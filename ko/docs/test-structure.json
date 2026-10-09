@@ -4,9 +4,7 @@
       "backToDocumentation": "문서로 돌아가기"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "테스트 구조 가이드",
-      "subtitle": "async setup(), data(), task() 함수를 사용한 v0.9.0 스마트 테스트 구조 마스터하기"
+      "title": "테스트 구조 가이드"
     },
     "basicStructure": {
       "title": "📝 기본 테스트 구조",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "동적 테스트",
-      "badge": "v0.9.0 기능",
       "setupFunctions": {
         "title": "Setup 함수 사용",
         "description": "테스트 환경 준비:"

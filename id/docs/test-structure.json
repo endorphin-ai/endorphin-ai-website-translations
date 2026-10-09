@@ -4,9 +4,7 @@
       "backToDocumentation": "Kembali ke Dokumentasi"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Panduan Struktur Tes",
-      "subtitle": "Kuasai struktur tes cerdas v0.9.0 dengan fungsi async setup(), data() dan task()"
+      "title": "Panduan Struktur Tes"
     },
     "basicStructure": {
       "title": "📝 Struktur Tes Dasar",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Tes Dinamis",
-      "badge": "Fitur v0.9.0",
       "setupFunctions": {
         "title": "Menggunakan Fungsi Setup",
         "description": "Siapkan lingkungan tes Anda:"

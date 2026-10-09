@@ -135,124 +135,56 @@
       "backToDocumentation": "[ZH] Back to Documentation"
     },
     "header": {
-      "badge": "[ZH] Config",
-      "title": "[ZH] Environment Setup",
-      "description": "[ZH] Environment variables and configuration guide. Configure Endorphin AI with simple environment variables for different environments."
+      "badge": "[ZH] Config"
     },
     "quickSetup": {
       "title": "[ZH] Quick Setup",
-      "description": "[ZH] Get started with minimal configuration",
       "step1": "[ZH] 1. Create a .env file in your project root:",
-      "sparkle": "[ZH] ✨ That's it!",
-      "ready": "[ZH] You're ready to go with just your OpenAI API key."
+      "sparkle": "[ZH] ✨ That's it!"
     },
     "availableVariables": {
       "title": "[ZH] Available Variables",
-      "description": "[ZH] Complete list of environment variables you can configure",
       "openaiApiKey": {
-        "title": "[ZH] OPENAI_API_KEY (Required)",
         "description": "[ZH] Your OpenAI API key for AI-powered testing.",
-        "howToGet": "[ZH] How to get one:",
-        "steps": "[ZH] Go to OpenAI API Keys,Create a new key,Copy and paste it here"
+        "howToGet": "[ZH] How to get one:"
       },
       "headless": {
-        "title": "[ZH] HEADLESS (Optional)",
         "description": "[ZH] Run browser with or without UI.",
-        "options": {
-          "false": "[ZH] HEADLESS=false  # See the browser (good for debugging)",
-          "true": "[ZH] HEADLESS=true   # No browser window (good for CI/CD)"
-        },
-        "default": "[ZH] Default: true"
+        "options": {}
       },
       "baseUrl": {
-        "title": "[ZH] BASE_URL (Optional)",
-        "description": "[ZH] Default website for your tests.",
-        "default": "[ZH] Default: https://qafromla.herokuapp.com/"
+        "description": "[ZH] Default website for your tests."
       },
       "slowMo": {
-        "title": "[ZH] SLOW_MO (Optional)",
-        "description": "[ZH] Slow down browser actions (milliseconds).",
-        "options": {
-          "0": "[ZH] SLOW_MO=0     # No delay (fastest)",
-          "500": "[ZH] SLOW_MO=500   # Half second delay",
-          "1000": "[ZH] SLOW_MO=1000  # One second delay"
-        },
-        "default": "[ZH] Default: 0"
+        "options": {}
       },
       "endorphinDebug": {
-        "title": "[ZH] ENDORPHIN_DEBUG (Optional)",
-        "description": "[ZH] Enable debug mode for detailed logging.",
-        "options": {
-          "true": "[ZH] ENDORPHIN_DEBUG=true   # Enable debug mode",
-          "false": "[ZH] ENDORPHIN_DEBUG=false  # Disable debug mode"
-        },
-        "default": "[ZH] Default: false"
+        "options": {}
       }
     },
     "exampleConfigurations": {
       "title": "[ZH] Example Configurations",
-      "description": "[ZH] Ready-to-use configurations for different environments",
       "localDevelopment": {
-        "title": "[ZH] Local Development",
-        "description": "[ZH] Perfect for development and debugging:"
+        "title": "[ZH] Local Development"
       },
-      "stagingEnvironment": {
-        "title": "[ZH] Staging Environment",
-        "description": "[ZH] For testing against staging servers:"
-      },
-      "productionCi": {
-        "title": "[ZH] Production/CI",
-        "description": "[ZH] Optimized for CI/CD pipelines:"
-      },
-      "debugMode": {
-        "title": "[ZH] Debug Mode",
-        "description": "[ZH] For troubleshooting test issues:"
-      }
+      "stagingEnvironment": {},
+      "productionCi": {},
+      "debugMode": {}
     },
     "advancedConfiguration": {
-      "title": "[ZH] Advanced Configuration",
-      "description": "[ZH] Additional variables for power users",
-      "modelConfiguration": {
-        "title": "[ZH] Model Configuration"
-      },
-      "browserSettings": {
-        "title": "[ZH] Browser Settings"
-      },
-      "outputSettings": {
-        "title": "[ZH] Output Settings"
-      }
+      "modelConfiguration": {},
+      "browserSettings": {},
+      "outputSettings": {}
     },
     "usingDifferentEnvironments": {
-      "title": "[ZH] Using Different Environments",
-      "method1": {
-        "title": "[ZH] Method 1: Multiple .env Files",
-        "description": "[ZH] Create separate files for each environment:",
-        "loadSpecific": "[ZH] Load specific environment:"
-      },
-      "method2": {
-        "title": "[ZH] Method 2: Environment Variables",
-        "description": "[ZH] Set variables directly in command line:"
-      },
-      "method3": {
-        "title": "[ZH] Method 3: Package.json Scripts",
-        "description": "[ZH] Add scripts to your package.json:",
-        "thenRun": "[ZH] Then run with:"
-      }
+      "method1": {},
+      "method2": {},
+      "method3": {}
     },
     "securityBestPractices": {
-      "title": "[ZH] Security Best Practices",
-      "neverCommit": {
-        "title": "[ZH] 🚨 Never Commit API Keys",
-        "description": "[ZH] Add .env to your .gitignore:"
-      },
-      "useEnvironmentVariables": {
-        "title": "[ZH] ⚠️ Use Environment Variables in CI",
-        "description": "[ZH] Set OPENAI_API_KEY as a secret in your CI/CD platform"
-      },
-      "createExample": {
-        "title": "[ZH] ✅ Create .env.example",
-        "description": "[ZH] Share template without secrets:"
-      }
+      "neverCommit": {},
+      "useEnvironmentVariables": {},
+      "createExample": {}
     },
     "nextSteps": {
       "next": "[ZH] CI/CD Setup",

@@ -19,16 +19,13 @@
       "description": "日本語でユーザーアクションを記述"
     },
     "selfHealing": {
-      "title": "🔁 自己修復テスト",
-      "description": "UIの変更に自動的に適応"
+      "title": "🔁 自己修復テスト"
     },
     "smartValidation": {
-      "title": "🕵️ インテリジェント検証エージェント",
-      "description": "視覚的・論理的エラーを検出"
+      "title": "🕵️ インテリジェント検証エージェント"
     },
     "costTracking": {
-      "title": "💰 コストとトークン追跡",
-      "description": "AI使用コストとトークン消費を監視"
+      "title": "💰 コストとトークン追跡"
     },
     "ciIntegration": {
       "title": "🚀 CI統合",
@@ -59,12 +56,10 @@
       "description": "AIがテスト指示をどのように分析、推論、実行するかを正確に確認"
     },
     "builtInTools": {
-      "title": "🔧 内蔵ツールシステム",
-      "description": "12の包括的なブラウザ自動化ツールを内蔵 - カスタムツール不要"
+      "title": "🔧 内蔵ツールシステム"
     },
     "testRecorderInteractive": {
-      "title": "🎬 テストレコーダー",
-      "description": "インタラクティブなテストレコーダーでプロンプトをリアルタイムで試行 - テストアイデアを即座に実験・検証"
+      "title": "🎬 テストレコーダー"
     },
     "enhancedReports": {
       "title": "📊 拡張HTMLレポート",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 クイックスタート",
     "step1": "フレームワークをインストール",
-    "step2": "OpenAI APIキーを設定",
     "step3": "最初のテストを作成",
     "step4": "実行して魔法を体験！",
     "startNow": "今すぐ始める →"

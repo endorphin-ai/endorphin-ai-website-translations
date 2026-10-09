@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Essentieel",
-      "title": "Project Setup Gids",
-      "subtitle": "Volledige project setup en configuratie gids voor professionele test workflows"
+      "title": "Project Setup Gids"
     },
     "installation": {
-      "title": "Installatie",
-      "description": "Ga aan de slag met Endorphin AI met een van deze methoden:",
-      "option1": "Optie 1: Snelle Setup",
-      "option2": "Optie 2: Handmatige Installatie"
+      "title": "Installatie"
     },
     "projectSetup": {
       "title": "Project Setup",
-      "description": "Initialiseer uw project met de juiste structuur en configuratiebestanden.",
       "quickSetup": "Snelle Setup met Init",
       "quickSetupDescription": "De snelste manier om uw project in te stellen:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "Dit creëert:",
       "configFile": "Configuratiebestand",
-      "testsFolder": "Uw testbestanden",
       "envTemplate": "Omgevingsvariabelen sjabloon",
       "exampleTest": "Voorbeeld testbestand",
       "manualSetup": "Handmatige Setup",
-      "manualDescription": "Voor meer controle over uw setup:",
-      "step1": "1. Maak endorphin.config.ts:",
       "step2": "2. Maak .env bestand:",
       "step3": "3. Maak tests map:"
     },
     "openaiSetup": {
       "title": "OpenAI Setup",
-      "description": "Configureer uw OpenAI API sleutel voor AI-aangedreven testen:",
       "step1": "1. Krijg uw API sleutel van",
       "step1Description": "Bezoek platform.openai.com/api-keys om uw API sleutel aan te maken",
       "step2": "2. Voeg toe aan uw .env bestand:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "Maak Uw Eerste Test",
-      "description": "Maak een testbestand om te verifiëren dat uw setup correct werkt.",
-      "createFile": "Maak een bestand genaamd google-test.js in uw tests map:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Tests Uitvoeren",
       "listTests": "Lijst alle tests:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Voer specifieke test uit:",
@@ -60,10 +46,7 @@
       "openBrowser": "Open in browser:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Setup Voltooid!",
-      "description": "Uw project is nu geconfigureerd en klaar voor AI-aangedreven testen. U kunt beginnen met het schrijven van tests met natuurlijke taal beschrijvingen."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Volgende: Test Structuur →",
       "backButton": "Terug naar Documentatie"

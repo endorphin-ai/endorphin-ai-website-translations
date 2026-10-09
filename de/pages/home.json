@@ -19,16 +19,13 @@
       "description": "Beschreiben Sie Benutzeraktionen in einfachem Englisch"
     },
     "selfHealing": {
-      "title": "🔁 Selbstheilende Tests",
-      "description": "Automatische Anpassung an UI-Änderungen"
+      "title": "🔁 Selbstheilende Tests"
     },
     "smartValidation": {
-      "title": "🕵️ Intelligenter Validierungs-Agent",
-      "description": "Erkennt visuelle und logische Fehler"
+      "title": "🕵️ Intelligenter Validierungs-Agent"
     },
     "costTracking": {
-      "title": "💰 Kosten- & Token-Verfolgung",
-      "description": "Überwachen Sie KI-Nutzungskosten und Token-Verbrauch"
+      "title": "💰 Kosten- & Token-Verfolgung"
     },
     "ciIntegration": {
       "title": "🚀 CI-Integration",
@@ -59,12 +56,10 @@
       "description": "Sehen Sie genau, wie KI Testanweisungen analysiert, begründet und ausführt"
     },
     "builtInTools": {
-      "title": "🔧 Eingebautes Tool-System",
-      "description": "12 umfassende Browser-Automatisierungstools eingebaut - keine benutzerdefinierten Tools erforderlich"
+      "title": "🔧 Eingebautes Tool-System"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Test-Recorder",
-      "description": "Interaktiver Test-Recorder zum Ausprobieren von Prompts in Echtzeit - experimentieren und validieren Sie Test-Ideen sofort"
+      "title": "🎬 Test-Recorder"
     },
     "enhancedReports": {
       "title": "📊 Erweiterte HTML-Berichte",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Schnellstart",
     "step1": "Framework installieren",
-    "step2": "OpenAI API-Schlüssel einrichten",
     "step3": "Ersten Test schreiben",
     "step4": "Ausführen und die Magie erleben!",
     "startNow": "Jetzt starten →"

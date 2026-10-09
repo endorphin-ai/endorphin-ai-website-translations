@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5분",
     "title": "빠른 시작 가이드",
-    "subtitle": "5분 내에 Endorphin AI를 시작하고 실행하세요",
-    "congratulations": {
-      "title": "🎉 축하합니다!",
-      "subtitle": "AI 기반의 첫 번째 테스트를 성공적으로 실행했습니다. 더 많은 것을 시도할 준비가 되셨나요?"
-    },
+    "congratulations": {},
     "step1": {
-      "title": "설치",
-      "description": "npm을 통해 Endorphin AI 설치:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript 정의 포함 • ✅ 기본 설정 필요 없음"
+      "title": "설치"
     },
     "step2": {
-      "title": "🔑 OpenAI 설정",
-      "description": "OpenAI API 키를 구성하세요:",
-      "getApiKey": "1. OpenAI에서 API 키 받기",
-      "visitPlatform": "platform.openai.com/api-keys를 방문하여 API 키를 생성하세요",
-      "addToEnv": "2. .env 파일에 추가:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ API 키를 안전하게 보관 • ✅ .env 파일을 버전 제어에 커밋하지 마세요",
-      "substep1": "1. OpenAI에서 API 키 받기",
       "visitLink": "Visit",
-      "createKey": "to create your API key",
-      "substep2": "2. .env 파일에 추가:"
+      "createKey": "to create your API key"
     },
     "step3": {
-      "title": "첫 번째 테스트 작성",
-      "description": "v0.9.0 스마트 구조를 사용하여 간단한 테스트 파일 작성:",
-      "codeComment": "// my-first-test.ts\\nimport type { TestCase } from 'endorphin-ai';\\n\\nexport const LOGIN_TEST: TestCase = {\\n  id: 'LOGIN-001',\\n  name: '사용자 로그인 테스트',\\n  description: '사용자 인증 플로우 테스트',\\n  tags: ['인증'],\\n  priority: '높음',\\n  \\n  setup: async () => ({\\n    baseUrl: 'https://example.com'\\n  }),\\n  \\n  data: async () => ({\\n    email: 'test@example.com',\\n    password: 'password123'\\n  }),\\n  \\n  task: async (data, setup) => \\`\\n    \\${setup.baseUrl}/login으로 이동\\n    이메일 필드에 \\\"\\${data.email}\\\" 입력\\n    비밀번호 필드에 \\\"\\${data.password}\\\" 입력\\n    \\\"로그인\\\" 버튼 클릭\\n    대시보드가 보이는지 확인\\n  \\`\\n};"
+      "title": "첫 번째 테스트 작성"
     },
     "step4": {
-      "title": "테스트 실행",
-      "description": "단일 명령으로 테스트 실행:",
-      "command": "npx endorphin-ai run my-first-test.js",
-      "aiAnalysis": "AI가 지시사항을 분석하고 자동으로 테스트를 실행합니다"
+      "title": "테스트 실행"
     },
     "step5": {
       "title": "결과 보기",
-      "description": "비용 추적이 포함된 아름다운 HTML 보고서 확인:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "테스트 실행 세부사항",
-        "aiDecisions": "AI 결정 기록",
-        "costBreakdown": "비용 세분화",
-        "screenshots": "스크린샷 갤러리"
-      },
-      "feature1": "테스트 실행 세부사항",
-      "feature2": "AI 결정 기록",
-      "feature3": "비용 세분화",
-      "feature4": "스크린샷 갤러리"
+      "features": {}
     },
     "nextSteps": {
-      "setup": {
-        "title": "완전한 설정",
-        "description": "고급 구성 및 프로젝트 설정 학습",
-        "button": "가이드 읽기"
-      },
-      "structure": {
-        "title": "테스트 구조",
-        "description": "v0.9.0 스마트 테스트 구조 마스터하기",
-        "button": "더 알아보기"
-      },
-      "examples": {
-        "title": "예제",
-        "description": "실제 테스트 예제 둘러보기",
-        "button": "예제 보기"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "모든 문서 탐색"
   }

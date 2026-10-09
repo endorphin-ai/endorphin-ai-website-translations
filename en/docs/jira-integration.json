@@ -1,0 +1,356 @@
+{
+  "jiraIntegrationPage": {
+    "navigation": {
+      "backToDocumentation": "Back to Documentation"
+    },
+    "header": {
+      "badge": "Integration",
+      "title": "JIRA Integration",
+      "description": "Set up JIRA integration to sync test cases from JIRA tickets and run them with Endorphin AI."
+    },
+    "common": {
+      "recommended": "Recommended",
+      "legacy": "Legacy support",
+      "optional": "Optional, but recommended",
+      "solution": "Solution",
+      "generates": "This generates a test with:"
+    },
+    "overview": {
+      "title": "Overview",
+      "description": "JIRA integration allows you to:",
+      "items": [
+        "Automatically fetch test cases from JIRA tickets",
+        "Convert JIRA tickets written in a special format into executable tests",
+        "Generate test data using AI",
+        "Run JIRA-synced tests alongside your regular tests",
+        "Track raw JIRA data for auditing and debugging"
+      ]
+    },
+    "prerequisites": {
+      "title": "Prerequisites",
+      "items": [
+        "JIRA Cloud account with API access",
+        "JIRA project with test case tickets",
+        "Node.js 16+ and Endorphin AI installed"
+      ]
+    },
+    "credentials": {
+      "title": "Step 1: Get JIRA Credentials",
+      "description": "Collect these five values before you configure the integration.",
+      "url": {
+        "title": "Find your JIRA URL",
+        "description": "Your JIRA URL has this format:"
+      },
+      "email": {
+        "title": "Get your email",
+        "description": "Use the email address associated with your JIRA account."
+      },
+      "token": {
+        "title": "Create an API token",
+        "steps": [
+          "Go to Atlassian Account Settings",
+          "Click \"Create API token\"",
+          "Give it a name (for example, \"Endorphin AI Integration\")",
+          "Copy the generated token and save it securely"
+        ],
+        "link": "Open Atlassian Account Settings"
+      },
+      "projectId": {
+        "title": "Find the Project ID",
+        "steps": [
+          "Go to your JIRA project",
+          "Click \"Project settings\" → \"Details\"",
+          "Note the Project ID. It is numeric, for example 10001"
+        ]
+      },
+      "issueTypeId": {
+        "title": "Find the Issue Type ID",
+        "steps": [
+          "Go to JIRA Administration → Issues → Issue types",
+          "Find your test case issue type",
+          "Note the ID. It is numeric, for example 10013"
+        ]
+      }
+    },
+    "configuration": {
+      "title": "Step 2: Configuration Setup",
+      "description": "You can configure JIRA integration with environment variables or with the configuration file.",
+      "env": {
+        "title": "Option 1: Environment Variables (.env file)",
+        "description": "Create or update your .env file:"
+      },
+      "configFile": {
+        "title": "Option 2: Configuration File (endorphin.config.ts)",
+        "description": "Add the JIRA configuration to your endorphin.config.ts:"
+      }
+    },
+    "ticketFormat": {
+      "title": "Step 3: JIRA Ticket Format",
+      "description": "Create JIRA tickets with one of the following special formats in the ticket description.",
+      "roleBased": {
+        "title": "Enhanced Format with Role-Based Users"
+      },
+      "basic": {
+        "title": "Basic Format"
+      },
+      "singleUser": {
+        "title": "Alternative Single-User Format"
+      }
+    },
+    "breakdown": {
+      "title": "Format Breakdown",
+      "users": {
+        "title": "@USERS section",
+        "items": [
+          "@USERS [@ROLE1, @ROLE2, @ROLE3] declares the user roles for the test",
+          "Supports descriptive role names like @ADMIN, @SELLER, @USER, @MANAGER",
+          "Role names are case-insensitive and converted to lowercase (for example, @ADMIN becomes admin)",
+          "Special characters are removed (for example, @USER-BUYER becomes userbuyer)",
+          "Each role must have a corresponding @ROLE.PHASE1 section in @STEPS"
+        ]
+      },
+      "data": {
+        "title": "@DATA section",
+        "items": [
+          "@DATA('prompt') is the AI prompt for generating test data",
+          "List the field definitions one per line, in the form fieldname: description of what this field should contain",
+          "Supports any field names you need",
+          "Use role-specific field names for multi-user tests (for example, admin_email, seller_email)"
+        ]
+      },
+      "steps": {
+        "title": "@STEPS section",
+        "items": [
+          "Contains all test execution phases",
+          "Role-based (recommended): @ADMIN.PHASE1, @SELLER.PHASE1. Uses the declared role names",
+          "Legacy: @USER1, @USER.PHASE1, @USER1.PHASE1. Uses numeric user identifiers"
+        ]
+      },
+      "userRole": {
+        "title": "User/Role section",
+        "items": [
+          "Holds the test steps to execute for each user or role",
+          "Use ${data.fieldname} to reference generated data",
+          "Each line is a test instruction",
+          "Steps execute in parallel for multi-user tests"
+        ]
+      }
+    },
+    "multiUser": {
+      "title": "Multi-User Tests",
+      "roleBased": {
+        "title": "Role-Based Multi-User Format",
+        "description": "For tests with multiple users running in parallel using descriptive role names:",
+        "results": [
+          "users: ['admin', 'customer'], two browser sessions with meaningful role names",
+          "A tasks object with the keys admin.phase1 and customer.phase1",
+          "Each role executes its phase in parallel"
+        ]
+      },
+      "legacy": {
+        "title": "Legacy Multi-User Format",
+        "description": "For backward compatibility, the numeric format still works:",
+        "results": [
+          "users: ['user1', 'user2'], two browser sessions",
+          "A tasks object with the keys user1.phase1 and user2.phase1",
+          "Each user executes their phase in parallel"
+        ]
+      }
+    },
+    "multiPhase": {
+      "title": "Single-User Multi-Phase Tests",
+      "description": "For tests with one user going through multiple phases:",
+      "results": [
+        "A single task function (not tasks)",
+        "All phases combined into sequential steps"
+      ]
+    },
+    "running": {
+      "title": "Step 4: Running JIRA Sync",
+      "syncAndRun": {
+        "title": "Sync and Run Tests"
+      },
+      "syncOnly": {
+        "title": "Sync Only (No Test Execution)",
+        "description": "Currently, JIRA sync is integrated with test execution. To sync without running tests, run a sync and then cancel the test execution."
+      }
+    },
+    "syncProcess": {
+      "title": "Step 5: Understanding the Sync Process",
+      "whatHappens": {
+        "title": "What Happens During Sync",
+        "steps": [
+          {
+            "title": "Connection test",
+            "description": "Verifies JIRA credentials and connectivity"
+          },
+          {
+            "title": "Ticket fetch",
+            "description": "Downloads tickets matching your project, issue type, and label"
+          },
+          {
+            "title": "Raw data storage",
+            "description": "Saves the original tickets to the jira-raw/ folder"
+          },
+          {
+            "title": "Conversion",
+            "description": "Transforms JIRA tickets into Endorphin AI test cases"
+          },
+          {
+            "title": "File generation",
+            "description": "Creates TypeScript test files in tests/jira/"
+          },
+          {
+            "title": "Test execution",
+            "description": "Runs the generated tests"
+          }
+        ]
+      },
+      "fileStructure": {
+        "title": "File Structure After Sync"
+      }
+    },
+    "advanced": {
+      "title": "Step 6: Advanced Usage",
+      "customFields": {
+        "title": "Custom Field Names",
+        "description": "You can use any field names in your @DATA section:"
+      },
+      "dynamicData": {
+        "title": "Dynamic Data Generation",
+        "description": "The AI generates realistic data based on your field descriptions:"
+      },
+      "variableSubstitution": {
+        "title": "Variable Substitution",
+        "description": "Use ${data.fieldname} anywhere in your test steps:"
+      }
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "description": "Common issues and how to fix them",
+      "authFailed": {
+        "title": "Authentication Failed",
+        "solution": "Check your JIRA_EMAIL and JIRA_API_TOKEN. Regenerate the API token if needed."
+      },
+      "noTickets": {
+        "title": "No Tickets Found",
+        "solutions": [
+          "Verify that JIRA_PROJECT_ID and JIRA_ISSUE_TYPE_ID are correct",
+          "Check that the tickets have the specified label (JIRA_LABEL)",
+          "Ensure tickets exist in the project"
+        ]
+      },
+      "invalidFormat": {
+        "title": "Invalid Ticket Format",
+        "solution": "Ensure your JIRA ticket description follows the required format with @DATA, @STEPS, and @USER.PHASE1 sections."
+      },
+      "fieldParsing": {
+        "title": "Field Parsing Issues",
+        "solutions": [
+          "Ensure each field is on a separate line in the @DATA section",
+          "Use clear field descriptions",
+          "Avoid special characters in field names"
+        ]
+      },
+      "debugMode": {
+        "title": "Debug Mode",
+        "description": "Enable detailed logging:"
+      },
+      "rawData": {
+        "title": "Checking Raw Data",
+        "description": "Inspect the raw JIRA data in the jira-raw/ folder to debug ticket format issues."
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "naming": {
+        "title": "Consistent Naming",
+        "items": [
+          "Use descriptive field names (for example, user_email instead of email1)",
+          "Follow consistent naming patterns across tickets"
+        ]
+      },
+      "descriptions": {
+        "title": "Clear Descriptions",
+        "items": [
+          "Write clear field descriptions for better AI data generation",
+          "Be specific about data requirements (for example, \"valid email address for testing\")"
+        ]
+      },
+      "organization": {
+        "title": "Test Organization",
+        "items": [
+          "Use consistent labels for grouping related test tickets",
+          "Include ticket IDs in test names for easy tracking"
+        ]
+      },
+      "versionControl": {
+        "title": "Version Control",
+        "items": [
+          "Add jira-raw/ to .gitignore if the data contains sensitive information",
+          "Include generated test files in version control for review"
+        ]
+      },
+      "regularSync": {
+        "title": "Regular Sync",
+        "items": [
+          "Run JIRA sync regularly to get the latest ticket updates",
+          "Review generated tests before important test runs"
+        ]
+      }
+    },
+    "security": {
+      "title": "Security Considerations",
+      "items": [
+        "Store API tokens securely (use the .env file, not code)",
+        "Add .env to .gitignore to prevent credential exposure",
+        "Rotate JIRA API tokens regularly",
+        "Review generated test data for sensitive information"
+      ]
+    },
+    "example": {
+      "title": "Example Workflow",
+      "description": "A complete example, from ticket to results.",
+      "step1": {
+        "title": "Create a JIRA ticket (QE-001)",
+        "summaryLabel": "Summary",
+        "summaryValue": "Login Flow Test",
+        "descriptionLabel": "Description"
+      },
+      "step2": {
+        "title": "Run sync and test"
+      },
+      "step3": {
+        "title": "Review results",
+        "items": [
+          "Check tests/jira/QE_001.ts for the generated test",
+          "Review the test execution results",
+          "Update the JIRA ticket if needed"
+        ]
+      }
+    },
+    "nextSteps": {
+      "title": "Next Steps",
+      "testWritingTips": {
+        "title": "Test Writing Tips",
+        "description": "Advanced test patterns"
+      },
+      "htmlReporter": {
+        "title": "HTML Reports",
+        "description": "View detailed test results"
+      },
+      "environmentSetup": {
+        "title": "Environment Variables",
+        "description": "More configuration options"
+      },
+      "quickStart": {
+        "title": "Quick Start",
+        "description": "More information on getting started"
+      },
+      "projectSetup": {
+        "title": "Project Setup",
+        "description": "More information on setting up a project"
+      }
+    }
+  }
+}

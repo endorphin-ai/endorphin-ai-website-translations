@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Temel",
-      "title": "Proje Kurulum Kılavuzu",
-      "subtitle": "Profesyonel test iş akışları için tam proje kurulumu ve yapılandırma kılavuzu"
+      "title": "Proje Kurulum Kılavuzu"
     },
     "installation": {
-      "title": "Kurulum",
-      "description": "Bu yöntemlerden birini kullanarak Endorphin AI ile başlayın:",
-      "option1": "Seçenek 1: Hızlı Kurulum",
-      "option2": "Seçenek 2: Manuel Kurulum"
+      "title": "Kurulum"
     },
     "projectSetup": {
       "title": "Proje Kurulumu",
-      "description": "Projenizi uygun yapı ve yapılandırma dosyaları ile başlatın.",
       "quickSetup": "Init ile Hızlı Kurulum",
       "quickSetupDescription": "Projenizi kurmanın en hızlı yolu:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "Bu oluşturur:",
       "configFile": "Yapılandırma dosyası",
-      "testsFolder": "Test dosyalarınız",
       "envTemplate": "Ortam değişkenleri şablonu",
       "exampleTest": "Örnek test dosyası",
       "manualSetup": "Manuel Kurulum",
-      "manualDescription": "Kurulumunuz üzerinde daha fazla kontrol için:",
-      "step1": "1. endorphin.config.ts oluştur:",
       "step2": "2. .env dosyası oluştur:",
       "step3": "3. Tests klasörü oluştur:"
     },
     "openaiSetup": {
       "title": "OpenAI Kurulumu",
-      "description": "Yapay zeka destekli test için OpenAI API anahtarınızı yapılandırın:",
       "step1": "1. API anahtarınızı alın",
       "step1Description": "API anahtarınızı oluşturmak için platform.openai.com/api-keys adresini ziyaret edin",
       "step2": "2. .env dosyanıza ekleyin:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "İlk Testinizi Oluşturun",
-      "description": "Kurulumunuzun doğru çalıştığını doğrulamak için bir test dosyası oluşturun.",
-      "createFile": "Tests klasörünüzde google-test.js adında bir dosya oluşturun:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Testleri Çalıştırma",
       "listTests": "Tüm testleri listele:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Belirli testi çalıştır:",
@@ -60,10 +46,7 @@
       "openBrowser": "Tarayıcıda aç:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Kurulum Tamamlandı!",
-      "description": "Projeniz artık yapay zeka destekli test için yapılandırıldı ve hazır. Doğal dil açıklamalarını kullanarak test yazmaya başlayabilirsiniz."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Sonraki: Test Yapısı →",
       "backButton": "Dokümantasyona Dön"

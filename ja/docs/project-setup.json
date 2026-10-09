@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "必須",
-      "title": "プロジェクトセットアップガイド",
-      "subtitle": "プロフェッショナルなテストワークフローのための完全なプロジェクトセットアップと設定ガイド"
+      "title": "プロジェクトセットアップガイド"
     },
     "installation": {
-      "title": "インストール",
-      "description": "以下のいずれかの方法でEndorphin AIを始めましょう：",
-      "option1": "オプション1：クイックセットアップ",
-      "option2": "オプション2：手動インストール"
+      "title": "インストール"
     },
     "projectSetup": {
       "title": "プロジェクトセットアップ",
-      "description": "適切な構造と設定ファイルでプロジェクトを初期化します。",
       "quickSetup": "Initによるクイックセットアップ",
       "thisCreates": "これにより作成されます：",
       "configFile": "⚙️ endorphin.config.js設定ファイル",
-      "testsFolder": "📁 テストファイル用の/testsフォルダ",
       "envTemplate": "🔐 環境変数用の.envファイル",
       "exampleTest": "📦 一般的なタスク用のpackage.jsonスクリプト",
       "manualSetup": "手動セットアップ",
-      "manualDescription": "セットアップをより詳細に制御するには：",
-      "step1": "1. プロジェクト構造を作成",
       "step2": "2. 環境変数を設定",
       "step3": "3. 設定ファイルをセットアップ"
     },
     "openaiSetup": {
       "title": "OpenAIセットアップ",
-      "description": "AI駆動テスト用のOpenAI APIキーを設定します：",
       "step1": "1. APIキーを取得",
       "step2": "2. .envファイルに追加："
     },
-    "firstTest": {
-      "title": "最初のテストを作成",
-      "description": "セットアップが正しく動作することを確認するテストファイルを作成します。",
-      "createFile": "testsフォルダにgoogle-test.jsという名前のファイルを作成してください："
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "テストの実行",
       "listTests": "すべてのテストを一覧表示：",
       "runSpecific": "特定のテストを実行：",
       "runAll": "すべてのテストを実行："
@@ -51,10 +37,7 @@
       "generateReport": "レポートを生成：",
       "openBrowser": "ブラウザで開く："
     },
-    "success": {
-      "title": "セットアップ完了！",
-      "description": "プロジェクトが設定され、AI駆動テストの準備が整いました。自然言語の記述を使用してテストを書き始めることができます。"
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "次：テスト構造 →",
       "backButton": "ドキュメントに戻る"

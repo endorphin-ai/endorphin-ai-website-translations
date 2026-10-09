@@ -5,119 +5,198 @@
     },
     "header": {
       "badge": "Advanced",
-      "title": "AI Prompt Guide",
-      "subtitle": "Advanced AI prompting techniques and optimization for maximum testing effectiveness"
+      "title": "AI Agent Prompting Guide",
+      "subtitle": "How to write natural language instructions that help the AI agent pick the right browser tools and parameters."
     },
-    "introduction": {
-      "title": "Master AI Prompting",
-      "description": "Learn how to write effective prompts that get the best results from AI-powered testing.",
-      "importance": "Why prompt optimization matters:",
-      "importanceList": {
-        "accuracy": "✅ Higher test accuracy and reliability",
-        "efficiency": "✅ Reduced token usage and costs",
-        "maintenance": "✅ More maintainable and debuggable tests",
-        "robustness": "✅ Better handling of edge cases",
-        "speed": "✅ Faster test execution"
-      }
-    },
-    "promptPrinciples": {
-      "title": "Core Prompting Principles",
-      "description": "Follow these principles for effective AI communication:",
-      "principles": {
-        "clarity": {
-          "title": "1. Be Clear and Specific",
-          "description": "Use precise language and avoid ambiguity",
-          "example": "Good: 'Click the blue Submit button in the footer'\nBad: 'Click the button'"
-        },
-        "context": {
-          "title": "2. Provide Context",
-          "description": "Give the AI enough context to understand the scenario",
-          "example": "Good: 'After logging in, navigate to user profile settings'\nBad: 'Go to settings'"
-        },
-        "structure": {
-          "title": "3. Use Logical Structure",
-          "description": "Organize steps in a logical, sequential order",
-          "example": "Good: Step-by-step instructions with clear flow\nBad: Jumping between unrelated actions"
-        },
-        "validation": {
-          "title": "4. Include Validation",
-          "description": "Always specify what should be verified",
-          "example": "Good: 'Verify the success message appears'\nBad: 'Submit the form' (without validation)"
-        }
-      }
-    },
-    "advancedTechniques": {
-      "title": "Advanced Techniques",
-      "description": "Sophisticated prompting strategies for complex scenarios:",
-      "techniques": {
-        "conditionalLogic": {
-          "title": "Conditional Logic",
-          "description": "Handle different scenarios based on page state or data",
-          "example": "If user is already logged in, skip login and go to dashboard"
-        },
-        "errorHandling": {
-          "title": "Error Handling",
-          "description": "Anticipate and handle potential errors gracefully",
-          "example": "If login fails, capture error message and retry with different credentials"
-        },
-        "dynamicContent": {
-          "title": "Dynamic Content",
-          "description": "Work with content that changes based on data or state",
-          "example": "Select the first available product from the search results"
-        },
-        "multiStepFlows": {
-          "title": "Multi-Step Flows",
-          "description": "Break complex workflows into manageable steps",
-          "example": "Complete checkout process: cart → shipping → payment → confirmation"
-        }
-      }
-    },
-    "optimization": {
-      "title": "Prompt Optimization",
-      "description": "Strategies to improve performance and reduce costs:",
-      "strategies": {
-        "tokenEfficiency": {
-          "title": "Token Efficiency",
-          "description": "Write concise prompts that achieve maximum results with minimal tokens",
-          "tips": "• Use action verbs • Avoid redundant descriptions • Focus on essentials"
-        },
-        "reusability": {
-          "title": "Reusable Patterns",
-          "description": "Create prompt templates for common scenarios",
-          "tips": "• Standard login flows • Form validation patterns • Navigation sequences"
-        },
-        "testing": {
-          "title": "Prompt Testing",
-          "description": "Test and refine prompts using the Test Recorder",
-          "tips": "• Use Test Recorder for experimentation • A/B test different approaches • Monitor success rates"
-        }
-      }
-    },
-    "examples": {
-      "title": "Real-World Examples",
-      "description": "Practical examples showing effective prompt patterns:",
-      "ecommerce": {
-        "title": "E-commerce Checkout",
-        "description": "Complete purchase flow with cart, shipping, and payment"
+    "overview": {
+      "title": "Overview",
+      "description": "This guide helps you write effective natural language instructions for Endorphin AI's test framework. The AI agent uses specific tools to automate browser interactions, and using the right language patterns helps it select the correct tools and parameters.",
+      "benefitsTitle": "Key Benefits",
+      "benefits": {
+        "naturalLanguage": "Natural Language - write tests in plain English",
+        "toolSelection": "Smart Tool Selection - AI chooses the right browser automation tools",
+        "reliable": "Reliable Execution - consistent, repeatable test automation",
+        "visual": "Visual Verification - screenshots and element validation included"
       },
-      "dashboard": {
-        "title": "Dashboard Interaction",
-        "description": "Complex dashboard navigation and data manipulation"
-      },
-      "forms": {
-        "title": "Complex Form Handling",
-        "description": "Multi-step forms with validation and conditional fields"
+      "toolsTitle": "Available Tools",
+      "toolsDescription": "The framework provides these main tool categories:",
+      "tools": {
+        "navigation": {
+          "name": "Navigation",
+          "purpose": "Page navigation"
+        },
+        "content": {
+          "name": "Content Analysis",
+          "purpose": "Page content inspection",
+          "note": "raw HTML only; the accessibility tree is auto-injected"
+        },
+        "interaction": {
+          "name": "Interaction",
+          "purpose": "User interactions"
+        },
+        "verification": {
+          "name": "Verification",
+          "purpose": "Element validation"
+        },
+        "utilities": {
+          "name": "Utilities",
+          "purpose": "Support actions"
+        }
       }
     },
-    "troubleshooting": {
-      "title": "Common Issues & Solutions",
-      "description": "Troubleshoot common prompting challenges:",
-      "issues": {
-        "elementNotFound": "• Element not found → Use semantic descriptions instead of technical selectors",
-        "ambiguousInstructions": "• Ambiguous instructions → Add more context and specific details",
-        "timingIssues": "• Timing issues → Add explicit wait conditions",
-        "validationFailures": "• Validation failures → Be more specific about expected outcomes"
+    "navigate": {
+      "title": "Navigation Prompting",
+      "purpose": "Navigate to URLs with enhanced loading options",
+      "good": "Effective Prompts",
+      "avoid": "Avoid",
+      "unclear": "unclear",
+      "ambiguous": "ambiguous",
+      "relativeUrls": "Relative URLs without context",
+      "advanced": "Advanced Navigation"
+    },
+    "click": {
+      "title": "Click Actions",
+      "purpose": "Click buttons, links, and interactive elements",
+      "text": {
+        "title": "Button/Link Clicking",
+        "description": "Name the button or link text. The agent uses the text strategy.",
+        "examples": "Specific examples:"
+      },
+      "results": {
+        "logIn": "Finds button with \"Log In\" text",
+        "signIn": "Finds \"Sign In\" button",
+        "submit": "Finds \"Submit\" button",
+        "register": "Finds \"Register\" link text"
+      },
+      "css": {
+        "title": "CSS Selector Clicking",
+        "description": "For complex elements:",
+        "whenTitle": "When to use CSS:",
+        "when": {
+          "noText": "No visible text on the button",
+          "similar": "Multiple similar buttons",
+          "iconOnly": "Icon-only buttons",
+          "custom": "Custom styled elements"
+        }
+      },
+      "role": {
+        "title": "Role-Based Clicking",
+        "description": "For semantic elements. The agent uses the role strategy."
       }
+    },
+    "fill": {
+      "title": "Form Filling",
+      "purpose": "Fill input fields with text",
+      "email": "Email Fields",
+      "password": "Password Fields",
+      "text": "Text Fields",
+      "selectorsUsed": "Selectors used:",
+      "autoDetected": "Auto-detected selectors:",
+      "advanced": "Advanced Form Filling"
+    },
+    "verify": {
+      "title": "Verification & Validation",
+      "purpose": "Check if elements exist and are in expected states",
+      "existence": "Element Existence",
+      "specific": "Specific examples:",
+      "content": "Page Content Verification",
+      "elementInfo": {
+        "title": "Element Inspection",
+        "purpose": "Get detailed information about elements"
+      }
+    },
+    "contentAnalysis": {
+      "title": "Content Analysis",
+      "purpose": "Analyze page content for decision making",
+      "whenTitle": "When to use:",
+      "when": {
+        "complexPages": "Finding elements on complex pages",
+        "nextSteps": "Determining next steps based on page state",
+        "debugging": "Debugging failed interactions",
+        "structure": "Understanding page structure"
+      }
+    },
+    "wait": {
+      "title": "Timing & Waits",
+      "purpose": "Add delays and wait for elements",
+      "time": {
+        "title": "Time-based Waits",
+        "scenariosTitle": "Common scenarios:",
+        "scenarios": {
+          "submit": "After clicking submit buttons",
+          "transitions": "During page transitions",
+          "forms": "After form submissions",
+          "animations": "For animations to complete"
+        }
+      },
+      "element": {
+        "title": "Element-based Waits",
+        "statesTitle": "States:",
+        "default": "default"
+      }
+    },
+    "screenshot": {
+      "title": "Screenshots & Documentation",
+      "purpose": "Capture visual documentation",
+      "automaticTitle": "Automatic screenshots:",
+      "automatic": {
+        "afterAction": "Taken after each major action",
+        "onError": "Captured when errors occur",
+        "names": "Saved with descriptive names",
+        "stored": "Stored in test results folder"
+      }
+    },
+    "example": {
+      "title": "Complete Test Example",
+      "description": "A well-structured test task using effective prompting:"
+    },
+    "pitfalls": {
+      "title": "Common Pitfalls & Solutions",
+      "bad": "Bad:",
+      "good": "Good:",
+      "vague": "Vague Instructions",
+      "missingWaits": "Missing Wait Times",
+      "ambiguous": "Ambiguous Element References",
+      "noErrorContext": "No Error Handling Context"
+    },
+    "strategies": {
+      "title": "Advanced Prompting Strategies",
+      "sequential": "Sequential Actions",
+      "conditional": "Conditional Logic",
+      "errorScenarios": "Error Scenarios",
+      "multiStep": "Multi-step Workflows"
+    },
+    "bestPractices": {
+      "title": "Best Practices Summary",
+      "specific": {
+        "title": "Be Specific",
+        "description": "Use exact button text and clear element descriptions"
+      },
+      "waits": {
+        "title": "Include Waits",
+        "description": "Add appropriate wait times for page loads and transitions"
+      },
+      "verify": {
+        "title": "Verify Actions",
+        "description": "Always verify the result of important actions"
+      },
+      "natural": {
+        "title": "Use Natural Language",
+        "description": "Write as you would instruct a human tester"
+      },
+      "structure": {
+        "title": "Structure Steps",
+        "description": "Break complex flows into clear, sequential steps"
+      },
+      "errors": {
+        "title": "Handle Errors",
+        "description": "Include verification steps to catch failures"
+      },
+      "document": {
+        "title": "Document State",
+        "description": "Use screenshots to capture important moments"
+      },
+      "remember": "Remember: the AI agent is intelligent but benefits from clear, specific instructions that map well to the available browser automation tools."
     },
     "nextSteps": {
       "nextButton": "VS Code Debugging",

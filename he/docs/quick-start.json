@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 דקות",
     "title": "מדריך התחלה מהירה",
-    "subtitle": "הפעל את Endorphin AI תוך פחות מ-5 דקות",
     "step1": {
-      "title": "התקנה",
-      "description": "התקן את Endorphin AI דרך npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ הגדרות TypeScript כלולות • ✅ אין צורך בהגדרות"
+      "title": "התקנה"
     },
     "step2": {
-      "title": "🔑 הגדרת OpenAI",
-      "description": "הגדר את מפתח OpenAI API שלך:",
-      "getApiKey": "1. קבל מפתח OpenAI API",
-      "visitPlatform": "בקר ב-platform.openai.com/api-keys כדי ליצור מפתח API שלך",
-      "addToEnv": "2. הוסף לקובץ .env:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ שמור על מפתח API בטוח • ✅ לעולם אל תבצע commit של קבצי .env לבקרת גרסאות",
-      "substep1": "1. קבל מפתח OpenAI API",
       "visitLink": "בקר ב",
-      "createKey": "כדי ליצור מפתח API שלך",
-      "substep2": "2. הוסף לקובץ .env:"
+      "createKey": "כדי ליצור מפתח API שלך"
     },
     "step3": {
-      "title": "צור את הבדיקה הראשונה שלך",
-      "description": "צור קובץ בדיקה פשוט באמצעות המבנה החכם v0.9.0:",
-      "codeComment": "// הבדיקה-הראשונה-שלי.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'בדיקת התחברות',\n  description: 'בדיקת זרימת אימות משתמש',\n  tags: ['אימות'],\n  priority: 'גבוהה',\n  \n  setup: async () => ({\n    baseUrl: 'https://דוגמה.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@דוגמה.com',\n    password: 'סיסמה123'\n  }),\n  \n  task: async (data, setup) => `\n    נווט ל-${setup.baseUrl}/login\n    מלא שדה אימייל עם \"${data.email}\"\n    מלא שדה סיסמה עם \"${data.password}\"\n    לחץ על כפתור \"התחבר\"\n    וודא שהדשבורד גלוי\n  `\n};"
+      "title": "צור את הבדיקה הראשונה שלך"
     },
     "step4": {
-      "title": "הרץ את הבדיקה שלך",
-      "description": "הרץ את הבדיקה שלך בפקודה אחת:",
-      "command": "npx endorphin-ai run הבדיקה-הראשונה-שלי.js",
-      "aiAnalysis": "ה-AI ינתח את ההוראות שלך ויבצע את הבדיקה אוטומטית"
+      "title": "הרץ את הבדיקה שלך"
     },
     "step5": {
       "title": "צפה בתוצאות",
-      "description": "בדוק את דוח ה-HTML היפה שלך עם מעקב עלויות:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "פרטי ביצוע בדיקה",
-        "aiDecisions": "היסטוריית החלטות AI",
-        "costBreakdown": "פירוט עלויות",
-        "screenshots": "גלריית צילומי מסך"
-      },
-      "feature1": "פרטי ביצוע בדיקה",
-      "feature2": "היסטוריית החלטות AI",
-      "feature3": "פירוט עלויות",
-      "feature4": "גלריית צילומי מסך"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 ברכות!",
-      "subtitle": "הצלחת להריץ את הבדיקה הראשונה שלך המופעלת על ידי AI. מוכן לעוד?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "הגדרה מלאה",
-        "description": "למד הגדרות מתקדמות והגדרת פרויקט",
-        "button": "קרא מדריך"
-      },
-      "structure": {
-        "title": "מבנה בדיקות",
-        "description": "שלוט במבנה הבדיקה החכם v0.9.0",
-        "button": "למד עוד"
-      },
-      "examples": {
-        "title": "דוגמאות",
-        "description": "חקור דוגמאות בדיקות אמיתיות",
-        "button": "צפה בדוגמאות"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "חקור את כל התיעוד"
   }

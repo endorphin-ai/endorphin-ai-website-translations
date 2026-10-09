@@ -4,9 +4,9 @@
             "backToDocumentation": "Back to Documentation"
         },
         "header": {
-            "badge": "v0.9.0 Feature",
+            "badge": "Setup Guide",
             "title": "Global Setup Guide",
-            "description": "Run custom code before all your tests start - perfect for preparing servers, databases, and test environments"
+            "description": "Run custom code before all your tests start"
         },
         "whatIsGlobalSetup": {
             "title": "What is Global Setup?",
@@ -19,10 +19,12 @@
             }
         },
         "quickSetup": {
-            "title": "Quick Setup (2 Steps)",
+            "title": "Quick Setup",
             "step1": {
-                "title": "Create global-setup.js",
-                "description": "Create a global-setup.js file in your project root:"
+                "title": "Create a global setup file",
+                "description": "Create a global setup file in your project root:",
+                "optionTypeScript": "Option A: TypeScript (recommended) - create global-setup.ts",
+                "optionJavaScript": "Option B: JavaScript - create global-setup.js"
             },
             "step2": {
                 "title": "Configure Endorphin",
@@ -47,7 +49,7 @@
         },
         "usingSetupData": {
             "title": "Using Setup Data in Tests",
-            "description": "Access environment variables and data set during global setup"
+            "description": "Access environment variables set during setup"
         },
         "importantNotes": {
             "title": "Important Notes",
@@ -96,19 +98,34 @@
                     "Global variables might not persist",
                     "Use files or external storage for complex data"
                 ]
+            },
+            "typeScriptNotWorking": {
+                "title": "TypeScript Global Setup Not Working",
+                "description": "If you get errors like \"Unknown file extension .ts\", try these solutions:",
+                "useJavaScript": "Option 1: Use JavaScript instead",
+                "runWithTsx": "Option 2: Run with tsx",
+                "compileFirst": "Option 3: Compile TypeScript first"
+            },
+            "commonIssues": {
+                "title": "Common Issues",
+                "items": [
+                    "File not found - Check the path in your config",
+                    "Not a function - Make sure you export default a function",
+                    "Import errors - Use ES6 imports, not CommonJS"
+                ]
             }
         },
         "proTips": {
-            "title": "Pro Tips",
+            "title": "Tips",
             "tips": [
                 "Keep it Simple - Don't overcomplicate setup",
                 "Log Progress - Help debug when things go wrong",
                 "Handle Errors - Fail gracefully with clear messages",
-                "Fast Setup - Don't slow down test starts"
+                "Fast Setup - Don't slow down test starts",
+                "TypeScript - Use .ts files with proper typing for a better development experience"
             ]
         },
         "navigationButtons": {
-            "backToDocumentation": "Back to Documentation",
             "previous": "CI/CD Setup",
             "next": "Test Structure"
         }

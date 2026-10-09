@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Istotne",
-      "title": "Przewodnik Konfiguracji Projektu",
-      "subtitle": "Kompletny przewodnik konfiguracji i instalacji projektu dla profesjonalnych przepływów pracy testowych"
+      "title": "Przewodnik Konfiguracji Projektu"
     },
     "installation": {
-      "title": "Instalacja",
-      "description": "Rozpocznij z Endorphin AI używając jednej z tych metod:",
-      "option1": "Opcja 1: Szybka Konfiguracja",
-      "option2": "Opcja 2: Instalacja Manualna"
+      "title": "Instalacja"
     },
     "projectSetup": {
       "title": "Konfiguracja Projektu",
-      "description": "Zainicjuj swój projekt z odpowiednią strukturą i plikami konfiguracyjnymi.",
       "quickSetup": "Szybka Konfiguracja z Init",
       "quickSetupDescription": "Najszybszy sposób na konfigurację projektu:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "To tworzy:",
       "configFile": "Plik konfiguracyjny",
-      "testsFolder": "Twoje pliki testowe",
       "envTemplate": "Szablon zmiennych środowiskowych",
       "exampleTest": "Przykładowy plik testowy",
       "manualSetup": "Konfiguracja Manualna",
-      "manualDescription": "Dla większej kontroli nad konfiguracją:",
-      "step1": "1. Utwórz endorphin.config.ts:",
       "step2": "2. Utwórz plik .env:",
       "step3": "3. Utwórz folder tests:"
     },
     "openaiSetup": {
       "title": "Konfiguracja OpenAI",
-      "description": "Skonfiguruj swój klucz API OpenAI dla testów zasilanych AI:",
       "step1": "1. Uzyskaj klucz API od",
       "step1Description": "Odwiedź platform.openai.com/api-keys aby utworzyć klucz API",
       "step2": "2. Dodaj do pliku .env:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "Utwórz Swój Pierwszy Test",
-      "description": "Utwórz plik testowy aby sprawdzić, czy konfiguracja działa poprawnie.",
-      "createFile": "Utwórz plik o nazwie google-test.js w folderze tests:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Uruchamianie Testów",
       "listTests": "Listuj wszystkie testy:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Uruchom konkretny test:",
@@ -60,10 +46,7 @@
       "openBrowser": "Otwórz w przeglądarce:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Konfiguracja Ukończona!",
-      "description": "Twój projekt jest teraz skonfigurowany i gotowy do testów zasilanych AI. Możesz zacząć pisać testy używając opisów w języku naturalnym."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Następne: Struktura Testów →",
       "backButton": "Powrót do Dokumentacji"

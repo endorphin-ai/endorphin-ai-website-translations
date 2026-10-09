@@ -5,12 +5,10 @@
     },
     "header": {
       "badge": "Reports",
-      "title": "HTML Reporter",
-      "description": "Interactive reports with cost tracking and AI decisions. Beautiful, interactive test reports that make debugging easy."
+      "title": "HTML Reporter"
     },
     "whatAreReports": {
       "title": "🎯 What are HTML Reports?",
-      "description": "After running tests, Endorphin AI creates interactive web reports that provide comprehensive insights into your test execution.",
       "features": {
         "passedFailed": "Which tests passed or failed",
         "screenshots": "Screenshots of every step",
@@ -20,27 +18,19 @@
     },
     "quickStart": {
       "title": "🚀 Quick Start",
-      "description": "Generate your first HTML report in 3 simple steps",
       "step1": {
-        "title": "1. Run tests first:",
-        "command": "npx endorphin run test HEALTH-001"
+        "title": "1. Run tests first:"
       },
-      "step2": {
-        "title": "2. Generate the report:",
-        "command": "npx endorphin generate report"
-      },
+      "step2": {},
       "step3": {
-        "title": "3. Open it:",
-        "command": "npx endorphin open report"
+        "title": "3. Open it:"
       },
       "thatsIt": {
-        "title": "✨ That's it!",
-        "description": "Your report opens in the browser automatically."
+        "title": "✨ That's it!"
       }
     },
     "features": {
       "title": "📋 Report Features",
-      "description": "Comprehensive insights into your test execution",
       "dashboard": {
         "title": "Dashboard View",
         "description": "When you open a report, you'll see:",
@@ -51,16 +41,13 @@
       "interactive": {
         "title": "Interactive Features",
         "searchTests": {
-          "title": "Search Tests",
-          "description": "Type in the search box to find tests instantly - by ID, name, or any content"
+          "title": "Search Tests"
         },
         "filterStatus": {
-          "title": "Filter by Status",
-          "description": "Click tabs to filter: All, Passed, Failed tests"
+          "title": "Filter by Status"
         },
         "viewScreenshots": {
-          "title": "View Screenshots",
-          "description": "Click any screenshot to see full-size, zoom, and navigate between steps"
+          "title": "View Screenshots"
         }
       },
       "testDetails": {
@@ -75,9 +62,6 @@
       }
     },
     "advancedFeatures": {
-      "title": "Advanced Features",
-      "badge": "v0.9.0",
-      "description": "Enhanced reporting with AI insights and cost tracking",
       "costTracking": {
         "title": "Cost & Token Tracking",
         "description": "Each test shows detailed AI usage information:",
@@ -123,8 +107,7 @@
       "exportJson": "Export to JSON"
     },
     "fileOrganization": {
-      "title": "📁 Where Reports are Saved",
-      "structure": "test-results/\n├── reports/\n│   ├── report-2025-01-04.html    # Today's report\n│   ├── screenshots/               # Images for the report\n│   └── assets/                    # Styles and scripts\n└── HEALTH-001_2025-01-04/         # Raw test data"
+      "title": "📁 Where Reports are Saved"
     },
     "tips": {
       "title": "💡 Tips & Tricks",
@@ -172,27 +155,17 @@
       "cleanup": {
         "title": "Clean Up Old Reports",
         "remove30Days": {
-          "description": "Remove reports older than 30 days:",
-          "command": "npx endorphin cleanup reports"
+          "description": "Remove reports older than 30 days:"
         },
         "keep7Days": {
-          "description": "Keep only last 7 days:",
-          "command": "npx endorphin cleanup reports 7"
+          "description": "Keep only last 7 days:"
         }
       },
       "customNames": {
-        "title": "Custom Report Names",
         "changeName": {
-          "description": "Change report name:",
-          "command": "npx endorphin generate report --filename my-custom-report.html"
+          "description": "Change report name:"
         },
-        "multipleReports": {
-          "description": "Generate multiple reports:",
-          "smokeComment": "# Smoke test report",
-          "smokeCommand": "npx endorphin generate report --filename smoke-tests.html",
-          "regressionComment": "# Full regression report",
-          "regressionCommand": "npx endorphin generate report --filename regression.html"
-        }
+        "multipleReports": {}
       }
     },
     "nextSteps": {

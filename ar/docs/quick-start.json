@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 دقائق",
     "title": "دليل البدء السريع",
-    "subtitle": "ابدأ مع Endorphin AI في أقل من 5 دقائق",
     "step1": {
-      "title": "التثبيت",
-      "description": "ثبت Endorphin AI عبر npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ تعريفات TypeScript مضمنة • ✅ لا حاجة لإعدادات"
+      "title": "التثبيت"
     },
     "step2": {
-      "title": "🔑 إعداد OpenAI",
-      "description": "قم بإعداد مفتاح OpenAI API الخاص بك:",
-      "getApiKey": "1. احصل على مفتاح OpenAI API",
-      "visitPlatform": "زر platform.openai.com/api-keys لإنشاء مفتاح API الخاص بك",
-      "addToEnv": "2. أضف إلى ملف .env:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ احتفظ بمفتاح API آمناً • ✅ لا تقم بإرسال ملفات .env إلى نظام التحكم بالإصدارات",
-      "substep1": "1. احصل على مفتاح OpenAI API",
       "visitLink": "زر",
-      "createKey": "لإنشاء مفتاح API الخاص بك",
-      "substep2": "2. أضف إلى ملف .env:"
+      "createKey": "لإنشاء مفتاح API الخاص بك"
     },
     "step3": {
-      "title": "أنشئ اختبارك الأول",
-      "description": "أنشئ ملف اختبار بسيط باستخدام الهيكل الذكي v0.9.0:",
-      "codeComment": "// اختباري-الاول.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'اختبار تسجيل الدخول',\n  description: 'اختبار سير عمل مصادقة المستخدم',\n  tags: ['مصادقة'],\n  priority: 'عالية',\n  \n  setup: async () => ({\n    baseUrl: 'https://مثال.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@مثال.com',\n    password: 'كلمة_مرور123'\n  }),\n  \n  task: async (data, setup) => `\n    انتقل إلى ${setup.baseUrl}/login\n    املأ حقل البريد الإلكتروني بـ \"${data.email}\"\n    املأ حقل كلمة المرور بـ \"${data.password}\"\n    انقر على زر \"تسجيل الدخول\"\n    تحقق من أن لوحة المعلومات مرئية\n  `\n};"
+      "title": "أنشئ اختبارك الأول"
     },
     "step4": {
-      "title": "شغل اختبارك",
-      "description": "شغل اختبارك بأمر واحد:",
-      "command": "npx endorphin-ai run اختباري-الاول.js",
-      "aiAnalysis": "سيحلل الذكاء الاصطناعي تعليماتك وينفذ الاختبار تلقائياً"
+      "title": "شغل اختبارك"
     },
     "step5": {
       "title": "عرض النتائج",
-      "description": "تحقق من تقرير HTML الجميل مع تتبع التكاليف:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "تفاصيل تنفيذ الاختبار",
-        "aiDecisions": "تاريخ قرارات الذكاء الاصطناعي",
-        "costBreakdown": "تفصيل التكاليف",
-        "screenshots": "معرض لقطات الشاشة"
-      },
-      "feature1": "تفاصيل تنفيذ الاختبار",
-      "feature2": "تاريخ قرارات الذكاء الاصطناعي",
-      "feature3": "تفصيل التكاليف",
-      "feature4": "معرض لقطات الشاشة"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 تهانينا!",
-      "subtitle": "لقد شغلت بنجاح أول اختبار مدعوم بالذكاء الاصطناعي. مستعد للمزيد؟"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "الإعداد الكامل",
-        "description": "تعلم الإعدادات المتقدمة وتكوين المشروع",
-        "button": "اقرأ الدليل"
-      },
-      "structure": {
-        "title": "هيكل الاختبارات",
-        "description": "أتقن هيكل الاختبار الذكي v0.9.0",
-        "button": "تعلم المزيد"
-      },
-      "examples": {
-        "title": "أمثلة",
-        "description": "استكشف أمثلة اختبارات واقعية",
-        "button": "عرض الأمثلة"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "استكشف كامل التوثيق"
   }

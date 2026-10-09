@@ -4,120 +4,41 @@
       "backToDocumentation": "문서로 돌아가기"
     },
     "header": {
-      "badge": "고급",
-      "title": "AI 프롬프트 가이드",
-      "subtitle": "최대 테스트 효과를 위한 고급 AI 프롬프트 기법 및 최적화"
+      "badge": "고급"
     },
     "introduction": {
-      "title": "AI 프롬프트 마스터하기",
-      "description": "AI 기반 테스팅에서 최상의 결과를 얻는 효과적인 프롬프트 작성 방법을 배웁니다.",
-      "importance": "프롬프트 최적화가 중요한 이유:",
-      "importanceList": {
-        "accuracy": "✅ 더 높은 테스트 정확성과 신뢰성",
-        "efficiency": "✅ 토큰 사용량 및 비용 절감",
-        "maintenance": "✅ 더 유지보수 가능하고 디버깅 가능한 테스트",
-        "robustness": "✅ 엣지 케이스의 더 나은 처리",
-        "speed": "✅ 더 빠른 테스트 실행"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "핵심 프롬프트 원칙",
-      "description": "효과적인 AI 커뮤니케이션을 위해 다음 원칙을 따르세요:",
       "principles": {
-        "clarity": {
-          "title": "1. 명확하고 구체적으로",
-          "description": "정확한 언어를 사용하고 모호함을 피하세요",
-          "example": "좋음: '푸터의 파란색 제출 버튼을 클릭'\n나쁨: '버튼을 클릭'"
-        },
-        "context": {
-          "title": "2. 컨텍스트 제공",
-          "description": "AI가 시나리오를 이해할 수 있도록 충분한 컨텍스트를 제공하세요",
-          "example": "좋음: '로그인 후 사용자 프로필 설정으로 이동'\n나쁨: '설정으로 이동'"
-        },
-        "structure": {
-          "title": "3. 논리적 구조 사용",
-          "description": "단계를 논리적이고 순차적인 순서로 정리하세요",
-          "example": "좋음: 명확한 흐름의 단계별 지침\n나쁨: 관련 없는 액션 간 점프"
-        },
-        "validation": {
-          "title": "4. 검증 포함",
-          "description": "무엇을 확인해야 하는지 항상 명시하세요",
-          "example": "좋음: '성공 메시지가 나타나는지 확인'\n나쁨: '폼 제출' (검증 없음)"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "고급 기법",
-      "description": "복잡한 시나리오를 위한 정교한 프롬프트 전략:",
       "techniques": {
-        "conditionalLogic": {
-          "title": "조건부 로직",
-          "description": "페이지 상태나 데이터에 기반한 다양한 시나리오 처리",
-          "example": "사용자가 이미 로그인되어 있다면 로그인을 건너뛰고 대시보드로 이동"
-        },
-        "errorHandling": {
-          "title": "오류 처리",
-          "description": "잠재적 오류를 예상하고 우아하게 처리",
-          "example": "로그인이 실패하면 오류 메시지를 캡처하고 다른 자격 증명으로 재시도"
-        },
-        "dynamicContent": {
-          "title": "동적 콘텐츠",
-          "description": "데이터나 상태에 따라 변하는 콘텐츠 작업",
-          "example": "검색 결과에서 첫 번째 사용 가능한 제품 선택"
-        },
-        "multiStepFlows": {
-          "title": "다단계 플로우",
-          "description": "복잡한 워크플로우를 관리 가능한 단계로 분할",
-          "example": "완전한 체크아웃 프로세스: 장바구니 → 배송 → 결제 → 확인"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "프롬프트 최적화",
-      "description": "성능 향상과 비용 절감을 위한 전략:",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "토큰 효율성",
-          "description": "최소한의 토큰으로 최대한의 결과를 달성하는 간결한 프롬프트 작성",
-          "tips": "• 액션 동사 사용 • 중복 설명 피하기 • 핵심에 집중"
-        },
-        "reusability": {
-          "title": "재사용 가능한 패턴",
-          "description": "일반적인 시나리오를 위한 프롬프트 템플릿 생성",
-          "tips": "• 표준 로그인 플로우 • 폼 검증 패턴 • 네비게이션 시퀀스"
-        },
-        "testing": {
-          "title": "프롬프트 테스트",
-          "description": "Test Recorder를 사용하여 프롬프트 테스트 및 개선",
-          "tips": "• 실험을 위해 Test Recorder 사용 • 다양한 접근법 A/B 테스트 • 성공률 모니터링"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "실제 사례",
-      "description": "효과적인 프롬프트 패턴을 보여주는 실용적인 예제:",
-      "ecommerce": {
-        "title": "전자상거래 체크아웃",
-        "description": "장바구니, 배송, 결제를 포함한 완전한 구매 플로우"
-      },
-      "dashboard": {
-        "title": "대시보드 상호작용",
-        "description": "복잡한 대시보드 네비게이션 및 데이터 조작"
-      },
-      "forms": {
-        "title": "복잡한 폼 처리",
-        "description": "검증 및 조건부 필드가 있는 다단계 폼"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "일반적인 문제 및 해결책",
-      "description": "일반적인 프롬프트 문제 해결:",
-      "issues": {
-        "elementNotFound": "• 요소를 찾을 수 없음 → 기술적 선택자 대신 의미론적 설명 사용",
-        "ambiguousInstructions": "• 모호한 지침 → 더 많은 컨텍스트와 구체적인 세부사항 추가",
-        "timingIssues": "• 타이밍 문제 → 명시적 대기 조건 추가",
-        "validationFailures": "• 검증 실패 → 예상 결과에 대해 더 구체적으로 명시"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "다음: VS Code 디버깅 →",

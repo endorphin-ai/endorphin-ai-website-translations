@@ -1,0 +1,349 @@
+{
+    "claudeCodeIntegrationPage": {
+        "navigation": {
+            "backToDocumentation": "Back to Documentation"
+        },
+        "header": {
+            "badge": "Claude Code",
+            "title": "Claude Code Integration",
+            "description": "Use Claude Code to write and fix Endorphin AI tests. This guide shows how to set up the integration and use the three ready-made skills."
+        },
+        "whatIs": {
+            "title": "What is Claude Code Integration?",
+            "description": "The integration turns the Endorphin AI test recorder into a programmable API that Claude Code can call directly. This gives you:",
+            "features": {
+                "create": {
+                    "title": "Autonomous test creation",
+                    "description": "Describe what you want to test in one sentence. Claude sees the page and generates all the steps."
+                },
+                "repair": {
+                    "title": "Autonomous test repair",
+                    "description": "Claude diagnoses failures and rewrites broken steps using the current page state."
+                },
+                "record": {
+                    "title": "Interactive recording",
+                    "description": "Launch the test recorder from Claude Code."
+                }
+            },
+            "summary": "You do not need to write test files or debug failures by hand. Claude Code does it for you."
+        },
+        "autonomousMode": {
+            "title": "Autonomous Mode",
+            "description": "Claude Code can see the page through the accessibility tree that every CLI response returns. This makes three things possible:",
+            "items": {
+                "zeroStep": {
+                    "title": "Zero-step authoring",
+                    "description": "Say \"write a login test at https://app.com with user@test.com / pass123\" and Claude generates all the steps automatically."
+                },
+                "selfCorrecting": {
+                    "title": "Self-correcting",
+                    "description": "When a step fails, Claude reads errorDetails.availableElements and retries with the correct element name."
+                },
+                "pageAware": {
+                    "title": "Page-aware",
+                    "description": "After each step, Claude reads pageState.accessibilityTree to decide what to do next."
+                }
+            }
+        },
+        "quickStart": {
+            "title": "Quick Start",
+            "step1": {
+                "title": "Install the Claude Code integration",
+                "description": "In your Endorphin AI project directory, run:",
+                "createsTitle": "This creates:",
+                "files": {
+                    "writeTest": "AI-assisted test creation",
+                    "fixTest": "Intelligent test repair",
+                    "recordTest": "Interactive recorder launcher",
+                    "claudeMd": "Documentation for Claude Code"
+                }
+            },
+            "step2": {
+                "title": "Open the project in Claude Code",
+                "descriptionBefore": "Visit",
+                "descriptionAfter": "and open your project."
+            },
+            "step3": {
+                "title": "Try your first skill",
+                "description": "In Claude Code, type:",
+                "result": "Claude Code guides you through creating the test interactively."
+            }
+        },
+        "skills": {
+            "title": "Available Skills",
+            "usage": "Usage",
+            "whatItDoes": "What it does",
+            "exampleSession": "Example session",
+            "writeTest": {
+                "title": "Create new tests (autonomous)",
+                "description": "Creates a complete test from a high-level description. Claude reads the page and generates all the steps.",
+                "steps": [
+                    "Extracts test metadata from your description (URL, credentials, goal)",
+                    "Creates a recording session and reads the initial page state",
+                    "Analyzes the accessibility tree to see all page elements",
+                    "Generates steps based on the test goal and the current page",
+                    "Handles failures by reading the available elements and retrying",
+                    "Generates the final test file"
+                ]
+            },
+            "fixTest": {
+                "title": "Fix failing tests (autonomous)",
+                "description": "Diagnoses a failing test and re-records it with fixes.",
+                "steps": [
+                    "Reads the test file and runs it to get the failure details",
+                    "Identifies the broken step and the error message",
+                    "Creates a new session and fast-forwards through the passing steps",
+                    "At the failing step, reads the page state and compares it with the error",
+                    "Rewrites the step using the elements that are actually available",
+                    "Generates the fixed test file"
+                ]
+            },
+            "recordTest": {
+                "title": "Launch the interactive recorder",
+                "description": "Starts the interactive test recorder with visual feedback.",
+                "launches": "Runs this command in your terminal:",
+                "recorderIntro": "The interactive recorder:",
+                "steps": [
+                    "Prompts for test metadata",
+                    "Opens a browser window",
+                    "Guides you through recording steps",
+                    "Saves the test file when you are done"
+                ],
+                "seeAlso": "See the Test Recorder guide for details on the interactive recorder."
+            }
+        },
+        "cliApi": {
+            "title": "Recorder CLI API",
+            "description": "The skills use a programmatic API. You can also call it directly.",
+            "output": "Output (JSON)",
+            "outputSuccess": "Output (JSON, success)",
+            "outputFailure": "Output (JSON, failure)",
+            "create": {
+                "title": "Create a recording session"
+            },
+            "addStep": {
+                "title": "Add a step to a session"
+            },
+            "generate": {
+                "title": "Generate the test file"
+            },
+            "list": {
+                "title": "List all sessions"
+            },
+            "status": {
+                "title": "Get the session status"
+            }
+        },
+        "cliExample": {
+            "title": "CLI API Example",
+            "description": "Create a complete test using the CLI API:"
+        },
+        "bestPractices": {
+            "title": "Best Practices",
+            "avoid": "Avoid",
+            "better": "Better",
+            "specific": {
+                "title": "Be specific in test steps",
+                "avoid": "\"click button\"",
+                "better": "\"click the blue Submit button\""
+            },
+            "verifications": {
+                "title": "Add verifications",
+                "avoid": "Just clicking around",
+                "better": "\"verify success message shows\""
+            },
+            "realData": {
+                "title": "Use real data",
+                "avoid": "\"type something\"",
+                "better": "\"type john.doe@company.com\""
+            },
+            "stepByStep": {
+                "title": "Think step by step",
+                "avoid": "\"do the login\"",
+                "better": "\"click login, fill email, fill password, submit\""
+            },
+            "testData": {
+                "title": "Keep test data organized",
+                "description": "When you create tests with /write-test, provide test data as key-value pairs:",
+                "note": "This data is saved with the test and can be referenced in steps."
+            }
+        },
+        "troubleshooting": {
+            "title": "Troubleshooting",
+            "description": "Common problems and how to solve them",
+            "problem": "Problem:",
+            "solution": "Solution:",
+            "skillNotFound": {
+                "title": "Skill not found",
+                "problem": "Claude Code says the skill was not found.",
+                "solutions": {
+                    "verifyDir": "Verify that this directory exists:",
+                    "checkFiles": "Check that the skill files exist:",
+                    "rerun": "Run the install command again:"
+                }
+            },
+            "browserNotOpening": {
+                "title": "Browser not opening",
+                "problem": "The recording session is created but the browser does not open.",
+                "solutions": {
+                    "headless": "Check that your config sets headless to false:",
+                    "playwright": "Verify that the Playwright browsers are installed:"
+                }
+            },
+            "aiNotResponding": {
+                "title": "AI not responding",
+                "problem": "Steps hang or time out.",
+                "solutions": [
+                    "Check your OpenAI API key in .env",
+                    "Verify your internet connection",
+                    "Check your API credits and quota",
+                    "Try a simpler step description"
+                ]
+            },
+            "sessionNotFound": {
+                "title": "Session not found",
+                "problem": "recorder add-step fails with \"Session not found\".",
+                "solutions": {
+                    "list": "List all sessions:",
+                    "verifyId": "Verify that the session ID is correct",
+                    "checkDir": "Check that the test-recorder/ directory exists"
+                }
+            },
+            "commandsNotWorking": {
+                "title": "Commands not working",
+                "problem": "Steps fail to execute.",
+                "solutions": [
+                    "Be more specific (\"click the Submit button\", not \"click\")",
+                    "Wait between actions (\"wait 2 seconds\")",
+                    "Use the exact text you see on screen",
+                    "Check for typos in selector descriptions"
+                ]
+            },
+            "jsonOutput": {
+                "title": "JSON output errors",
+                "problem": "The CLI output is not valid JSON.",
+                "solutions": [
+                    "User messages go to stderr, not stdout",
+                    "Only JSON goes to stdout",
+                    "Parse the output with jq or JSON.parse()",
+                    "Check the exit code: 0 means success, 1 means error"
+                ]
+            }
+        },
+        "sessionPersistence": {
+            "title": "Session Persistence",
+            "description": "Recording sessions are saved in test-recorder/{sessionId}/:",
+            "statesTitle": "Session states",
+            "states": {
+                "inProgress": "The session is active and you can add more steps",
+                "completed": "The test file is generated and the session is closed"
+            },
+            "noteTitle": "Note",
+            "note": "Completed sessions cannot be modified. Create a new session to re-record."
+        },
+        "comparison": {
+            "title": "Interactive Recorder vs. Claude Code Skills",
+            "columns": {
+                "feature": "Feature",
+                "interactive": "Interactive Recorder",
+                "claudeCode": "Claude Code Skills"
+            },
+            "rows": {
+                "launch": {
+                    "feature": "Launch",
+                    "claudeCodeSuffix": "in Claude Code"
+                },
+                "stepInput": {
+                    "feature": "Step input",
+                    "interactive": "Terminal prompts",
+                    "claudeCode": "Claude Code conversation"
+                },
+                "workflow": {
+                    "feature": "Workflow",
+                    "interactive": "Manual, step by step",
+                    "claudeCode": "AI-guided with suggestions"
+                },
+                "testRepair": {
+                    "feature": "Test repair",
+                    "interactive": "Manual analysis",
+                    "claudeCodePrefix": "Automated with"
+                },
+                "browser": {
+                    "feature": "Browser",
+                    "interactive": "Opens automatically",
+                    "claudeCode": "Opens automatically"
+                },
+                "screenshots": {
+                    "feature": "Screenshots",
+                    "interactive": "Captured for each step",
+                    "claudeCode": "Captured for each step"
+                },
+                "testFile": {
+                    "feature": "Test file",
+                    "interactive": "Generated at the end",
+                    "claudeCode": "Generated at the end"
+                },
+                "useCase": {
+                    "feature": "Use case",
+                    "interactive": "Direct control",
+                    "claudeCode": "AI assistance and automation"
+                }
+            },
+            "summary": "Both methods produce identical test files and use the same underlying recorder."
+        },
+        "learningPath": {
+            "title": "Learning Path",
+            "steps": {
+                "record": {
+                    "title": "Start with /record-test",
+                    "description": "Get familiar with the interactive recorder"
+                },
+                "write": {
+                    "title": "Try /write-test",
+                    "description": "Experience AI-guided test creation"
+                },
+                "fix": {
+                    "title": "Use /fix-test",
+                    "description": "Learn intelligent test repair"
+                },
+                "cli": {
+                    "title": "Explore the CLI API",
+                    "description": "Automate test creation in scripts"
+                }
+            }
+        },
+        "gettingHelp": {
+            "title": "Getting Help",
+            "items": {
+                "issues": {
+                    "title": "GitHub Issues",
+                    "description": "Report bugs or request features"
+                },
+                "discussions": {
+                    "title": "GitHub Discussions",
+                    "description": "Community help and questions"
+                },
+                "claudeMd": {
+                    "title": "CLAUDE.md",
+                    "description": "Full API reference in .claude/CLAUDE.md"
+                }
+            }
+        },
+        "nextSteps": {
+            "title": "Related Guides",
+            "readyToStart": "Ready to start? Run the install command and try /write-test.",
+            "testRecorder": {
+                "title": "Test Recorder",
+                "description": "Interactive test recorder guide"
+            },
+            "testWritingTips": {
+                "title": "Test Writing Tips",
+                "description": "Best practices for writing tests"
+            },
+            "htmlReporter": {
+                "title": "HTML Reporter",
+                "description": "View test results"
+            }
+        }
+    }
+}

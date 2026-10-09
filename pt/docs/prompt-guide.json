@@ -4,120 +4,41 @@
       "backToDocumentation": "Voltar à Documentação"
     },
     "header": {
-      "badge": "Avançado",
-      "title": "Guia de Prompt de IA",
-      "subtitle": "Técnicas avançadas de prompt de IA e otimização para máxima eficácia de teste"
+      "badge": "Avançado"
     },
     "introduction": {
-      "title": "Domine Prompts de IA",
-      "description": "Aprenda como escrever prompts eficazes que obtêm os melhores resultados de testes potencializados por IA.",
-      "importance": "Por que a otimização de prompt é importante:",
-      "importanceList": {
-        "accuracy": "✅ Maior precisão e confiabilidade de teste",
-        "efficiency": "✅ Uso reduzido de tokens e custos",
-        "maintenance": "✅ Testes mais sustentáveis e depuráveis",
-        "robustness": "✅ Melhor manuseio de casos extremos",
-        "speed": "✅ Execução de teste mais rápida"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "Princípios Fundamentais de Prompt",
-      "description": "Siga estes princípios para comunicação efetiva com IA:",
       "principles": {
-        "clarity": {
-          "title": "1. Seja Claro e Específico",
-          "description": "Use linguagem precisa e evite ambiguidade",
-          "example": "Bom: 'Clique no botão azul Enviar no rodapé'\nRuim: 'Clique no botão'"
-        },
-        "context": {
-          "title": "2. Forneça Contexto",
-          "description": "Dê à IA contexto suficiente para entender o cenário",
-          "example": "Bom: 'Após fazer login, navegue para configurações do perfil do usuário'\nRuim: 'Vá para configurações'"
-        },
-        "structure": {
-          "title": "3. Use Estrutura Lógica",
-          "description": "Organize passos em ordem lógica e sequencial",
-          "example": "Bom: Instruções passo-a-passo com fluxo claro\nRuim: Pular entre ações não relacionadas"
-        },
-        "validation": {
-          "title": "4. Inclua Validação",
-          "description": "Sempre especifique o que deve ser verificado",
-          "example": "Bom: 'Verifique que a mensagem de sucesso aparece'\nRuim: 'Envie o formulário' (sem validação)"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "Técnicas Avançadas",
-      "description": "Estratégias sofisticadas de prompt para cenários complexos:",
       "techniques": {
-        "conditionalLogic": {
-          "title": "Lógica Condicional",
-          "description": "Lide com diferentes cenários baseados no estado da página ou dados",
-          "example": "Se o usuário já está logado, pule o login e vá para o dashboard"
-        },
-        "errorHandling": {
-          "title": "Tratamento de Erro",
-          "description": "Antecipe e trate erros potenciais elegantemente",
-          "example": "Se o login falhar, capture a mensagem de erro e tente novamente com credenciais diferentes"
-        },
-        "dynamicContent": {
-          "title": "Conteúdo Dinâmico",
-          "description": "Trabalhe com conteúdo que muda baseado em dados ou estado",
-          "example": "Selecione o primeiro produto disponível dos resultados de pesquisa"
-        },
-        "multiStepFlows": {
-          "title": "Fluxos Multi-Etapa",
-          "description": "Divida fluxos de trabalho complexos em passos gerenciáveis",
-          "example": "Processo completo de checkout: carrinho → envio → pagamento → confirmação"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "Otimização de Prompt",
-      "description": "Estratégias para melhorar performance e reduzir custos:",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "Eficiência de Token",
-          "description": "Escreva prompts concisos que alcancem resultados máximos com tokens mínimos",
-          "tips": "• Use verbos de ação • Evite descrições redundantes • Foque no essencial"
-        },
-        "reusability": {
-          "title": "Padrões Reutilizáveis",
-          "description": "Crie templates de prompt para cenários comuns",
-          "tips": "• Fluxos de login padrão • Padrões de validação de formulário • Sequências de navegação"
-        },
-        "testing": {
-          "title": "Teste de Prompt",
-          "description": "Teste e refine prompts usando o Test Recorder",
-          "tips": "• Use Test Recorder para experimentação • Teste A/B diferentes abordagens • Monitore taxas de sucesso"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "Exemplos do Mundo Real",
-      "description": "Exemplos práticos mostrando padrões de prompt efetivos:",
-      "ecommerce": {
-        "title": "Checkout de E-commerce",
-        "description": "Fluxo completo de compra com carrinho, envio e pagamento"
-      },
-      "dashboard": {
-        "title": "Interação de Dashboard",
-        "description": "Navegação complexa de dashboard e manipulação de dados"
-      },
-      "forms": {
-        "title": "Tratamento de Formulário Complexo",
-        "description": "Formulários multi-etapa com validação e campos condicionais"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "Problemas Comuns e Soluções",
-      "description": "Solucione desafios comuns de prompt:",
-      "issues": {
-        "elementNotFound": "• Elemento não encontrado → Use descrições semânticas ao invés de seletores técnicos",
-        "ambiguousInstructions": "• Instruções ambíguas → Adicione mais contexto e detalhes específicos",
-        "timingIssues": "• Problemas de timing → Adicione condições de espera explícitas",
-        "validationFailures": "• Falhas de validação → Seja mais específico sobre resultados esperados"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "Próximo: Depuração VS Code →",

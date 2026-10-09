@@ -19,16 +19,13 @@
       "description": "Beschrijf gebruikersacties in gewoon Nederlands"
     },
     "selfHealing": {
-      "title": "🔁 Zelfherstellende Tests",
-      "description": "Past zich automatisch aan UI-wijzigingen aan"
+      "title": "🔁 Zelfherstellende Tests"
     },
     "smartValidation": {
-      "title": "🕵️ Slimme Validatie Agent",
-      "description": "Detecteert visuele en logische bugs"
+      "title": "🕵️ Slimme Validatie Agent"
     },
     "costTracking": {
-      "title": "💰 Kosten & Token Tracking",
-      "description": "Monitor AI-gebruikskosten en tokenconsumptie"
+      "title": "💰 Kosten & Token Tracking"
     },
     "ciIntegration": {
       "title": "🚀 CI Integratie",
@@ -59,12 +56,10 @@
       "description": "Zie precies hoe AI testinstructies heeft geanalyseerd, beredeneerd en uitgevoerd"
     },
     "builtInTools": {
-      "title": "🔧 Ingebouwd Tool Systeem",
-      "description": "12 uitgebreide browser automatiseringstools ingebouwd - geen aangepaste tools nodig"
+      "title": "🔧 Ingebouwd Tool Systeem"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Test Recorder",
-      "description": "Interactieve test recorder om prompts in real-time uit te proberen - experimenteer en valideer testideeën onmiddellijk"
+      "title": "🎬 Test Recorder"
     },
     "enhancedReports": {
       "title": "📊 Verbeterde HTML Rapporten",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Snelle Start",
     "step1": "Installeer het framework",
-    "step2": "Stel uw OpenAI API sleutel in",
     "step3": "Schrijf uw eerste test",
     "step4": "Run en bekijk de magie gebeuren!",
     "startNow": "Start Nu →"

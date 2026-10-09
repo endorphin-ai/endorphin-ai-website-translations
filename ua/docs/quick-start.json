@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Хвилин",
     "title": "Посібник Швидкого Старту",
-    "subtitle": "Почніть роботу з Endorphin AI менш ніж за 5 хвилин",
-    "congratulations": {
-      "title": "🎉 Вітаємо!",
-      "subtitle": "Ви успішно виконали ваш перший тест на основі AI. Готові до більшого?"
-    },
+    "congratulations": {},
     "step1": {
-      "title": "Установлення",
-      "description": "Установлення Endorphin AI через npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ Визначення TypeScript включені • ✅ Конфігурація не потрібна"
+      "title": "Установлення"
     },
     "step2": {
-      "title": "🔑 Налаштування OpenAI",
-      "description": "Налаштуйте ваш API ключ OpenAI:",
-      "getApiKey": "1. Отримайте ваш API ключ від OpenAI",
-      "visitPlatform": "Відвідайте platform.openai.com/api-keys для створення вашого API ключа",
-      "addToEnv": "2. Додати до файлу .env:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Тримайте ваш API ключ у безпеці • ✅ Ніколи не комітьте файли .env у контроль версій",
-      "substep1": "1. Отримайте ваш API ключ від OpenAI",
       "visitLink": "Visit",
-      "createKey": "to create your API key",
-      "substep2": "2. Додати до файлу .env:"
+      "createKey": "to create your API key"
     },
     "step3": {
-      "title": "Створіть Ваш Перший Тест",
-      "description": "Створіть простий файл теста, використовуючи розумну структуру v0.9.0:",
-      "codeComment": "// мій-перший-тест.ts\\nimport type { TestCase } from 'endorphin-ai';\\n\\nexport const LOGIN_TEST: TestCase = {\\n  id: 'LOGIN-001',\\n  name: 'Тест входу користувача',\\n  description: 'Тестування потоку автентифікації користувача',\\n  tags: ['автентифікація'],\\n  priority: 'Високий',\\n  \\n  setup: async () => ({\\n    baseUrl: 'https://приклад.com'\\n  }),\\n  \\n  data: async () => ({\\n    email: 'test@приклад.com',\\n    password: 'пароль123'\\n  }),\\n  \\n  task: async (data, setup) => \\`\\n    Перейти на \\${setup.baseUrl}/login\\n    Заповнити поле email значенням \\\"\\${data.email}\\\"\\n    Заповнити поле пароля значенням \\\"\\${data.password}\\\"\\n    Натиснути кнопку \\\"Вхід\\\"\\n    Перевірити, що панель керування видима\\n  \\`\\n};"
+      "title": "Створіть Ваш Перший Тест"
     },
     "step4": {
-      "title": "Запустіть Ваш Тест",
-      "description": "Виконайте ваш тест однією командою:",
-      "command": "npx endorphin-ai run мій-перший-тест.js",
-      "aiAnalysis": "AI проаналізує ваші інструкції та автоматично виконає тест"
+      "title": "Запустіть Ваш Тест"
     },
     "step5": {
       "title": "Переглянути Результати",
-      "description": "Перевірте ваш чудовий HTML звіт з відстеженням витрат:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Деталі виконання тесту",
-        "aiDecisions": "Історія рішень AI",
-        "costBreakdown": "Розбивка витрат",
-        "screenshots": "Галерея скріншотів"
-      },
-      "feature1": "Деталі виконання тесту",
-      "feature2": "Історія рішень AI",
-      "feature3": "Розбивка витрат",
-      "feature4": "Галерея скріншотів"
+      "features": {}
     },
     "nextSteps": {
-      "setup": {
-        "title": "Повне Налаштування",
-        "description": "Вивчіть розширену конфігурацію та налаштування проєкту",
-        "button": "Прочитати Посібник"
-      },
-      "structure": {
-        "title": "Структура Тесту",
-        "description": "Опануйте розумну структуру тесту v0.9.0",
-        "button": "Дізнатись Більше"
-      },
-      "examples": {
-        "title": "Приклади",
-        "description": "Перегляньте реальні приклади тестування",
-        "button": "Переглянути Приклади"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Дослідити Усю Документацію"
   }

@@ -24,6 +24,10 @@ const FILE_STRUCTURE = {
 	'docs/html-reporter.json': ['htmlReporterPage'],
 	'docs/test-recorder.json': ['testRecorderPage'],
 	'docs/cicd-setup.json': ['cicdSetupPage'],
+	'docs/claude-code-integration.json': ['claudeCodeIntegrationPage'],
+	'docs/vision-verification.json': ['visionVerificationPage'],
+	'docs/jira-integration.json': ['jiraIntegrationPage'],
+	'docs/multi-user-testing.json': ['multiUserTestingPage'],
 };
 
 function buildTranslations() {

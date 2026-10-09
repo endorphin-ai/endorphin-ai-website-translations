@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "Essentiel",
-      "title": "Guide de Configuration du Projet",
-      "subtitle": "Guide complet de configuration et d'installation du projet pour les flux de travail de test professionnels"
+      "title": "Guide de Configuration du Projet"
     },
     "installation": {
-      "title": "Installation",
-      "description": "Commencez avec Endorphin AI en utilisant l'une de ces méthodes :",
-      "option1": "Option 1 : Configuration Rapide",
-      "option2": "Option 2 : Installation Manuelle"
+      "title": "Installation"
     },
     "projectSetup": {
       "title": "Configuration du Projet",
-      "description": "Initialisez votre projet avec la structure et les fichiers de configuration appropriés.",
       "quickSetup": "Configuration Rapide avec Init",
       "thisCreates": "Ceci crée :",
       "configFile": "Fichier de configuration",
-      "testsFolder": "Vos fichiers de test",
       "envTemplate": "Modèle de variables d'environnement",
       "exampleTest": "Fichier de test d'exemple",
       "manualSetup": "Configuration Manuelle",
-      "manualDescription": "Pour plus de contrôle sur votre configuration :",
-      "step1": "1. Créer endorphin.config.ts :",
       "step2": "2. Créer le fichier .env :",
       "step3": "3. Créer le dossier tests :"
     },
     "openaiSetup": {
       "title": "Configuration OpenAI",
-      "description": "Configurez votre clé API OpenAI pour les tests alimentés par l'IA :",
       "step1": "1. Obtenez votre clé API de",
       "step2": "2. Ajouter à votre fichier .env :"
     },
-    "firstTest": {
-      "title": "Créez Votre Premier Test",
-      "description": "Créez un fichier de test pour vérifier que votre configuration fonctionne correctement.",
-      "createFile": "Créez un fichier appelé google-test.js dans votre dossier tests :"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Exécuter les Tests",
       "listTests": "Lister tous les tests :",
       "runSpecific": "Exécuter un test spécifique :",
       "runAll": "Exécuter tous les tests :"
@@ -51,10 +37,7 @@
       "generateReport": "Générer un rapport :",
       "openBrowser": "Ouvrir dans le navigateur :"
     },
-    "success": {
-      "title": "Configuration Terminée !",
-      "description": "Votre projet est maintenant configuré et prêt pour les tests alimentés par l'IA. Vous pouvez commencer à écrire des tests en utilisant des descriptions en langage naturel."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Suivant : Structure de Test →",
       "backButton": "Retour à la Documentation"

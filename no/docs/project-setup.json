@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Grunnleggende",
-      "title": "Prosjektoppsettguide",
-      "subtitle": "Komplett prosjektoppsett og konfigurasjonsguide for profesjonelle testarbeidsflyter"
+      "title": "Prosjektoppsettguide"
     },
     "installation": {
-      "title": "Installasjon",
-      "description": "Kom i gang med Endorphin AI ved å bruke en av disse metodene:",
-      "option1": "Alternativ 1: Hurtigoppsett",
-      "option2": "Alternativ 2: Manuell installasjon"
+      "title": "Installasjon"
     },
     "projectSetup": {
       "title": "Prosjektoppsett",
-      "description": "Initialiser prosjektet ditt med riktig struktur og konfigurasjonsfiler.",
       "quickSetup": "Hurtigoppsett med Init",
       "quickSetupDescription": "Den raskeste måten å sette opp prosjektet ditt:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "Dette oppretter:",
       "configFile": "Konfigurasjonsfil",
-      "testsFolder": "Dine testfiler",
       "envTemplate": "Miljøvariabler mal",
       "exampleTest": "Eksempel testfil",
       "manualSetup": "Manuelt Oppsett",
-      "manualDescription": "For mer kontroll over oppsettet ditt:",
-      "step1": "1. Opprett endorphin.config.ts:",
       "step2": "2. Opprett .env-fil:",
       "step3": "3. Opprett tests-mappe:"
     },
     "openaiSetup": {
       "title": "OpenAI-oppsett",
-      "description": "Konfigurer din OpenAI API-nøkkel for AI-dreven testing:",
       "step1": "1. Få din API-nøkkel fra",
       "step1Description": "Besøk platform.openai.com/api-keys for å opprette din API-nøkkel",
       "step2": "2. Legg til i din .env-fil:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "Opprett Din Første Test",
-      "description": "Opprett en testfil for å verifisere at oppsettet ditt fungerer riktig.",
-      "createFile": "Opprett en fil kalt google-test.js i tests-mappen din:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Kjøre Tester",
       "listTests": "List alle tester:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Kjør spesifikk test:",
@@ -60,10 +46,7 @@
       "openBrowser": "Åpne i nettleser:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Oppsett Fullført!",
-      "description": "Prosjektet ditt er nå konfigurert og klart for AI-dreven testing. Du kan begynne å skrive tester ved å bruke naturlige språkbeskrivelser."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Neste: Teststruktur →",
       "backButton": "Tilbake til Dokumentasjon"

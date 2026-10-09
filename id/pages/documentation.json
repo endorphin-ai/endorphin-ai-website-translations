@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Dokumentasi lengkap",
     "subtitle": "Semua yang Anda butuhkan untuk menguasai pengujian bertenaga AI dengan Endorphin AI. Dari mulai cepat hingga teknik lanjutan.",
-    "versionBadge": "Dokumentasi v0.9.0",
     "startQuickGuide": "Mulai dengan panduan cepat",
     "browseAllDocs": "Jelajahi semua dokumen",
     "readGuide": "Baca panduan",
     "badges": {
       "5min": "5 menit",
       "essential": "Penting",
-      "v090": "v0.9.0",
       "examples": "Contoh",
       "advanced": "Lanjutan",
       "proTips": "Tips Pro",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Dapatkan Endorphin AI berjalan dalam 5 menit",
       "projectSetup": "Pengaturan proyek",
       "projectSetupDesc": "Panduan lengkap pengaturan dan instalasi proyek",
-      "testStructure": "Struktur tes",
-      "testStructureDesc": "Struktur tes cerdas v0.9 dengan fungsi setup/data/task"
+      "testStructure": "Struktur tes"
     },
     "advanced": {
       "title": "Topik lanjutan",
@@ -72,8 +69,6 @@
         "button": "Mulai sekarang →"
       },
       "testStructure": {
-        "title": "Struktur tes v0.9.0",
-        "description": "Pelajari struktur tes cerdas baru dengan fungsi async setup(), data(), dan task().",
         "button": "Pelajari lebih lanjut →"
       }
     }

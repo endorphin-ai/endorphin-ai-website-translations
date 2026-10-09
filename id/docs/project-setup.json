@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "Penting",
-      "title": "Panduan Pengaturan Proyek",
-      "subtitle": "Panduan lengkap pengaturan dan instalasi proyek untuk alur kerja pengujian profesional"
+      "title": "Panduan Pengaturan Proyek"
     },
     "installation": {
-      "title": "Instalasi",
-      "description": "Mulai dengan Endorphin AI menggunakan salah satu metode ini:",
-      "option1": "Opsi 1: Pengaturan Cepat",
-      "option2": "Opsi 2: Instalasi Manual"
+      "title": "Instalasi"
     },
     "projectSetup": {
       "title": "Pengaturan Proyek",
-      "description": "Inisialisasi proyek Anda dengan struktur dan file konfigurasi yang tepat.",
       "quickSetup": "Pengaturan Cepat dengan Init",
       "thisCreates": "Ini membuat:",
       "configFile": "File konfigurasi",
-      "testsFolder": "File tes Anda",
       "envTemplate": "Template variabel lingkungan",
       "exampleTest": "File tes contoh",
       "manualSetup": "Pengaturan Manual",
-      "manualDescription": "Untuk kontrol lebih atas pengaturan Anda:",
-      "step1": "1. Buat endorphin.config.ts:",
       "step2": "2. Buat file .env:",
       "step3": "3. Buat folder tests:"
     },
     "openaiSetup": {
       "title": "Pengaturan OpenAI",
-      "description": "Atur kunci OpenAI API Anda untuk tes bertenaga AI:",
       "step1": "1. Dapatkan kunci API Anda dari",
       "step2": "2. Tambahkan ke file .env Anda:"
     },
-    "firstTest": {
-      "title": "Buat Tes Pertama Anda",
-      "description": "Buat file tes untuk memverifikasi bahwa pengaturan Anda berfungsi dengan benar.",
-      "createFile": "Buat file bernama google-test.js di folder tests Anda:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Menjalankan Tes",
       "listTests": "Daftar semua tes:",
       "runSpecific": "Jalankan tes tertentu:",
       "runAll": "Jalankan semua tes:"
@@ -51,10 +37,7 @@
       "generateReport": "Buat laporan:",
       "openBrowser": "Buka di browser:"
     },
-    "success": {
-      "title": "Pengaturan Selesai!",
-      "description": "Proyek Anda sekarang sudah diatur dan siap untuk tes bertenaga AI. Anda dapat mulai menulis tes menggunakan deskripsi bahasa alami."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Selanjutnya: Struktur Tes →",
       "backButton": "Kembali ke Dokumentasi"

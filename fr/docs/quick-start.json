@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minutes",
     "title": "Guide de Démarrage Rapide",
-    "subtitle": "Soyez opérationnel avec Endorphin AI en moins de 5 minutes",
     "step1": {
-      "title": "Installation",
-      "description": "Installer Endorphin AI via npm :",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ Définitions TypeScript incluses • ✅ Aucune configuration requise"
+      "title": "Installation"
     },
     "step2": {
-      "title": "🔑 Configuration OpenAI",
-      "description": "Configurer votre clé API OpenAI :",
-      "getApiKey": "1. Obtenez votre clé API d'OpenAI",
-      "visitPlatform": "Visitez platform.openai.com/api-keys pour créer votre clé API",
-      "addToEnv": "2. Ajouter au fichier .env :",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Gardez votre clé API sécurisée • ✅ Ne commitez jamais les fichiers .env dans le contrôle de version",
-      "substep1": "1. Obtenez votre clé API d'OpenAI",
       "visitLink": "Visitez",
-      "createKey": "pour créer votre clé API",
-      "substep2": "2. Ajouter au fichier .env :"
+      "createKey": "pour créer votre clé API"
     },
     "step3": {
-      "title": "Créer Votre Premier Test",
-      "description": "Créer un fichier de test simple en utilisant la structure intelligente v0.9.0 :",
-      "codeComment": "// mon-premier-test.ts\\nimport type { TestCase } from 'endorphin-ai';\\n\\nexport const LOGIN_TEST: TestCase = {\\n  id: 'LOGIN-001',\\n  name: 'Test de Connexion Utilisateur',\\n  description: 'Tester le flux d\\'authentification utilisateur',\\n  tags: ['authentification'],\\n  priority: 'Haute',\\n  \\n  setup: async () => ({\\n    baseUrl: 'https://exemple.com'\\n  }),\\n  \\n  data: async () => ({\\n    email: 'test@exemple.com',\\n    password: 'motdepasse123'\\n  }),\\n  \\n  task: async (data, setup) => \\`\\n    Naviguer vers \\${setup.baseUrl}/login\\n    Remplir le champ email avec \\\"\\${data.email}\\\"\\n    Remplir le champ mot de passe avec \\\"\\${data.password}\\\"\\n    Cliquer sur le bouton \\\"Connexion\\\"\\n    Vérifier que le tableau de bord est visible\\n  \\`\\n};"
+      "title": "Créer Votre Premier Test"
     },
     "step4": {
-      "title": "Exécuter Votre Test",
-      "description": "Exécuter votre test avec une seule commande :",
-      "command": "npx endorphin-ai run mon-premier-test.js",
-      "aiAnalysis": "L'IA analysera vos instructions et exécutera le test automatiquement"
+      "title": "Exécuter Votre Test"
     },
     "step5": {
       "title": "Voir les Résultats",
-      "description": "Vérifier votre magnifique rapport HTML avec suivi des coûts :",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Détails d'exécution du test",
-        "aiDecisions": "Historique des décisions IA",
-        "costBreakdown": "Répartition des coûts",
-        "screenshots": "Galerie de captures d'écran"
-      },
-      "feature1": "Détails d'exécution du test",
-      "feature2": "Historique des décisions IA",
-      "feature3": "Répartition des coûts",
-      "feature4": "Galerie de captures d'écran"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Félicitations !",
-      "subtitle": "Vous avez exécuté avec succès votre premier test alimenté par l'IA. Prêt pour plus ?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Configuration Complète",
-        "description": "Apprenez la configuration avancée et la mise en place du projet",
-        "button": "Lire le Guide"
-      },
-      "structure": {
-        "title": "Structure de Test",
-        "description": "Maîtrisez la structure de test intelligente v0.9.0",
-        "button": "En Savoir Plus"
-      },
-      "examples": {
-        "title": "Exemples",
-        "description": "Parcourez des exemples de tests du monde réel",
-        "button": "Voir les Exemples"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Explorer Toute la Documentation"
   }

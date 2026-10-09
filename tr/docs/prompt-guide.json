@@ -4,120 +4,41 @@
       "backToDocumentation": "[TR] Back to Documentation"
     },
     "header": {
-      "badge": "[TR] Advanced",
-      "title": "[TR] AI Prompt Guide",
-      "subtitle": "[TR] Advanced AI prompting techniques and optimization for maximum testing effectiveness"
+      "badge": "[TR] Advanced"
     },
     "introduction": {
-      "title": "[TR] Master AI Prompting",
-      "description": "[TR] Learn how to write effective prompts that get the best results from AI-powered testing.",
-      "importance": "[TR] Why prompt optimization matters:",
-      "importanceList": {
-        "accuracy": "[TR] ✅ Higher test accuracy and reliability",
-        "efficiency": "[TR] ✅ Reduced token usage and costs",
-        "maintenance": "[TR] ✅ More maintainable and debuggable tests",
-        "robustness": "[TR] ✅ Better handling of edge cases",
-        "speed": "[TR] ✅ Faster test execution"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "[TR] Core Prompting Principles",
-      "description": "[TR] Follow these principles for effective AI communication:",
       "principles": {
-        "clarity": {
-          "title": "[TR] 1. Be Clear and Specific",
-          "description": "[TR] Use precise language and avoid ambiguity",
-          "example": "[TR] Good: 'Click the blue Submit button in the footer'\nBad: 'Click the button'"
-        },
-        "context": {
-          "title": "[TR] 2. Provide Context",
-          "description": "[TR] Give the AI enough context to understand the scenario",
-          "example": "[TR] Good: 'After logging in, navigate to user profile settings'\nBad: 'Go to settings'"
-        },
-        "structure": {
-          "title": "[TR] 3. Use Logical Structure",
-          "description": "[TR] Organize steps in a logical, sequential order",
-          "example": "[TR] Good: Step-by-step instructions with clear flow\nBad: Jumping between unrelated actions"
-        },
-        "validation": {
-          "title": "[TR] 4. Include Validation",
-          "description": "[TR] Always specify what should be verified",
-          "example": "[TR] Good: 'Verify the success message appears'\nBad: 'Submit the form' (without validation)"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "[TR] Advanced Techniques",
-      "description": "[TR] Sophisticated prompting strategies for complex scenarios:",
       "techniques": {
-        "conditionalLogic": {
-          "title": "[TR] Conditional Logic",
-          "description": "[TR] Handle different scenarios based on page state or data",
-          "example": "[TR] If user is already logged in, skip login and go to dashboard"
-        },
-        "errorHandling": {
-          "title": "[TR] Error Handling",
-          "description": "[TR] Anticipate and handle potential errors gracefully",
-          "example": "[TR] If login fails, capture error message and retry with different credentials"
-        },
-        "dynamicContent": {
-          "title": "[TR] Dynamic Content",
-          "description": "[TR] Work with content that changes based on data or state",
-          "example": "[TR] Select the first available product from the search results"
-        },
-        "multiStepFlows": {
-          "title": "[TR] Multi-Step Flows",
-          "description": "[TR] Break complex workflows into manageable steps",
-          "example": "[TR] Complete checkout process: cart → shipping → payment → confirmation"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "[TR] Prompt Optimization",
-      "description": "[TR] Strategies to improve performance and reduce costs:",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "[TR] Token Efficiency",
-          "description": "[TR] Write concise prompts that achieve maximum results with minimal tokens",
-          "tips": "[TR] • Use action verbs • Avoid redundant descriptions • Focus on essentials"
-        },
-        "reusability": {
-          "title": "[TR] Reusable Patterns",
-          "description": "[TR] Create prompt templates for common scenarios",
-          "tips": "[TR] • Standard login flows • Form validation patterns • Navigation sequences"
-        },
-        "testing": {
-          "title": "[TR] Prompt Testing",
-          "description": "[TR] Test and refine prompts using the Test Recorder",
-          "tips": "[TR] • Use Test Recorder for experimentation • A/B test different approaches • Monitor success rates"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "[TR] Real-World Examples",
-      "description": "[TR] Practical examples showing effective prompt patterns:",
-      "ecommerce": {
-        "title": "[TR] E-commerce Checkout",
-        "description": "[TR] Complete purchase flow with cart, shipping, and payment"
-      },
-      "dashboard": {
-        "title": "[TR] Dashboard Interaction",
-        "description": "[TR] Complex dashboard navigation and data manipulation"
-      },
-      "forms": {
-        "title": "[TR] Complex Form Handling",
-        "description": "[TR] Multi-step forms with validation and conditional fields"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "[TR] Common Issues & Solutions",
-      "description": "[TR] Troubleshoot common prompting challenges:",
-      "issues": {
-        "elementNotFound": "[TR] • Element not found → Use semantic descriptions instead of technical selectors",
-        "ambiguousInstructions": "[TR] • Ambiguous instructions → Add more context and specific details",
-        "timingIssues": "[TR] • Timing issues → Add explicit wait conditions",
-        "validationFailures": "[TR] • Validation failures → Be more specific about expected outcomes"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "[TR] VS Code Debugging",

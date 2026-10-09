@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minuten",
     "title": "Schnellstart-Anleitung",
-    "subtitle": "Mit Endorphin AI in unter 5 Minuten einsatzbereit",
     "step1": {
-      "title": "Installation",
-      "description": "Endorphin AI über npm installieren:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript-Definitionen enthalten • ✅ Keine Konfiguration erforderlich"
+      "title": "Installation"
     },
     "step2": {
-      "title": "🔑 OpenAI-Setup",
-      "description": "OpenAI API-Schlüssel konfigurieren:",
-      "getApiKey": "1. API-Schlüssel von OpenAI erhalten",
-      "visitPlatform": "Besuchen Sie platform.openai.com/api-keys, um Ihren API-Schlüssel zu erstellen",
-      "addToEnv": "2. Zur .env-Datei hinzufügen:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ API-Schlüssel sicher aufbewahren • ✅ Niemals .env-Dateien zur Versionskontrolle hinzufügen",
-      "substep1": "1. API-Schlüssel von OpenAI erhalten",
       "visitLink": "Besuchen Sie",
-      "createKey": "um Ihren API-Schlüssel zu erstellen",
-      "substep2": "2. Zur .env-Datei hinzufügen:"
+      "createKey": "um Ihren API-Schlüssel zu erstellen"
     },
     "step3": {
-      "title": "Ersten Test erstellen",
-      "description": "Einfache Testdatei mit der v0.9.0-Smart-Struktur erstellen:",
-      "codeComment": "// mein-erster-test.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Benutzer-Anmeldung Test',\n  description: 'Benutzer-Authentifizierungs-Ablauf testen',\n  tags: ['authentifizierung'],\n  priority: 'Hoch',\n  \n  setup: async () => ({\n    baseUrl: 'https://beispiel.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@beispiel.com',\n    password: 'passwort123'\n  }),\n  \n  task: async (data, setup) => `\n    Zu ${setup.baseUrl}/login navigieren\n    E-Mail-Feld mit \"${data.email}\" ausfüllen\n    Passwort-Feld mit \"${data.password}\" ausfüllen\n    \"Anmelden\" Button klicken\n    Dashboard-Sichtbarkeit überprüfen\n  `\n};"
+      "title": "Ersten Test erstellen"
     },
     "step4": {
-      "title": "Test ausführen",
-      "description": "Test mit einem einzigen Befehl ausführen:",
-      "command": "npx endorphin-ai run mein-erster-test.js",
-      "aiAnalysis": "KI wird Ihre Anweisungen analysieren und den Test automatisch ausführen"
+      "title": "Test ausführen"
     },
     "step5": {
       "title": "Ergebnisse anzeigen",
-      "description": "Schönen HTML-Bericht mit Kostenverfolgung prüfen:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Test-Ausführungsdetails",
-        "aiDecisions": "KI-Entscheidungshistorie",
-        "costBreakdown": "Kostenaufschlüsselung",
-        "screenshots": "Screenshot-Galerie"
-      },
-      "feature1": "Test-Ausführungsdetails",
-      "feature2": "KI-Entscheidungshistorie",
-      "feature3": "Kostenaufschlüsselung",
-      "feature4": "Screenshot-Galerie"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Herzlichen Glückwunsch!",
-      "subtitle": "Sie haben erfolgreich Ihren ersten KI-gestützten Test ausgeführt. Bereit für mehr?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Setup vervollständigen",
-        "description": "Erweiterte Konfiguration und Projekt-Setup lernen",
-        "button": "Anleitung lesen"
-      },
-      "structure": {
-        "title": "Test-Struktur",
-        "description": "Die v0.9.0-Smart-Test-Struktur meistern",
-        "button": "Mehr erfahren"
-      },
-      "examples": {
-        "title": "Beispiele",
-        "description": "Praktische Test-Beispiele durchstöbern",
-        "button": "Beispiele ansehen"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Alle Dokumentationen erkunden"
   }

@@ -221,8 +221,6 @@
         "title": "[PL] Session Information",
         "functions": {
           "getSessionData": "[PL] Get current test session summary",
-          "getSetupResult": "[PL] Get test setup result (v0.9 smart tests)",
-          "getDataGenerationResult": "[PL] Get data generation result (v0.9 smart tests)",
           "clearSession": "[PL] Clear current session"
         }
       },
@@ -274,7 +272,6 @@
         "optimization": "[PL] Optimization: Simplify prompts or break into smaller tests"
       },
       "example4": {
-        "title": "[PL] Example 4: v0.9.0 Setup/Data Debugging",
         "problem": "[PL] Problem: Dynamic test data not working as expected",
         "console": "[PL] In Debug Console:",
         "verification": "[PL] Verify your setup/data functions returned correct values"

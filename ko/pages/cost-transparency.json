@@ -23,7 +23,6 @@
     },
     "callToAction": {
       "title": "Happy Vibetesting을 시작할 준비가 되셨나요?",
-      "description": "v0.9.0과 함께 AI 테스팅 혁명에 참여하세요. 스마트 테스트 구조, 비용 투명성, 엔터프라이즈급 안정성을 제공합니다.",
       "getStartedFree": "무료로 시작하기",
       "readDocumentation": "문서 읽기"
     },

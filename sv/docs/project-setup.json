@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Grundläggande",
-      "title": "Projektinställningsguide",
-      "subtitle": "Fullständig projektinställning och konfigurationsguide för professionella testarbetsflöden"
+      "title": "Projektinställningsguide"
     },
     "installation": {
-      "title": "Installation",
-      "description": "Kom igång med Endorphin AI med en av dessa metoder:",
-      "option1": "Alternativ 1: Snabb inställning",
-      "option2": "Alternativ 2: Manuell installation"
+      "title": "Installation"
     },
     "projectSetup": {
       "title": "Projektinställning",
-      "description": "Initialisera ditt projekt med rätt struktur och konfigurationsfiler.",
       "quickSetup": "Snabb inställning med Init",
       "quickSetupDescription": "Det snabbaste sättet att ställa in ditt projekt:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "Detta skapar:",
       "configFile": "Konfigurationsfil",
-      "testsFolder": "Dina testfiler",
       "envTemplate": "Miljövariabler mall",
       "exampleTest": "Exempel testfil",
       "manualSetup": "Manuell inställning",
-      "manualDescription": "För mer kontroll över din inställning:",
-      "step1": "1. Skapa endorphin.config.ts:",
       "step2": "2. Skapa .env-fil:",
       "step3": "3. Skapa tests-mapp:"
     },
     "openaiSetup": {
       "title": "OpenAI-inställning",
-      "description": "Konfigurera din OpenAI API-nyckel för AI-driven testning:",
       "step1": "1. Hämta din API-nyckel från",
       "step1Description": "Besök platform.openai.com/api-keys för att skapa din API-nyckel",
       "step2": "2. Lägg till i din .env-fil:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "Skapa Ditt Första Test",
-      "description": "Skapa en testfil för att verifiera att din inställning fungerar korrekt.",
-      "createFile": "Skapa en fil som heter google-test.js i din tests-mapp:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Köra Tester",
       "listTests": "Lista alla tester:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Kör specifikt test:",
@@ -60,10 +46,7 @@
       "openBrowser": "Öppna i webbläsare:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Inställning Klar!",
-      "description": "Ditt projekt är nu konfigurerat och redo för AI-driven testning. Du kan börja skriva tester med naturliga språkbeskrivningar."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Nästa: Teststruktur →",
       "backButton": "Tillbaka till Dokumentation"

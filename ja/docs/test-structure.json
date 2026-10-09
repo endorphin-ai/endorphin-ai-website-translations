@@ -4,9 +4,7 @@
       "backToDocumentation": "ドキュメントに戻る"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "テスト構造ガイド",
-      "subtitle": "async setup()、data()、task()関数を使ったv0.9.0スマートテスト構造をマスターする"
+      "title": "テスト構造ガイド"
     },
     "basicStructure": {
       "title": "📝 基本テスト構造",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "動的テスト",
-      "badge": "v0.9.0 機能",
       "setupFunctions": {
         "title": "Setup関数の使用",
         "description": "テスト環境を準備する："

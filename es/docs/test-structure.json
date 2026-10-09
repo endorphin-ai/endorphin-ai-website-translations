@@ -4,9 +4,7 @@
       "backToDocumentation": "Volver a la Documentación"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Guía de Estructura de Pruebas",
-      "subtitle": "Domina la estructura de pruebas inteligente v0.9.0 con funciones async setup(), data() y task()"
+      "title": "Guía de Estructura de Pruebas"
     },
     "basicStructure": {
       "title": "📝 Estructura Básica de Pruebas",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Pruebas Dinámicas",
-      "badge": "Función v0.9.0",
       "setupFunctions": {
         "title": "Usando Funciones Setup",
         "description": "Prepara tu entorno de prueba:"

@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Menit",
     "title": "Panduan Mulai Cepat",
-    "subtitle": "Dapatkan Endorphin AI berjalan dalam waktu kurang dari 5 menit",
     "step1": {
-      "title": "Instalasi",
-      "description": "Instal Endorphin AI melalui npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ Definisi TypeScript disertakan • ✅ Tidak perlu konfigurasi"
+      "title": "Instalasi"
     },
     "step2": {
-      "title": "🔑 Pengaturan OpenAI",
-      "description": "Atur kunci OpenAI API Anda:",
-      "getApiKey": "1. Dapatkan kunci OpenAI API Anda",
-      "visitPlatform": "Kunjungi platform.openai.com/api-keys untuk membuat kunci API Anda",
-      "addToEnv": "2. Tambahkan ke file .env:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Jaga keamanan kunci API Anda • ✅ Jangan pernah commit file .env ke kontrol versi",
-      "substep1": "1. Dapatkan kunci OpenAI API Anda",
       "visitLink": "Kunjungi",
-      "createKey": "untuk membuat kunci API Anda",
-      "substep2": "2. Tambahkan ke file .env:"
+      "createKey": "untuk membuat kunci API Anda"
     },
     "step3": {
-      "title": "Buat tes pertama Anda",
-      "description": "Buat file tes sederhana menggunakan struktur cerdas v0.9.0:",
-      "codeComment": "// tes-pertama-saya.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Tes Login',\n  description: 'Menguji alur autentikasi pengguna',\n  tags: ['autentikasi'],\n  priority: 'Tinggi',\n  \n  setup: async () => ({\n    baseUrl: 'https://contoh.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@contoh.com',\n    password: 'password123'\n  }),\n  \n  task: async (data, setup) => `\n    Navigasi ke ${setup.baseUrl}/login\n    Isi field email dengan \"${data.email}\"\n    Isi field password dengan \"${data.password}\"\n    Klik tombol \"Masuk\"\n    Verifikasi bahwa dashboard terlihat\n  `\n};"
+      "title": "Buat tes pertama Anda"
     },
     "step4": {
-      "title": "Jalankan tes Anda",
-      "description": "Jalankan tes Anda dengan satu perintah:",
-      "command": "npx endorphin-ai run tes-pertama-saya.js",
-      "aiAnalysis": "AI akan menganalisis instruksi Anda dan mengeksekusi tes secara otomatis"
+      "title": "Jalankan tes Anda"
     },
     "step5": {
       "title": "Lihat hasil",
-      "description": "Periksa laporan HTML indah Anda dengan pelacakan biaya:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Detail eksekusi tes",
-        "aiDecisions": "Riwayat keputusan AI",
-        "costBreakdown": "Rincian biaya",
-        "screenshots": "Galeri screenshot"
-      },
-      "feature1": "Detail eksekusi tes",
-      "feature2": "Riwayat keputusan AI",
-      "feature3": "Rincian biaya",
-      "feature4": "Galeri screenshot"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Selamat!",
-      "subtitle": "Anda telah berhasil menjalankan tes pertama yang didukung AI. Siap untuk lebih banyak?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Pengaturan Lengkap",
-        "description": "Pelajari pengaturan lanjutan dan konfigurasi proyek",
-        "button": "Baca Panduan"
-      },
-      "structure": {
-        "title": "Struktur Tes",
-        "description": "Kuasai struktur tes cerdas v0.9.0",
-        "button": "Pelajari Lebih Lanjut"
-      },
-      "examples": {
-        "title": "Contoh",
-        "description": "Jelajahi contoh tes dunia nyata",
-        "button": "Lihat Contoh"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Jelajahi Semua Dokumentasi"
   }

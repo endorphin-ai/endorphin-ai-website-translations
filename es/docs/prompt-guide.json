@@ -4,120 +4,41 @@
       "backToDocumentation": "Volver a la Documentación"
     },
     "header": {
-      "badge": "Avanzado",
-      "title": "Guía de Prompts de IA",
-      "subtitle": "Técnicas avanzadas de prompts de IA y optimización para máxima efectividad en pruebas"
+      "badge": "Avanzado"
     },
     "introduction": {
-      "title": "Domina los Prompts de IA",
-      "description": "Aprende cómo escribir prompts efectivos que obtengan los mejores resultados de las pruebas potenciadas por IA.",
-      "importance": "Por qué importa la optimización de prompts:",
-      "importanceList": {
-        "accuracy": "✅ Mayor precisión y confiabilidad de pruebas",
-        "efficiency": "✅ Uso reducido de tokens y costos",
-        "maintenance": "✅ Pruebas más mantenibles y depurables",
-        "robustness": "✅ Mejor manejo de casos extremos",
-        "speed": "✅ Ejecución de pruebas más rápida"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "Principios Fundamentales de Prompts",
-      "description": "Sigue estos principios para comunicación efectiva con IA:",
       "principles": {
-        "clarity": {
-          "title": "1. Sé Claro y Específico",
-          "description": "Usa lenguaje preciso y evita ambigüedades",
-          "example": "Bueno: 'Haz clic en el botón azul Enviar en el pie de página'\nMalo: 'Haz clic en el botón'"
-        },
-        "context": {
-          "title": "2. Proporciona Contexto",
-          "description": "Dale a la IA suficiente contexto para entender el escenario",
-          "example": "Bueno: 'Después de iniciar sesión, navega a la configuración del perfil del usuario'\nMalo: 'Ve a configuración'"
-        },
-        "structure": {
-          "title": "3. Usa Estructura Lógica",
-          "description": "Organiza los pasos en un orden lógico y secuencial",
-          "example": "Bueno: Instrucciones paso a paso con flujo claro\nMalo: Saltar entre acciones no relacionadas"
-        },
-        "validation": {
-          "title": "4. Incluye Validación",
-          "description": "Siempre especifica qué debe verificarse",
-          "example": "Bueno: 'Verifica que aparezca el mensaje de éxito'\nMalo: 'Envía el formulario' (sin validación)"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "Técnicas Avanzadas",
-      "description": "Estrategias sofisticadas de prompts para escenarios complejos:",
       "techniques": {
-        "conditionalLogic": {
-          "title": "Lógica Condicional",
-          "description": "Maneja diferentes escenarios basados en el estado de la página o datos",
-          "example": "Si el usuario ya está conectado, omite el login y ve al dashboard"
-        },
-        "errorHandling": {
-          "title": "Manejo de Errores",
-          "description": "Anticipa y maneja errores potenciales de manera elegante",
-          "example": "Si el login falla, captura el mensaje de error y reintenta con credenciales diferentes"
-        },
-        "dynamicContent": {
-          "title": "Contenido Dinámico",
-          "description": "Trabaja con contenido que cambia basado en datos o estado",
-          "example": "Selecciona el primer producto disponible de los resultados de búsqueda"
-        },
-        "multiStepFlows": {
-          "title": "Flujos Multi-Paso",
-          "description": "Divide flujos de trabajo complejos en pasos manejables",
-          "example": "Completa el proceso de checkout: carrito → envío → pago → confirmación"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "Optimización de Prompts",
-      "description": "Estrategias para mejorar rendimiento y reducir costos:",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "Eficiencia de Tokens",
-          "description": "Escribe prompts concisos que logren máximos resultados con mínimos tokens",
-          "tips": "• Usa verbos de acción • Evita descripciones redundantes • Enfócate en lo esencial"
-        },
-        "reusability": {
-          "title": "Patrones Reutilizables",
-          "description": "Crea plantillas de prompts para escenarios comunes",
-          "tips": "• Flujos de login estándar • Patrones de validación de formularios • Secuencias de navegación"
-        },
-        "testing": {
-          "title": "Pruebas de Prompts",
-          "description": "Prueba y refina prompts usando el Test Recorder",
-          "tips": "• Usa Test Recorder para experimentación • Prueba A/B diferentes enfoques • Monitorea tasas de éxito"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "Ejemplos del Mundo Real",
-      "description": "Ejemplos prácticos mostrando patrones de prompts efectivos:",
-      "ecommerce": {
-        "title": "Checkout de E-commerce",
-        "description": "Flujo completo de compra con carrito, envío y pago"
-      },
-      "dashboard": {
-        "title": "Interacción con Dashboard",
-        "description": "Navegación compleja de dashboard y manipulación de datos"
-      },
-      "forms": {
-        "title": "Manejo de Formularios Complejos",
-        "description": "Formularios multi-paso con validación y campos condicionales"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "Problemas Comunes y Soluciones",
-      "description": "Resuelve desafíos comunes de prompts:",
-      "issues": {
-        "elementNotFound": "• Elemento no encontrado → Usa descripciones semánticas en lugar de selectores técnicos",
-        "ambiguousInstructions": "• Instrucciones ambiguas → Añade más contexto y detalles específicos",
-        "timingIssues": "• Problemas de timing → Añade condiciones de espera explícitas",
-        "validationFailures": "• Fallas de validación → Sé más específico sobre los resultados esperados"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "Siguiente: Depuración VS Code →",

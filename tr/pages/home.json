@@ -19,16 +19,13 @@
       "description": "Kullanıcı eylemlerini sade Türkçe ile açıklayın"
     },
     "selfHealing": {
-      "title": "🔁 Kendini İyileştiren Testler",
-      "description": "UI değişikliklerine otomatik olarak uyum sağlar"
+      "title": "🔁 Kendini İyileştiren Testler"
     },
     "smartValidation": {
-      "title": "🕵️ Akıllı Doğrulama Ajanı",
-      "description": "Görsel ve mantık hatalarını tespit eder"
+      "title": "🕵️ Akıllı Doğrulama Ajanı"
     },
     "costTracking": {
-      "title": "💰 Maliyet ve Token Takibi",
-      "description": "Yapay zeka kullanım maliyetlerini ve token tüketimini izleyin"
+      "title": "💰 Maliyet ve Token Takibi"
     },
     "ciIntegration": {
       "title": "🚀 CI Entegrasyonu",
@@ -59,12 +56,10 @@
       "description": "Yapay zekanın test talimatlarını nasıl analiz ettiğini, yorumladığını ve uyguladığını tam olarak görün"
     },
     "builtInTools": {
-      "title": "🔧 Yerleşik Araç Sistemi",
-      "description": "12 kapsamlı tarayıcı otomasyon aracı yerleşik - özel araçlara gerek yok"
+      "title": "🔧 Yerleşik Araç Sistemi"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Test Kaydedici",
-      "description": "Gerçek zamanlı komut denemek için etkileşimli test kaydedici - test fikirlerini anında deneyin ve doğrulayın"
+      "title": "🎬 Test Kaydedici"
     },
     "enhancedReports": {
       "title": "📊 Gelişmiş HTML Raporları",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Hızlı Başlangıç",
     "step1": "Framework'ü yükleyin",
-    "step2": "OpenAI API anahtarınızı ayarlayın",
     "step3": "İlk testinizi yazın",
     "step4": "Çalıştırın ve sihri izleyin!",
     "startNow": "Şimdi Başla →"

@@ -4,9 +4,9 @@
       "backToDocumentation": "Back to Documentation"
     },
     "header": {
-      "badge": "v0.9.0",
+      "badge": "Core",
       "title": "Test Structure Guide",
-      "subtitle": "Master the v0.9.0 smart test structure with async setup(), data(), and task() functions"
+      "subtitle": "Master the smart test structure with async setup(), data(), and task() functions"
     },
     "basicStructure": {
       "title": "📝 Basic Test Structure",
@@ -30,7 +30,7 @@
     },
     "dynamicTests": {
       "title": "Dynamic Tests",
-      "badge": "v0.9.0 Feature",
+      "badge": "Dynamic tests",
       "setupFunctions": {
         "title": "Using Setup Functions",
         "description": "Prepare your test environment:"

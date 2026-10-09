@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "Essentiell",
-      "title": "Projekt-Setup-Anleitung",
-      "subtitle": "Vollständige Anleitung für Projekt-Setup und Konfiguration für professionelle Test-Workflows"
+      "title": "Projekt-Setup-Anleitung"
     },
     "installation": {
-      "title": "Installation",
-      "description": "Beginnen Sie mit Endorphin AI mit einer dieser Methoden:",
-      "option1": "Option 1: Schnell-Setup",
-      "option2": "Option 2: Manuelle Installation"
+      "title": "Installation"
     },
     "projectSetup": {
       "title": "Projekt-Setup",
-      "description": "Initialisieren Sie Ihr Projekt mit der richtigen Struktur und Konfigurationsdateien.",
       "quickSetup": "Schnell-Setup mit Init",
       "thisCreates": "Dies erstellt:",
       "configFile": "Konfigurationsdatei",
-      "testsFolder": "Ihre Testdateien",
       "envTemplate": "Umgebungsvariablen-Vorlage",
       "exampleTest": "Beispiel-Testdatei",
       "manualSetup": "Manuelles Setup",
-      "manualDescription": "Für mehr Kontrolle über Ihr Setup:",
-      "step1": "1. endorphin.config.ts erstellen:",
       "step2": "2. .env-Datei erstellen:",
       "step3": "3. tests-Ordner erstellen:"
     },
     "openaiSetup": {
       "title": "OpenAI-Setup",
-      "description": "Konfigurieren Sie Ihren OpenAI API-Schlüssel für KI-gestütztes Testen:",
       "step1": "1. API-Schlüssel erhalten von",
       "step2": "2. Zu Ihrer .env-Datei hinzufügen:"
     },
-    "firstTest": {
-      "title": "Ihren ersten Test erstellen",
-      "description": "Erstellen Sie eine Testdatei, um zu überprüfen, ob Ihr Setup korrekt funktioniert.",
-      "createFile": "Erstellen Sie eine Datei namens google-test.js in Ihrem tests-Ordner:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Tests ausführen",
       "listTests": "Alle Tests auflisten:",
       "runSpecific": "Spezifischen Test ausführen:",
       "runAll": "Alle Tests ausführen:"
@@ -51,10 +37,7 @@
       "generateReport": "Bericht generieren:",
       "openBrowser": "Im Browser öffnen:"
     },
-    "success": {
-      "title": "Setup abgeschlossen!",
-      "description": "Ihr Projekt ist jetzt konfiguriert und bereit für KI-gestütztes Testen. Sie können beginnen, Tests mit natürlichsprachlichen Beschreibungen zu schreiben."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Weiter: Test-Struktur →",
       "backButton": "Zurück zur Dokumentation"

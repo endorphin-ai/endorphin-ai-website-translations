@@ -4,9 +4,7 @@
       "backToDocumentation": "חזור לתיעוד"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "מדריך מבנה בדיקות",
-      "subtitle": "שלוט במבנה בדיקות חכם v0.9.0 עם פונקציות async setup(), data() ו-task()"
+      "title": "מדריך מבנה בדיקות"
     },
     "basicStructure": {
       "title": "📝 מבנה בדיקה בסיסי",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "בדיקות דינמיות",
-      "badge": "תכונת v0.9.0",
       "setupFunctions": {
         "title": "שימוש בפונקציות הגדרה",
         "description": "הכן את סביבת הבדיקה שלך:"

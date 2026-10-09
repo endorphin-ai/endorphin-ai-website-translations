@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Komplet Dokumentation",
     "subtitle": "Alt du behøver for at mestre AI-drevet testning med Endorphin AI. Fra hurtig start til avancerede teknikker.",
-    "versionBadge": "v0.9.0 Dokumentation",
     "startQuickGuide": "Start med Hurtig Guide",
     "browseAllDocs": "Gennemse Al Dokumentation",
     "readGuide": "Læs Guide",
     "badges": {
       "5min": "5 min",
       "essential": "Essentiel",
-      "v090": "v0.9.0",
       "examples": "Eksempler",
       "advanced": "Avanceret",
       "proTips": "Pro Tips",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Kom i gang med Endorphin AI på 5 minutter",
       "projectSetup": "Projektopsætning",
       "projectSetupDesc": "Komplet projektopsætning og konfigurationsguide",
-      "testStructure": "Teststruktur",
-      "testStructureDesc": "v0.9 smart teststruktur med setup/data/task funktioner"
+      "testStructure": "Teststruktur"
     },
     "advanced": {
       "title": "Avancerede Emner",
@@ -72,8 +69,6 @@
         "button": "Start Nu →"
       },
       "testStructure": {
-        "title": "v0.9.0 Teststruktur",
-        "description": "Lær den nye smarte teststruktur med async setup(), data() og task() funktioner.",
         "button": "Læs Mere →"
       }
     }

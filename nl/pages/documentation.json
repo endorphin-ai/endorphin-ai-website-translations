@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Volledige Documentatie",
     "subtitle": "Alles wat u nodig heeft om AI-aangedreven testen met Endorphin AI te beheersen. Van snelle start tot geavanceerde technieken.",
-    "versionBadge": "v0.9.0 Documentatie",
     "startQuickGuide": "Start met Snelle Gids",
     "browseAllDocs": "Bekijk Alle Docs",
     "readGuide": "Lees Gids",
     "badges": {
       "5min": "5 min",
       "essential": "Essentieel",
-      "v090": "v0.9.0",
       "examples": "Voorbeelden",
       "advanced": "Geavanceerd",
       "proTips": "Pro Tips",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Ga aan de slag met Endorphin AI in 5 minuten",
       "projectSetup": "Project Setup",
       "projectSetupDesc": "Volledige project setup en configuratie gids",
-      "testStructure": "Test Structuur",
-      "testStructureDesc": "v0.9 slimme test structuur met setup/data/task functies"
+      "testStructure": "Test Structuur"
     },
     "advanced": {
       "title": "Geavanceerde Onderwerpen",
@@ -72,8 +69,6 @@
         "button": "Start Nu →"
       },
       "testStructure": {
-        "title": "v0.9.0 Test Structuur",
-        "description": "Leer de nieuwe slimme test structuur met async setup(), data() en task() functies.",
         "button": "Meer Informatie →"
       }
     }

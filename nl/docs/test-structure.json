@@ -4,9 +4,7 @@
       "backToDocumentation": "Terug naar Documentatie"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Test Structuur Gids",
-      "subtitle": "Beheers de slimme test structuur v0.9.0 met async setup(), data() en task() functies"
+      "title": "Test Structuur Gids"
     },
     "basicStructure": {
       "title": "📝 Basis Test Structuur",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Dynamische Tests",
-      "badge": "v0.9.0 Functie",
       "setupFunctions": {
         "title": "Setup Functies Gebruiken",
         "description": "Bereid je test omgeving voor:"

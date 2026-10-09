@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minutos",
     "title": "Guía de Inicio Rápido",
-    "subtitle": "Ponte en marcha con Endorphin AI en menos de 5 minutos",
     "step1": {
-      "title": "Instalación",
-      "description": "Instala Endorphin AI vía npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ Definiciones TypeScript incluidas • ✅ Configuración cero requerida"
+      "title": "Instalación"
     },
     "step2": {
-      "title": "🔑 Configuración OpenAI",
-      "description": "Configura tu clave API de OpenAI:",
-      "getApiKey": "1. Obtén tu clave API de OpenAI",
-      "visitPlatform": "Visita platform.openai.com/api-keys para crear tu clave API",
-      "addToEnv": "2. Añadir al archivo .env:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Mantén tu clave API segura • ✅ Nunca comprometas archivos .env al control de versiones",
-      "substep1": "1. Obtén tu clave API de OpenAI",
       "visitLink": "Visita",
-      "createKey": "para crear tu clave API",
-      "substep2": "2. Añadir al archivo .env:"
+      "createKey": "para crear tu clave API"
     },
     "step3": {
-      "title": "Crea tu Primera Prueba",
-      "description": "Crea un archivo de prueba simple usando la estructura inteligente v0.9.0:",
-      "codeComment": "// mi-primera-prueba.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Prueba de Inicio de Sesión',\n  description: 'Prueba del flujo de autenticación del usuario',\n  tags: ['autenticación'],\n  priority: 'Alta',\n  \n  setup: async () => ({\n    baseUrl: 'https://ejemplo.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@ejemplo.com',\n    password: 'contraseña123'\n  }),\n  \n  task: async (data, setup) => `\n    Navegar a ${setup.baseUrl}/login\n    Llenar el campo email con \"${data.email}\"\n    Llenar el campo contraseña con \"${data.password}\"\n    Hacer clic en el botón \"Iniciar Sesión\"\n    Verificar que el dashboard sea visible\n  `\n};"
+      "title": "Crea tu Primera Prueba"
     },
     "step4": {
-      "title": "Ejecuta tu Prueba",
-      "description": "Ejecuta tu prueba con un solo comando:",
-      "command": "npx endorphin-ai run mi-primera-prueba.js",
-      "aiAnalysis": "La IA analizará tus instrucciones y ejecutará la prueba automáticamente"
+      "title": "Ejecuta tu Prueba"
     },
     "step5": {
       "title": "Ver Resultados",
-      "description": "Revisa tu hermoso informe HTML con seguimiento de costos:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Detalles de ejecución de prueba",
-        "aiDecisions": "Historial de decisiones de IA",
-        "costBreakdown": "Desglose de costos",
-        "screenshots": "Galería de capturas de pantalla"
-      },
-      "feature1": "Detalles de ejecución de prueba",
-      "feature2": "Historial de decisiones de IA",
-      "feature3": "Desglose de costos",
-      "feature4": "Galería de capturas de pantalla"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 ¡Felicitaciones!",
-      "subtitle": "Has ejecutado exitosamente tu primera prueba potenciada por IA. ¿Listo para más?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Configuración Completa",
-        "description": "Aprende configuración avanzada y configuración del proyecto",
-        "button": "Leer Guía"
-      },
-      "structure": {
-        "title": "Estructura de Pruebas",
-        "description": "Domina la estructura de prueba inteligente v0.9.0",
-        "button": "Saber Más"
-      },
-      "examples": {
-        "title": "Ejemplos",
-        "description": "Explora ejemplos de pruebas del mundo real",
-        "button": "Ver Ejemplos"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Explorar Toda la Documentación"
   }

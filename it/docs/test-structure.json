@@ -4,9 +4,7 @@
       "backToDocumentation": "Torna alla Documentazione"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Guida alla Struttura dei Test",
-      "subtitle": "Padroneggia la struttura di test intelligente v0.9.0 con funzioni async setup(), data() e task()"
+      "title": "Guida alla Struttura dei Test"
     },
     "basicStructure": {
       "title": "📝 Struttura Base del Test",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Test Dinamici",
-      "badge": "Funzionalità v0.9.0",
       "setupFunctions": {
         "title": "Utilizzo delle Funzioni Setup",
         "description": "Prepara il tuo ambiente di test:"

@@ -6,25 +6,21 @@
         "header": {
             "badge": "Interactive",
             "title": "Test Recorder",
-            "description": "Interactive test creation with browser recording. Create tests by showing the AI what to do in plain English - no coding required!"
+            "description": "Create tests by showing the AI what to do in plain English."
         },
         "whatIsRecorder": {
             "title": "🎯 What is Test Recorder?",
-            "description": "Test Recorder lets you create tests interactively by typing commands in plain English and watching the AI perform actions in a browser.",
+            "description": "Test Recorder lets you create tests interactively by:",
             "features": {
-                "typeCommands": "Type commands in plain English",
-                "watchAI": "Watch AI perform actions",
-                "getTestFile": "Get test file automatically"
+                "typeCommands": "Typing commands in plain English",
+                "watchAI": "Watching the AI perform actions in a browser",
+                "getTestFile": "Getting a test file automatically created"
             },
-            "noCoding": {
-                "title": "✨ No Coding Required!",
-                "description": "Just describe what you want to test, and the AI does the rest."
-            }
+            "noCoding": "✨ No coding required!"
         },
         "quickStart": {
             "title": "🚀 Quick Start",
-            "description": "Start recording your first test in one command",
-            "command": "npx endorphin run test-recorder",
+            "description": "Start recording:",
             "youllSee": "You'll see:",
             "steps": {
                 "browserOpens": "A browser window opens",
@@ -34,132 +30,121 @@
         },
         "recordingProcess": {
             "title": "📝 Recording a Test",
-            "description": "Step-by-step recording process",
+            "description": "Three steps from test details to a running test",
             "step1": {
                 "title": "Step 1: Test Details",
-                "description": "The recorder asks for basic test information:",
-                "example": "Test ID: LOGIN-001\nTest Name: User Login Test\nDescription: Test the login process\nPriority: High\nTags: login, auth\nSite URL: https://myapp.com"
+                "description": "The recorder asks for:"
             },
             "step2": {
                 "title": "Step 2: Give Commands",
-                "description": "Type what you want the AI to do:",
-                "commands": {
-                    "clickLogin": "click the login button",
-                    "clickLoginResult": "✅ Clicked login button",
-                    "fillEmail": "fill email with test@example.com",
-                    "fillEmailResult": "✅ Filled email field",
-                    "fillPassword": "fill password with mypassword",
-                    "fillPasswordResult": "✅ Filled password field",
-                    "clickSubmit": "click submit button",
-                    "clickSubmitResult": "✅ Clicked submit button",
-                    "verifyDashboard": "verify dashboard appears",
-                    "verifyDashboardResult": "✅ Verified dashboard is visible"
-                }
+                "description": "Type what you want the AI to do:"
             },
             "step3": {
-                "title": "Step 3: Save Test",
-                "description": "When you type finish, the recorder:",
-                "actions": {
-                    "createFile": "Creates a complete test file",
-                    "saveFile": "Saves it to your tests/ folder",
-                    "showCode": "Shows you the generated code",
-                    "nextSteps": "Provides next steps"
-                }
+                "title": "Step 3: Run Your Test"
             }
         },
-        "interactiveCommands": {
-            "title": "💬 Interactive Commands",
-            "description": "Commands you can use during recording",
-            "navigation": {
-                "title": "Navigation Commands",
-                "commands": {
-                    "goTo": "go to https://example.com",
-                    "navigate": "navigate to the login page",
-                    "open": "open the website",
-                    "refresh": "refresh the page"
-                }
-            },
-            "interaction": {
-                "title": "Interaction Commands",
-                "commands": {
-                    "click": "click the \"Sign In\" button",
-                    "fill": "fill email with user@example.com",
-                    "type": "type \"search term\" in the search box",
-                    "select": "select \"Option 1\" from dropdown"
-                }
-            },
-            "verification": {
-                "title": "Verification Commands",
-                "commands": {
-                    "verify": "verify \"Welcome\" message appears",
-                    "check": "check if login was successful",
-                    "confirm": "confirm the dashboard is visible",
-                    "makeSure": "make sure error message shows"
-                }
-            },
-            "recording": {
-                "title": "Recording Commands",
-                "commands": {
-                    "undo": "undo - Remove last action",
-                    "screenshot": "screenshot - Take a screenshot",
-                    "pause": "pause - Pause recording",
-                    "resume": "resume - Resume recording",
-                    "finish": "finish - Complete and save test"
-                }
-            }
+        "commandExamples": {
+            "title": "💬 Command Examples",
+            "description": "Commands you can type during recording",
+            "navigation": "Navigation",
+            "clicking": "Clicking",
+            "fillingForms": "Filling Forms",
+            "verification": "Verification",
+            "waiting": "Waiting",
+            "finishing": "Finishing"
         },
-        "generatedTest": {
-            "title": "Generated Test Example",
-            "description": "What the recorder creates for you",
-            "explanation": "After recording, you get a complete test file like this:",
-            "example": "export const LOGIN_TEST = {\n  id: 'LOGIN-001',\n  name: 'User Login Test',\n  description: 'Test the login process',\n  priority: 'High',\n  tags: ['login', 'auth'],\n  task: `\n    Navigate to https://myapp.com\n    Click the \"Login\" button\n    Fill email field: test@example.com\n    Fill password field: mypassword\n    Click \"Submit\" button\n    Wait 2 seconds\n    Verify dashboard appears\n    Check that \"Welcome\" message is visible\n  `\n};"
+        "whatGetsRecorded": {
+            "title": "What Gets Recorded",
+            "screenshots": {
+                "title": "Screenshots",
+                "description": "Every action creates before/after screenshots:"
+            },
+            "testFile": {
+                "title": "Test File",
+                "description": "A ready-to-run test file:"
+            }
         },
         "tips": {
             "title": "💡 Tips for Better Recording",
-            "beDescriptive": {
-                "title": "✅ Be Descriptive",
-                "description": "Use clear element descriptions: \"Login button\" instead of \"button\""
+            "beSpecific": {
+                "title": "Be Specific",
+                "bad": "\"click button\"",
+                "good": "\"click the blue Submit button\""
             },
-            "addWaits": {
-                "title": "⏱️ Add Waits",
-                "description": "Use \"wait 2 seconds\" after actions that trigger loading"
+            "addVerifications": {
+                "title": "Add Verifications",
+                "bad": "Just clicking around",
+                "good": "\"verify success message shows\""
             },
-            "verifyActions": {
-                "title": "🔍 Verify Actions",
-                "description": "Always verify important actions succeeded: \"verify login successful\""
+            "useRealData": {
+                "title": "Use Real Data",
+                "bad": "\"type something\"",
+                "good": "\"type john.doe@company.com\""
             },
-            "takeScreenshots": {
-                "title": "📸 Take Screenshots",
-                "description": "Use \"screenshot\" command to capture important moments"
+            "stepByStep": {
+                "title": "Think Step by Step",
+                "bad": "\"do the login\"",
+                "good": "\"click login, fill email, fill password, submit\""
             }
         },
         "troubleshooting": {
-            "title": "🔧 Troubleshooting",
-            "cantFindElement": {
-                "title": "AI Can't Find Element",
-                "description": "Solutions:",
+            "title": "🚨 Troubleshooting",
+            "browserNotOpening": {
+                "title": "Browser Not Opening",
+                "description": "Check your config has headless: false:"
+            },
+            "aiNotResponding": {
+                "title": "AI Not Responding",
                 "solutions": [
-                    "Try a more specific description",
-                    "Use \"screenshot\" to see current page",
-                    "Try different wording: \"login link\" vs \"sign in button\""
+                    "Check your OpenAI API key in .env",
+                    "Verify internet connection",
+                    "Make sure you have API credits"
                 ]
             },
-            "browserCrashes": {
-                "title": "Browser Crashes",
-                "description": "Solutions:",
+            "testNotFound": {
+                "title": "Test Not Found",
+                "description": "After recording:"
+            },
+            "commandsNotWorking": {
+                "title": "Commands Not Working",
                 "solutions": [
-                    "Restart the recorder: npx endorphin run test-recorder",
-                    "Check if site is accessible manually",
-                    "Try with a simpler site first"
+                    "Be more specific (\"click the Submit button\" not \"click\")",
+                    "Wait between actions (\"wait 2 seconds\")",
+                    "Use exact text you see on screen"
+                ]
+            }
+        },
+        "bestPractices": {
+            "title": "🎯 Best Practices",
+            "items": [
+                "Start Simple - Record basic flows first",
+                "Test Happy Paths - Get the normal flow working",
+                "Add Edge Cases - Record error scenarios separately",
+                "Use Good Names - Make test IDs descriptive",
+                "Verify Results - Always check actions worked"
+            ]
+        },
+        "cliApi": {
+            "title": "Non-Interactive Mode (CLI API)",
+            "description": "The test recorder also provides a programmable CLI API for automated test creation. It is used by Claude Code skills and can be invoked directly.",
+            "availableCommands": "Available Commands",
+            "fullExample": "Full Example",
+            "whenCli": {
+                "title": "When to Use CLI API",
+                "items": [
+                    "Automation - Create tests from scripts or CI/CD pipelines",
+                    "Claude Code Integration - Use the /write-test skill for AI-guided test creation",
+                    "Batch Test Creation - Generate multiple tests programmatically",
+                    "Custom Workflows - Build custom test creation tools"
                 ]
             },
-            "testNotSaving": {
-                "title": "Test Not Saving",
-                "description": "Solutions:",
-                "solutions": [
-                    "Make sure you type \"finish\" to complete",
-                    "Check that tests/ folder exists",
-                    "Verify you have write permissions"
+            "whenInteractive": {
+                "title": "When to Use Interactive Mode",
+                "items": [
+                    "Manual Testing - Direct control over each step",
+                    "Visual Feedback - See browser actions in real-time",
+                    "Learning - Understand how the recorder works",
+                    "Complex Scenarios - Situations requiring human judgment"
                 ]
             }
         },

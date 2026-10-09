@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Documentación completa",
     "subtitle": "Todo lo que necesitas para dominar las pruebas potenciadas por IA con Endorphin AI. Desde el inicio rápido hasta técnicas avanzadas.",
-    "versionBadge": "Documentación v0.9.0",
     "startQuickGuide": "Comenzar con la guía rápida",
     "browseAllDocs": "Explorar todos los documentos",
     "readGuide": "Leer guía",
     "badges": {
       "5min": "5 min",
       "essential": "Esencial",
-      "v090": "v0.9.0",
       "examples": "Ejemplos",
       "advanced": "Avanzado",
       "proTips": "Consejos pro",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Ponte en marcha con Endorphin AI en 5 minutos",
       "projectSetup": "Configuración del proyecto",
       "projectSetupDesc": "Guía completa de configuración e instalación del proyecto",
-      "testStructure": "Estructura de pruebas",
-      "testStructureDesc": "Estructura de prueba inteligente v0.9 con funciones setup/data/task"
+      "testStructure": "Estructura de pruebas"
     },
     "advanced": {
       "title": "Temas avanzados",
@@ -72,8 +69,6 @@
         "button": "Comenzar ahora →"
       },
       "testStructure": {
-        "title": "Estructura de pruebas v0.9.0",
-        "description": "Aprende la nueva estructura de prueba inteligente con funciones async setup(), data() y task().",
         "button": "Saber más →"
       }
     }

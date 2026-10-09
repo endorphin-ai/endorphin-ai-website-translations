@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "필수",
-      "title": "프로젝트 설정 가이드",
-      "subtitle": "전문적인 테스트 워크플로우를 위한 완전한 프로젝트 설정 및 구성 가이드"
+      "title": "프로젝트 설정 가이드"
     },
     "installation": {
-      "title": "설치",
-      "description": "다음 방법 중 하나로 Endorphin AI를 시작하세요:",
-      "option1": "옵션 1: 빠른 설정",
-      "option2": "옵션 2: 수동 설치"
+      "title": "설치"
     },
     "projectSetup": {
       "title": "프로젝트 설정",
-      "description": "적절한 구조와 구성 파일로 프로젝트를 초기화합니다.",
       "quickSetup": "Init을 사용한 빠른 설정",
       "thisCreates": "이것으로 생성됩니다:",
       "configFile": "구성 파일",
-      "testsFolder": "테스트 파일",
       "envTemplate": "환경 변수 템플릿",
       "exampleTest": "예제 테스트 파일",
       "manualSetup": "수동 설정",
-      "manualDescription": "설정에 대한 더 많은 제어를 원한다면:",
-      "step1": "1. endorphin.config.ts 생성:",
       "step2": "2. .env 파일 생성:",
       "step3": "3. tests 폴더 생성:"
     },
     "openaiSetup": {
       "title": "OpenAI 설정",
-      "description": "AI 기반 테스팅을 위한 OpenAI API 키를 구성하세요:",
       "step1": "1. API 키 받기",
       "step2": "2. .env 파일에 추가:"
     },
-    "firstTest": {
-      "title": "첫 번째 테스트 생성",
-      "description": "설정이 올바르게 작동하는지 확인하기 위한 테스트 파일을 생성합니다.",
-      "createFile": "tests 폴더에 google-test.js라는 파일을 생성하세요:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "테스트 실행",
       "listTests": "모든 테스트 나열:",
       "runSpecific": "특정 테스트 실행:",
       "runAll": "모든 테스트 실행:"
@@ -51,10 +37,7 @@
       "generateReport": "리포트 생성:",
       "openBrowser": "브라우저에서 열기:"
     },
-    "success": {
-      "title": "설정 완료!",
-      "description": "프로젝트가 구성되었으며 AI 기반 테스팅을 위한 준비가 완료되었습니다. 자연어 설명을 사용하여 테스트 작성을 시작할 수 있습니다."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "다음: 테스트 구조 →",
       "backButton": "문서로 돌아가기"

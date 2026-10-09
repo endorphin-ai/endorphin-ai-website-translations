@@ -19,16 +19,13 @@
       "description": "用简单的中文描述用户操作"
     },
     "selfHealing": {
-      "title": "🔁 自修复测试",
-      "description": "自动适应UI变化"
+      "title": "🔁 自修复测试"
     },
     "smartValidation": {
-      "title": "🕵️ 智能验证代理",
-      "description": "检测视觉和逻辑错误"
+      "title": "🕵️ 智能验证代理"
     },
     "costTracking": {
-      "title": "💰 成本和令牌跟踪",
-      "description": "监控AI使用成本和令牌消耗"
+      "title": "💰 成本和令牌跟踪"
     },
     "ciIntegration": {
       "title": "🚀 CI集成",
@@ -59,12 +56,10 @@
       "description": "准确了解AI如何分析、推理和执行您的测试指令"
     },
     "builtInTools": {
-      "title": "🔧 内置工具系统",
-      "description": "包含12个全面的浏览器自动化工具 - 无需自定义工具"
+      "title": "🔧 内置工具系统"
     },
     "testRecorderInteractive": {
-      "title": "🎬 测试录制器",
-      "description": "用于实时prompt测试的交互式测试录制器 - 立即实验和验证测试想法"
+      "title": "🎬 测试录制器"
     },
     "enhancedReports": {
       "title": "📊 增强HTML报告",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 快速开始",
     "step1": "安装框架",
-    "step2": "配置您的OpenAI API密钥",
     "step3": "编写您的第一个测试",
     "step4": "运行并见证魔法！",
     "startNow": "立即开始 →"
