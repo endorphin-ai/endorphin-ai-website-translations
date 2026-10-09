@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Essencial",
-      "title": "Guia de Configuração do Projeto",
-      "subtitle": "Guia completo de configuração e instalação do projeto para fluxos de trabalho de teste profissionais"
+      "title": "Guia de Configuração do Projeto"
     },
     "installation": {
-      "title": "Instalação",
-      "description": "Comece com o Endorphin AI usando um destes métodos:",
-      "option1": "Opção 1: Configuração Rápida",
-      "option2": "Opção 2: Instalação Manual"
+      "title": "Instalação"
     },
     "projectSetup": {
       "title": "Configuração do Projeto",
-      "description": "Inicialize seu projeto com a estrutura e arquivos de configuração adequados.",
       "quickSetup": "Configuração Rápida com Init",
       "quickSetupDescription": "A maneira mais rápida de configurar seu projeto:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "Isso cria:",
       "configFile": "Arquivo de configuração",
-      "testsFolder": "Seus arquivos de teste",
       "envTemplate": "Modelo de variáveis de ambiente",
       "exampleTest": "Arquivo de teste de exemplo",
       "manualSetup": "Configuração Manual",
-      "manualDescription": "Para mais controle sobre sua configuração:",
-      "step1": "1. Criar endorphin.config.ts:",
       "step2": "2. Criar arquivo .env:",
       "step3": "3. Criar pasta tests:"
     },
     "openaiSetup": {
       "title": "Configuração OpenAI",
-      "description": "Configure sua chave API OpenAI para testes potencializados por IA:",
       "step1": "1. Obtenha sua chave API da",
       "step1Description": "Visite platform.openai.com/api-keys para criar sua chave API",
       "step2": "2. Adicione ao seu arquivo .env:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "Crie Seu Primeiro Teste",
-      "description": "Crie um arquivo de teste para verificar se sua configuração está funcionando corretamente.",
-      "createFile": "Crie um arquivo chamado google-test.js na sua pasta tests:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Executando Testes",
       "listTests": "Listar todos os testes:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Executar teste específico:",
@@ -60,10 +46,7 @@
       "openBrowser": "Abrir no navegador:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Configuração Completa!",
-      "description": "Seu projeto está agora configurado e pronto para testes potencializados por IA. Você pode começar a escrever testes usando descrições em linguagem natural."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Próximo: Estrutura de Teste →",
       "backButton": "Voltar à Documentação"

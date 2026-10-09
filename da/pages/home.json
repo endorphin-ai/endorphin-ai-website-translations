@@ -19,16 +19,13 @@
       "description": "Beskriv brugerhandlinger på almindeligt dansk"
     },
     "selfHealing": {
-      "title": "🔁 Selvhelende Tests",
-      "description": "Tilpasser sig automatisk til UI-ændringer"
+      "title": "🔁 Selvhelende Tests"
     },
     "smartValidation": {
-      "title": "🕵️ Smart Valideringsagent",
-      "description": "Opdager visuelle og logiske fejl"
+      "title": "🕵️ Smart Valideringsagent"
     },
     "costTracking": {
-      "title": "💰 Omkostnings- og Token-sporing",
-      "description": "Overvåg AI-brugsomkostninger og tokenforbrug"
+      "title": "💰 Omkostnings- og Token-sporing"
     },
     "ciIntegration": {
       "title": "🚀 CI-integration",
@@ -59,12 +56,10 @@
       "description": "Se præcis, hvordan AI analyserede, ræsonnerede og udførte testinstruktioner"
     },
     "builtInTools": {
-      "title": "🔧 Indbygget Værktøjssystem",
-      "description": "12 omfattende browserautomatiseringsværktøjer indbygget - ingen tilpassede værktøjer nødvendige"
+      "title": "🔧 Indbygget Værktøjssystem"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Testoptager",
-      "description": "Interaktiv testoptager til at afprøve prompts i realtid - eksperimenter og valider testideer øjeblikkeligt"
+      "title": "🎬 Testoptager"
     },
     "enhancedReports": {
       "title": "📊 Forbedrede HTML-rapporter",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Hurtig Start",
     "step1": "Installer frameworket",
-    "step2": "Opsæt din OpenAI API-nøgle",
     "step3": "Skriv din første test",
     "step4": "Kør og se magien ske!",
     "startNow": "Start Nu →"

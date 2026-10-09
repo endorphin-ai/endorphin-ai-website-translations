@@ -6,42 +6,42 @@
     "header": {
       "badge": "Essential",
       "title": "Project Setup Guide",
-      "subtitle": "Complete project setup and configuration guide for professional testing workflows"
+      "subtitle": "Set up your Endorphin AI project in minutes."
     },
     "installation": {
       "title": "Installation",
-      "description": "Get started with Endorphin AI using one of these methods:",
-      "option1": "Option 1: Quick Setup",
-      "option2": "Option 2: Manual Installation"
+      "description": "Install Endorphin AI in one of two ways:",
+      "option1": "Option 1: Install in Your Project (Recommended)",
+      "option2": "Option 2: Global Installation"
     },
     "projectSetup": {
       "title": "Project Setup",
-      "description": "Initialize your project with the proper structure and configuration files.",
+      "description": "Create the config file, the tests folder and the environment file.",
       "quickSetup": "Quick Setup with Init",
       "thisCreates": "This creates:",
       "configFile": "Configuration file",
-      "testsFolder": "Your test files",
+      "testsFolder": "Folder for your test files",
       "envTemplate": "Environment variables template",
       "exampleTest": "Example test file",
       "manualSetup": "Manual Setup",
-      "manualDescription": "For more control over your setup:",
-      "step1": "1. Create endorphin.config.ts:",
+      "manualDescription": "If you prefer to set up manually:",
+      "step1": "1. Create the config file",
       "step2": "2. Create .env file:",
       "step3": "3. Create tests folder:"
     },
     "openaiSetup": {
       "title": "OpenAI Setup",
-      "description": "Configure your OpenAI API key for AI-powered testing:",
+      "description": "Endorphin AI needs an OpenAI API key.",
       "step1": "1. Get your API key from",
       "step2": "2. Add to your .env file:"
     },
     "firstTest": {
-      "title": "Create Your First Test",
-      "description": "Create a test file to verify your setup is working correctly.",
-      "createFile": "Create a file called google-test.js in your tests folder:"
+      "title": "Your First Test",
+      "description": "Add a simple test to check that the setup works.",
+      "createFile": "Create"
     },
     "runTest": {
-      "title": "Running Tests",
+      "title": "Run Your Test",
       "listTests": "List all tests:",
       "runSpecific": "Run specific test:",
       "runAll": "Run all tests:"
@@ -51,9 +51,57 @@
       "generateReport": "Generate report:",
       "openBrowser": "Open in browser:"
     },
+    "configuration": {
+      "title": "Configuration Options",
+      "description": "Settings you can put in endorphin.config.ts.",
+      "basic": "Basic Config",
+      "environments": "Environment-Specific Config",
+      "useEnvironments": "Use environments:"
+    },
+    "structure": {
+      "title": "Project Structure"
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "organize": "Organize Tests by Feature",
+      "naming": "Use Consistent Naming",
+      "testIds": "Test IDs:",
+      "files": "Files:",
+      "tags": "Tags:",
+      "envVars": "Environment Variables",
+      "keepInEnv": "Keep sensitive data in .env:",
+      "useInTests": "Use in tests:"
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "noTests": {
+        "title": "\"No tests found\"",
+        "item1": "Check tests are in the tests/ folder",
+        "item2": "Verify files export test objects",
+        "item3": "Ensure export const is used"
+      },
+      "apiKey": {
+        "title": "\"API key not found\"",
+        "item1": "Check the .env file exists",
+        "item2": "Verify the key starts with sk-",
+        "item3": "No spaces around = in .env"
+      },
+      "browser": {
+        "title": "\"Browser fails to launch\"",
+        "description": "Install browsers:"
+      },
+      "packageJson": {
+        "title": "Package.json Setup",
+        "description": "Ensure ES modules are enabled:"
+      }
+    },
     "success": {
-      "title": "Setup Complete!",
-      "description": "Your project is now configured and ready for AI-powered testing. You can start writing tests using natural language descriptions."
+      "title": "You're Ready!",
+      "description": "The basics are simple: install, configure, write tests, run.",
+      "startWriting": "Start writing tests:",
+      "testStructure": "Test Structure Guide",
+      "testWritingTips": "Test Writing Tips",
+      "quickStart": "Quick Start Examples"
     },
     "nextSteps": {
       "nextButton": "Test Structure",

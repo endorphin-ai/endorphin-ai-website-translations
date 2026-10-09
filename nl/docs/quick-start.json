@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minuten",
     "title": "Snelle Start Gids",
-    "subtitle": "Ga aan de slag met Endorphin AI in minder dan 5 minuten",
     "step1": {
-      "title": "Installatie",
-      "description": "Installeer Endorphin AI via npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript definities inbegrepen • ✅ Geen configuratie vereist"
+      "title": "Installatie"
     },
     "step2": {
-      "title": "🔑 OpenAI Setup",
-      "description": "Configureer uw OpenAI API sleutel:",
-      "getApiKey": "1. Krijg uw API sleutel van OpenAI",
-      "visitPlatform": "Bezoek platform.openai.com/api-keys om uw API sleutel aan te maken",
-      "addToEnv": "2. Voeg toe aan .env bestand:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Houd uw API sleutel veilig • ✅ Commit nooit .env bestanden naar versiebeheer",
-      "substep1": "1. Krijg uw API sleutel van OpenAI",
       "visitLink": "Bezoek",
-      "createKey": "om uw API sleutel aan te maken",
-      "substep2": "2. Voeg toe aan .env bestand:"
+      "createKey": "om uw API sleutel aan te maken"
     },
     "step3": {
-      "title": "Maak Uw Eerste Test",
-      "description": "Maak een eenvoudig testbestand met de v0.9.0 slimme structuur:",
-      "codeComment": "// my-first-test.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Gebruiker Login Test',\n  description: 'Test gebruikersauthenticatie flow',\n  tags: ['authenticatie'],\n  priority: 'Hoog',\n  \n  setup: async () => ({\n    baseUrl: 'https://example.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@example.com',\n    password: 'password123'\n  }),\n  \n  task: async (data, setup) => `\n    Navigeer naar ${setup.baseUrl}/login\n    Vul email veld met \"${data.email}\"\n    Vul wachtwoord veld met \"${data.password}\"\n    Klik \"Login\" knop\n    Verifieer dat dashboard zichtbaar is\n  `\n};"
+      "title": "Maak Uw Eerste Test"
     },
     "step4": {
-      "title": "Run Uw Test",
-      "description": "Voer uw test uit met een enkele opdracht:",
-      "command": "npx endorphin-ai run my-first-test.js",
-      "aiAnalysis": "AI zal uw instructies analyseren en de test automatisch uitvoeren"
+      "title": "Run Uw Test"
     },
     "step5": {
       "title": "Bekijk Resultaten",
-      "description": "Controleer uw mooie HTML rapport met kostentracering:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Test uitvoering details",
-        "aiDecisions": "AI beslissingsgeschiedenis",
-        "costBreakdown": "Kostenuitsplitsing",
-        "screenshots": "Screenshot galerij"
-      },
-      "feature1": "Test uitvoering details",
-      "feature2": "AI beslissingsgeschiedenis",
-      "feature3": "Kostenuitsplitsing",
-      "feature4": "Screenshot galerij"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Gefeliciteerd!",
-      "subtitle": "U heeft succesvol uw eerste AI-aangedreven test uitgevoerd. Klaar voor meer?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Volledige Setup",
-        "description": "Leer geavanceerde configuratie en projectsetup",
-        "button": "Lees Gids"
-      },
-      "structure": {
-        "title": "Test Structuur",
-        "description": "Beheers de v0.9.0 slimme test structuur",
-        "button": "Meer Informatie"
-      },
-      "examples": {
-        "title": "Voorbeelden",
-        "description": "Bekijk echte test voorbeelden",
-        "button": "Bekijk Voorbeelden"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Verken Alle Documentatie"
   }

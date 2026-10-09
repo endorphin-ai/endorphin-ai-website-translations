@@ -19,16 +19,13 @@
       "description": "Beskriv användaråtgärder på enkel svenska"
     },
     "selfHealing": {
-      "title": "🔁 Självläkande Tester",
-      "description": "Anpassar sig automatiskt till UI-ändringar"
+      "title": "🔁 Självläkande Tester"
     },
     "smartValidation": {
-      "title": "🕵️ Smart Valideringsagent",
-      "description": "Upptäcker visuella och logiska buggar"
+      "title": "🕵️ Smart Valideringsagent"
     },
     "costTracking": {
-      "title": "💰 Kostnads- och Tokenspårning",
-      "description": "Övervaka AI-användningskostnader och tokenkonsumtion"
+      "title": "💰 Kostnads- och Tokenspårning"
     },
     "ciIntegration": {
       "title": "🚀 CI-integration",
@@ -59,12 +56,10 @@
       "description": "Se exakt hur AI analyserade, resonerade och utförde testinstruktioner"
     },
     "builtInTools": {
-      "title": "🔧 Inbyggt Verktygsystem",
-      "description": "12 omfattande webbläsarautomatiseringsverktyg inbyggda - inga anpassade verktyg behövs"
+      "title": "🔧 Inbyggt Verktygsystem"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Testinspelare",
-      "description": "Interaktiv testinspelare för att prova prompter i realtid - experimentera och validera testidéer omedelbart"
+      "title": "🎬 Testinspelare"
     },
     "enhancedReports": {
       "title": "📊 Förbättrade HTML-rapporter",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Snabbstart",
     "step1": "Installera ramverket",
-    "step2": "Ställ in din OpenAI API-nyckel",
     "step3": "Skriv ditt första test",
     "step4": "Kör och se magin hända!",
     "startNow": "Börja Nu →"

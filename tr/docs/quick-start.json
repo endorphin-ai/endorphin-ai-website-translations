@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Dakika",
     "title": "Hızlı Başlangıç Kılavuzu",
-    "subtitle": "Endorphin AI ile 5 dakikadan kısa sürede çalışmaya başlayın",
     "step1": {
-      "title": "Kurulum",
-      "description": "Endorphin AI'ı npm ile yükleyin:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript tanımlamaları dahil • ✅ Sıfır yapılandırma gerekli"
+      "title": "Kurulum"
     },
     "step2": {
-      "title": "🔑 OpenAI Kurulumu",
-      "description": "OpenAI API anahtarınızı yapılandırın:",
-      "getApiKey": "1. OpenAI'dan API anahtarınızı alın",
-      "visitPlatform": "API anahtarınızı oluşturmak için platform.openai.com/api-keys adresini ziyaret edin",
-      "addToEnv": "2. .env dosyasına ekleyin:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ API anahtarınızı güvende tutun • ✅ .env dosyalarını asla sürüm kontrolüne eklemeyin",
-      "substep1": "1. OpenAI'dan API anahtarınızı alın",
       "visitLink": "Ziyaret edin",
-      "createKey": "API anahtarınızı oluşturmak için",
-      "substep2": "2. .env dosyasına ekleyin:"
+      "createKey": "API anahtarınızı oluşturmak için"
     },
     "step3": {
-      "title": "İlk Testinizi Oluşturun",
-      "description": "v0.9.0 akıllı yapısını kullanarak basit bir test dosyası oluşturun:",
-      "codeComment": "// my-first-test.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Kullanıcı Giriş Testi',\n  description: 'Kullanıcı kimlik doğrulama akışını test et',\n  tags: ['kimlik-doğrulama'],\n  priority: 'Yüksek',\n  \n  setup: async () => ({\n    baseUrl: 'https://example.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@example.com',\n    password: 'password123'\n  }),\n  \n  task: async (data, setup) => `\n    ${setup.baseUrl}/login adresine git\n    E-posta alanını \"${data.email}\" ile doldur\n    Şifre alanını \"${data.password}\" ile doldur\n    \"Giriş\" butonuna tıkla\n    Kontrol panelinin görünür olduğunu doğrula\n  `\n};"
+      "title": "İlk Testinizi Oluşturun"
     },
     "step4": {
-      "title": "Testinizi Çalıştırın",
-      "description": "Tek bir komutla testinizi çalıştırın:",
-      "command": "npx endorphin-ai run my-first-test.js",
-      "aiAnalysis": "Yapay zeka talimatlarınızı analiz edecek ve testi otomatik olarak çalıştıracak"
+      "title": "Testinizi Çalıştırın"
     },
     "step5": {
       "title": "Sonuçları Görüntüleyin",
-      "description": "Maliyet takibi ile güzel HTML raporunuzu kontrol edin:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Test çalıştırma detayları",
-        "aiDecisions": "Yapay zeka karar geçmişi",
-        "costBreakdown": "Maliyet dökümü",
-        "screenshots": "Ekran görüntüleri galerisi"
-      },
-      "feature1": "Test çalıştırma detayları",
-      "feature2": "Yapay zeka karar geçmişi",
-      "feature3": "Maliyet dökümü",
-      "feature4": "Ekran görüntüleri galerisi"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Tebrikler!",
-      "subtitle": "İlk yapay zeka destekli testinizi başarıyla çalıştırdınız. Daha fazlası için hazır mısınız?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Kurulumu Tamamla",
-        "description": "Gelişmiş yapılandırma ve proje kurulumunu öğrenin",
-        "button": "Kılavuzu Oku"
-      },
-      "structure": {
-        "title": "Test Yapısı",
-        "description": "v0.9.0 akıllı test yapısında ustalaşın",
-        "button": "Daha Fazla Bilgi"
-      },
-      "examples": {
-        "title": "Örnekler",
-        "description": "Gerçek dünya test örneklerine göz atın",
-        "button": "Örnekleri Görüntüle"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Tüm Dokümantasyonu Keşfet"
   }

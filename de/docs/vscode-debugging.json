@@ -52,8 +52,6 @@
         "title": "Session Information",
         "functions": {
           "getSessionData": "Get current test session summary",
-          "getSetupResult": "Get test setup result (v0.9 smart tests)",
-          "getDataGenerationResult": "Get data generation result (v0.9 smart tests)",
           "clearSession": "Clear current session"
         }
       },
@@ -105,7 +103,6 @@
         "optimization": "Optimization: Simplify prompts or break into smaller tests"
       },
       "example4": {
-        "title": "Example 4: v0.9.0 Setup/Data Debugging",
         "problem": "Problem: Dynamic test data not working as expected",
         "console": "In Debug Console:",
         "verification": "Verify your setup/data functions returned correct values"

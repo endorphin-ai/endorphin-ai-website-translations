@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Tam Dokümantasyon",
     "subtitle": "Endorphin AI ile yapay zeka destekli testlerde ustalaşmak için ihtiyacınız olan her şey. Hızlı başlangıçtan gelişmiş tekniklere.",
-    "versionBadge": "v0.9.0 Dokümantasyonu",
     "startQuickGuide": "Hızlı Kılavuz ile Başla",
     "browseAllDocs": "Tüm Dokümanlara Göz At",
     "readGuide": "Kılavuzu Oku",
     "badges": {
       "5min": "5 dk",
       "essential": "Temel",
-      "v090": "v0.9.0",
       "examples": "Örnekler",
       "advanced": "Gelişmiş",
       "proTips": "Pro İpuçları",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Endorphin AI ile 5 dakikada çalışmaya başlayın",
       "projectSetup": "Proje Kurulumu",
       "projectSetupDesc": "Tam proje kurulumu ve yapılandırma kılavuzu",
-      "testStructure": "Test Yapısı",
-      "testStructureDesc": "v0.9 setup/data/task fonksiyonları ile akıllı test yapısı"
+      "testStructure": "Test Yapısı"
     },
     "advanced": {
       "title": "Gelişmiş Konular",
@@ -72,8 +69,6 @@
         "button": "Şimdi Başla →"
       },
       "testStructure": {
-        "title": "v0.9.0 Test Yapısı",
-        "description": "Async setup(), data() ve task() fonksiyonları ile yeni akıllı test yapısını öğrenin.",
         "button": "Daha Fazla Bilgi →"
       }
     }

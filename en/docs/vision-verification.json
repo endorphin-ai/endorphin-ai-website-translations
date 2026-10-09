@@ -1,0 +1,291 @@
+{
+    "visionVerificationPage": {
+        "navigation": {
+            "backToDocumentation": "Back to Documentation"
+        },
+        "header": {
+            "badge": "Vision",
+            "title": "Vision Verification",
+            "description": "AI-powered screenshot verification that confirms test results visually."
+        },
+        "whatIs": {
+            "title": "What is Vision Verification?",
+            "description": "Vision verification adds a second layer of confidence to your test assertions. When it is enabled, after a standard DOM-based verification passes, the system:",
+            "steps": [
+                "Takes a screenshot of the page",
+                "Highlights the verified element with a red bounding box",
+                "Sends the screenshot to an AI vision model",
+                "Asks: \"Is this element actually visible on the page?\""
+            ],
+            "catches": "This catches cases where an element exists in the DOM but is not truly visible to a user: hidden behind overlays, clipped by overflow, rendered off-screen, or styled with zero opacity."
+        },
+        "quickSetup": {
+            "title": "Quick Setup",
+            "description": "Add the vision block to your endorphin.config.ts:",
+            "result": "That is all. Vision verification now runs automatically after every verification tool call."
+        },
+        "modes": {
+            "title": "Vision Modes",
+            "exampleOutput": "Example output",
+            "supplement": {
+                "title": "Supplement mode",
+                "default": "Default",
+                "description": "The DOM verification result is the primary source of truth. The vision result is added as an informational note. Use this mode when you trust DOM verification but want extra confidence."
+            },
+            "primary": {
+                "title": "Primary mode",
+                "description": "The vision result overrides the DOM verification result. Use this mode when DOM verification is unreliable, for example when elements are visually hidden but still present in the DOM."
+            },
+            "choosing": {
+                "title": "When to choose each mode",
+                "columns": {
+                    "scenario": "Scenario",
+                    "mode": "Recommended mode"
+                },
+                "scenarios": {
+                    "standard": "Standard web app testing",
+                    "visualChanges": "Testing visual UI changes (styling, layout)",
+                    "hiddenByCss": "Elements hidden by CSS (opacity, visibility, z-index)",
+                    "extraConfidence": "Extra confidence for critical assertions",
+                    "falsePositives": "Debugging false positives from DOM checks"
+                }
+            }
+        },
+        "tools": {
+            "title": "Which Tools Support Vision?",
+            "description": "Vision verification runs automatically on all verification tools:",
+            "columns": {
+                "tool": "Tool",
+                "verifies": "What it verifies"
+            },
+            "items": {
+                "verifyElement": "Element visibility and state (exists, visible, enabled, and so on)",
+                "verifyTextContent": "Specific text content appears on the page",
+                "verifyTitle": "Page title matches the expected value",
+                "verifyListVisible": "Multiple items are visible on the page"
+            },
+            "note": "You do not need to change your test instructions. If vision is enabled in your config, it activates automatically whenever the AI agent calls a verification tool."
+        },
+        "autoHighlight": {
+            "title": "Auto-Highlight Bounding Boxes",
+            "description": "When vision is enabled, a 1px red bounding box is drawn automatically around the verified element before the screenshot is taken. This helps the vision model locate and focus on the correct element.",
+            "howItWorks": {
+                "title": "How it works",
+                "cssSelectors": {
+                    "title": "CSS selectors",
+                    "description": "From verifyElement. The framework calls highlightElement(), which uses getBoundingClientRect() to position a red border around the matched element."
+                },
+                "textContent": {
+                    "title": "Text content",
+                    "description": "From verifyTextContent and verifyListVisible. The framework calls highlightText(), which uses a TreeWalker to find matching text nodes and draws a bounding box around them."
+                },
+                "cleanup": {
+                    "title": "Cleanup",
+                    "description": "Highlights are removed automatically after the screenshot is captured. They never appear in later screenshots or affect your page layout."
+                }
+            },
+            "example": {
+                "title": "Example",
+                "description": "When verifying a \"Submit\" button, the screenshot sent to the vision model looks like this:",
+                "note": "The red bounding box tells the vision model exactly which element to evaluate."
+            }
+        },
+        "providers": {
+            "title": "Provider Support",
+            "description": "Vision works with any AI provider that supports image analysis.",
+            "supportedModels": {
+                "title": "Supported models",
+                "columns": {
+                    "provider": "Provider",
+                    "models": "Models",
+                    "notes": "Notes"
+                },
+                "openai": {
+                    "name": "OpenAI",
+                    "notes": "Recommended for vision tasks"
+                },
+                "gemini": {
+                    "name": "Google Gemini",
+                    "notes": "Good balance of speed and accuracy"
+                }
+            },
+            "mixed": {
+                "title": "Mixed provider setup",
+                "description": "You can use a different model for vision than for your main test agent. This is useful when one provider is better at image analysis while another is more cost-effective for test execution:",
+                "envNote": "Make sure the right API key is set in your .env file for each provider you use:"
+            }
+        },
+        "configReference": {
+            "title": "VisionConfig Reference",
+            "columns": {
+                "option": "Option",
+                "type": "Type",
+                "default": "Default",
+                "description": "Description"
+            },
+            "options": {
+                "enabled": "Enable or disable vision verification",
+                "model": "AI model used for vision analysis",
+                "temperature": "Model temperature (lower is more deterministic)",
+                "maxTokens": "Maximum response tokens from the vision model",
+                "mode": "How the vision result is used relative to DOM verification"
+            },
+            "minimal": {
+                "title": "Minimal config",
+                "description": "The simplest configuration that enables vision with all defaults:",
+                "note": "This uses gpt-4o for vision, supplement mode, temperature 0.1, and up to 1000 tokens per response."
+            }
+        },
+        "whenToUse": {
+            "title": "When to Use Vision Verification",
+            "good": {
+                "title": "Good use cases",
+                "items": {
+                    "visualUi": {
+                        "title": "Visual UI testing",
+                        "description": "Confirming styling, layout, or visibility changes that DOM checks alone cannot catch."
+                    },
+                    "hiddenElements": {
+                        "title": "Hidden element detection",
+                        "description": "Catching elements that exist in the DOM but are covered by overlays, modals, or z-index stacking."
+                    },
+                    "critical": {
+                        "title": "Critical assertions",
+                        "description": "Adding a second verification layer for high-priority test steps where false positives are unacceptable."
+                    },
+                    "mysteriousPasses": {
+                        "title": "Debugging mysterious passes",
+                        "description": "When a test passes but the page looks wrong, vision verification can expose the discrepancy."
+                    }
+                }
+            },
+            "skip": {
+                "title": "When you might skip it",
+                "items": {
+                    "functional": {
+                        "title": "Simple functional tests",
+                        "description": "If you only check that a page navigates correctly or an API responds, vision adds overhead without much benefit."
+                    },
+                    "highVolume": {
+                        "title": "High-volume test suites",
+                        "description": "Running vision on hundreds of assertions adds cost and time. Consider enabling it selectively for critical flows."
+                    },
+                    "nonVisual": {
+                        "title": "Non-visual checks",
+                        "description": "Verifying page titles, URLs, or hidden form values does not benefit from screenshot analysis."
+                    }
+                }
+            }
+        },
+        "cost": {
+            "title": "Cost Considerations",
+            "description": "Each vision verification check incurs additional AI costs:",
+            "columns": {
+                "component": "Cost component",
+                "tokens": "Approximate tokens"
+            },
+            "rows": {
+                "screenshot": {
+                    "component": "Screenshot encoding (image input)",
+                    "tokens": "300-1000 tokens"
+                },
+                "response": {
+                    "component": "Vision model response",
+                    "tokens": "100-500 tokens"
+                },
+                "total": {
+                    "component": "Total per check",
+                    "tokens": "~500-1500 tokens"
+                }
+            },
+            "tips": {
+                "title": "Tips to manage costs",
+                "supplement": {
+                    "title": "Use supplement mode for non-critical tests",
+                    "description": "It adds confidence without changing test outcomes."
+                },
+                "selective": {
+                    "title": "Enable vision selectively",
+                    "description": "You do not need it on every test. Focus on critical user flows."
+                },
+                "cheaperModel": {
+                    "title": "Use a cheaper vision model",
+                    "description": "gpt-4o-mini and gemini-2.0-flash cost less per token while still providing reliable image analysis."
+                },
+                "monitor": {
+                    "title": "Monitor costs in reports",
+                    "description": "The HTML reporter shows token usage per step, including vision checks.",
+                    "link": "See the HTML Reporter guide"
+                }
+            }
+        },
+        "troubleshooting": {
+            "title": "Troubleshooting",
+            "description": "Common problems and how to solve them",
+            "problem": "Problem:",
+            "solution": "Solution:",
+            "notRunning": {
+                "title": "Vision verification not running",
+                "problem": "You enabled vision but the verification results do not include vision notes.",
+                "solution": "Check your configuration:"
+            },
+            "authentication": {
+                "title": "\"OPENAI_API_KEY required\" or authentication errors",
+                "problem": "The vision model cannot authenticate with the AI provider.",
+                "solution": "The vision model defaults to gpt-4o, which requires an OpenAI API key. Make sure the correct key is set:"
+            },
+            "boundingBox": {
+                "title": "Bounding box not visible in the screenshot",
+                "problem": "The red highlight does not appear around the element.",
+                "causesTitle": "Possible causes:",
+                "causes": [
+                    "The element is off-screen (scrolled out of view). The framework scrolls to the element before highlighting, but edge cases can occur with sticky headers or complex layouts.",
+                    "The element has zero width or height. Elements with display: none or zero dimensions cannot be highlighted.",
+                    "The element is inside an iframe. Cross-origin iframes may block highlight injection."
+                ]
+            },
+            "visionDisagrees": {
+                "title": "Vision says the element is not visible but the DOM says it is",
+                "description": "This is exactly the scenario vision verification is designed for. The element exists in the DOM but is not actually visible to a user. Common causes:",
+                "causes": [
+                    "The element is behind a modal or overlay (z-index stacking)",
+                    "The element is clipped by overflow: hidden on a parent",
+                    "The element has opacity: 0 or visibility: hidden",
+                    "The element is positioned off-screen with negative margins"
+                ],
+                "advice": "If this is expected behavior, switch to supplement mode so the DOM result takes precedence. If you want to catch these issues, use primary mode."
+            }
+        },
+        "fullExample": {
+            "title": "Example: Full Test with Vision",
+            "description": "A complete test that benefits from vision verification:",
+            "stepsIntro": "With vision enabled in endorphin.config.ts, each Verify step will:",
+            "steps": [
+                "Run the standard DOM-based check",
+                "Take a screenshot with the element highlighted",
+                "Send the screenshot to the vision model for confirmation",
+                "Include the vision result in the test report"
+            ]
+        },
+        "nextSteps": {
+            "title": "Next Steps",
+            "closing": "Vision verification adds a human-like \"eyes on the page\" check to your automated tests. Start with supplement mode on your most important test flows, and expand from there.",
+            "environmentSetup": {
+                "title": "Environment Setup",
+                "description": "Set up API keys for vision providers"
+            },
+            "htmlReporter": {
+                "title": "HTML Reporter",
+                "description": "View vision results in test reports"
+            },
+            "testWritingTips": {
+                "title": "Test Writing Tips",
+                "description": "Write better verification instructions"
+            },
+            "projectSetup": {
+                "title": "Project Setup",
+                "description": "Full configuration reference"
+            }
+        }
+    }
+}

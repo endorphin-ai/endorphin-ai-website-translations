@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "Essentiel",
-      "title": "Projektopsætningsguide",
-      "subtitle": "Komplet projektopsætning og konfigurationsguide til professionelle test workflows"
+      "title": "Projektopsætningsguide"
     },
     "installation": {
-      "title": "Installation",
-      "description": "Kom i gang med Endorphin AI ved at bruge en af disse metoder:",
-      "option1": "Mulighed 1: Hurtig Opsætning",
-      "option2": "Mulighed 2: Manuel Installation"
+      "title": "Installation"
     },
     "projectSetup": {
       "title": "Projektopsætning",
-      "description": "Initialiser dit projekt med den rette struktur og konfigurationsfiler.",
       "quickSetup": "Hurtig Opsætning med Init",
       "thisCreates": "Dette opretter:",
       "configFile": "Konfigurationsfil",
-      "testsFolder": "Dine testfiler",
       "envTemplate": "Miljøvariabel skabelon",
       "exampleTest": "Eksempel testfil",
       "manualSetup": "Manuel Opsætning",
-      "manualDescription": "For mere kontrol over din opsætning:",
-      "step1": "1. Opret endorphin.config.ts:",
       "step2": "2. Opret .env fil:",
       "step3": "3. Opret tests mappe:"
     },
     "openaiSetup": {
       "title": "OpenAI Opsætning",
-      "description": "Konfigurer din OpenAI API-nøgle til AI-drevet testning:",
       "step1": "1. Få din API-nøgle fra",
       "step2": "2. Tilføj til din .env-fil:"
     },
-    "firstTest": {
-      "title": "Opret Din Første Test",
-      "description": "Opret en testfil for at verificere, at din opsætning fungerer korrekt.",
-      "createFile": "Opret en fil kaldet google-test.js i din tests mappe:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Kørsel af Tests",
       "listTests": "List alle tests:",
       "runSpecific": "Kør specifik test:",
       "runAll": "Kør alle tests:"
@@ -51,10 +37,7 @@
       "generateReport": "Generer rapport:",
       "openBrowser": "Åbn i browser:"
     },
-    "success": {
-      "title": "Opsætning Fuldført!",
-      "description": "Dit projekt er nu konfigureret og klar til AI-drevet testning. Du kan begynde at skrive tests ved hjælp af naturlige sprogbeskrivelser."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Næste: Teststruktur →",
       "backButton": "Tilbage til Dokumentation"

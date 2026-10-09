@@ -4,120 +4,41 @@
       "backToDocumentation": "ドキュメントに戻る"
     },
     "header": {
-      "badge": "上級",
-      "title": "AIプロンプトガイド",
-      "subtitle": "最大のテスト効果のための高度なAIプロンプト技術と最適化"
+      "badge": "上級"
     },
     "introduction": {
-      "title": "AIプロンプトをマスターする",
-      "description": "AI駆動テストから最良の結果を得る効果的なプロンプトの書き方を学びます。",
-      "importance": "プロンプト最適化が重要な理由：",
-      "importanceList": {
-        "accuracy": "✅ より高いテスト精度と信頼性",
-        "efficiency": "✅ トークン使用量とコストの削減",
-        "maintenance": "✅ より保守性とデバッグ可能なテスト",
-        "robustness": "✅ エッジケースのより良い処理",
-        "speed": "✅ より高速なテスト実行"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "プロンプトの核心原則",
-      "description": "効果的なAIコミュニケーションのためにこれらの原則に従ってください：",
       "principles": {
-        "clarity": {
-          "title": "1. 明確で具体的に",
-          "description": "正確な言語を使用し、曖昧さを避ける",
-          "example": "良い例：'フッターにある青い送信ボタンをクリック'\n悪い例：'ボタンをクリック'"
-        },
-        "context": {
-          "title": "2. コンテキストを提供",
-          "description": "AIがシナリオを理解するのに十分なコンテキストを与える",
-          "example": "良い例：'ログイン後、ユーザープロフィール設定に移動'\n悪い例：'設定に移動'"
-        },
-        "structure": {
-          "title": "3. 論理的構造を使用",
-          "description": "ステップを論理的で順次的な順序で整理",
-          "example": "良い例：明確なフローでのステップバイステップ指示\n悪い例：無関係なアクション間のジャンプ"
-        },
-        "validation": {
-          "title": "4. バリデーションを含める",
-          "description": "何を検証すべきかを常に指定",
-          "example": "良い例：'成功メッセージが表示されることを確認'\n悪い例：'フォームを送信'（バリデーションなし）"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "高度な技術",
-      "description": "複雑なシナリオのための洗練されたプロンプト戦略：",
       "techniques": {
-        "conditionalLogic": {
-          "title": "条件ロジック",
-          "description": "ページ状態やデータに基づく異なるシナリオの処理",
-          "example": "ユーザーが既にログインしている場合、ログインをスキップしてダッシュボードに移動"
-        },
-        "errorHandling": {
-          "title": "エラーハンドリング",
-          "description": "潜在的なエラーを予期し、エレガントに処理",
-          "example": "ログインが失敗した場合、エラーメッセージをキャプチャし、異なる認証情報で再試行"
-        },
-        "dynamicContent": {
-          "title": "動的コンテンツ",
-          "description": "データや状態に基づいて変化するコンテンツでの作業",
-          "example": "検索結果から最初の利用可能な製品を選択"
-        },
-        "multiStepFlows": {
-          "title": "マルチステップフロー",
-          "description": "複雑なワークフローを管理可能なステップに分解",
-          "example": "完全なチェックアウトプロセス：カート → 配送 → 支払い → 確認"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "プロンプト最適化",
-      "description": "パフォーマンス向上とコスト削減のための戦略：",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "トークン効率",
-          "description": "最小限のトークンで最大の結果を達成する簡潔なプロンプトを書く",
-          "tips": "• アクション動詞を使用 • 冗長な説明を避ける • 要点に焦点を当てる"
-        },
-        "reusability": {
-          "title": "再利用可能なパターン",
-          "description": "一般的なシナリオ用のプロンプトテンプレートを作成",
-          "tips": "• 標準ログインフロー • フォームバリデーションパターン • ナビゲーションシーケンス"
-        },
-        "testing": {
-          "title": "プロンプトテスト",
-          "description": "Test Recorderを使用してプロンプトをテストし改良",
-          "tips": "• 実験にTest Recorderを使用 • 異なるアプローチでA/Bテスト • 成功率を監視"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "実世界の例",
-      "description": "効果的なプロンプトパターンを示す実践的な例：",
-      "ecommerce": {
-        "title": "Eコマースチェックアウト",
-        "description": "カート、配送、支払いを含む完全な購入フロー"
-      },
-      "dashboard": {
-        "title": "ダッシュボードインタラクション",
-        "description": "複雑なダッシュボードナビゲーションとデータ操作"
-      },
-      "forms": {
-        "title": "複雑なフォーム処理",
-        "description": "バリデーションと条件フィールドを持つマルチステップフォーム"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "一般的な問題と解決策",
-      "description": "一般的なプロンプトの課題のトラブルシューティング：",
-      "issues": {
-        "elementNotFound": "• 要素が見つからない → 技術的セレクターの代わりにセマンティックな説明を使用",
-        "ambiguousInstructions": "• 曖昧な指示 → より多くのコンテキストと具体的な詳細を追加",
-        "timingIssues": "• タイミングの問題 → 明示的な待機条件を追加",
-        "validationFailures": "• バリデーション失敗 → 期待される結果についてより具体的に"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "次：VS Codeデバッグ →",

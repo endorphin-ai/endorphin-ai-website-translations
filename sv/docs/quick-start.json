@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minuter",
     "title": "Snabbstartsguide",
-    "subtitle": "Kom igång med Endorphin AI på under 5 minuter",
     "step1": {
-      "title": "Installation",
-      "description": "Installera Endorphin AI via npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript-definitioner inkluderade • ✅ Noll konfiguration krävs"
+      "title": "Installation"
     },
     "step2": {
-      "title": "🔑 OpenAI-inställning",
-      "description": "Konfigurera din OpenAI API-nyckel:",
-      "getApiKey": "1. Hämta din API-nyckel från OpenAI",
-      "visitPlatform": "Besök platform.openai.com/api-keys för att skapa din API-nyckel",
-      "addToEnv": "2. Lägg till i .env-filen:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Håll din API-nyckel säker • ✅ Commita aldrig .env-filer till versionskontroll",
-      "substep1": "1. Hämta din API-nyckel från OpenAI",
       "visitLink": "Besök",
-      "createKey": "för att skapa din API-nyckel",
-      "substep2": "2. Lägg till i .env-filen:"
+      "createKey": "för att skapa din API-nyckel"
     },
     "step3": {
-      "title": "Skapa Ditt Första Test",
-      "description": "Skapa en enkel testfil med v0.9.0 smart struktur:",
-      "codeComment": "// my-first-test.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Användarinloggningstest',\n  description: 'Testa användarautentiseringsflöde',\n  tags: ['autentisering'],\n  priority: 'Hög',\n  \n  setup: async () => ({\n    baseUrl: 'https://example.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@example.com',\n    password: 'password123'\n  }),\n  \n  task: async (data, setup) => `\n    Navigera till ${setup.baseUrl}/login\n    Fyll e-postfältet med \"${data.email}\"\n    Fyll lösenordsfältet med \"${data.password}\"\n    Klicka på \"Logga in\"-knappen\n    Verifiera att instrumentpanelen är synlig\n  `\n};"
+      "title": "Skapa Ditt Första Test"
     },
     "step4": {
-      "title": "Kör Ditt Test",
-      "description": "Utför ditt test med ett enda kommando:",
-      "command": "npx endorphin-ai run my-first-test.js",
-      "aiAnalysis": "AI kommer att analysera dina instruktioner och utföra testet automatiskt"
+      "title": "Kör Ditt Test"
     },
     "step5": {
       "title": "Visa Resultat",
-      "description": "Kontrollera din vackra HTML-rapport med kostnadsspårning:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Testutförande detaljer",
-        "aiDecisions": "AI-besluthistorik",
-        "costBreakdown": "Kostnadsuppdelning",
-        "screenshots": "Skärmdumpsgalleri"
-      },
-      "feature1": "Testutförande detaljer",
-      "feature2": "AI-besluthistorik",
-      "feature3": "Kostnadsuppdelning",
-      "feature4": "Skärmdumpsgalleri"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Grattis!",
-      "subtitle": "Du har framgångsrikt kört ditt första AI-drivna test. Redo för mer?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Fullständig Inställning",
-        "description": "Lär dig avancerad konfiguration och projektinställning",
-        "button": "Läs Guide"
-      },
-      "structure": {
-        "title": "Teststruktur",
-        "description": "Bemästra v0.9.0 smart teststruktur",
-        "button": "Läs Mer"
-      },
-      "examples": {
-        "title": "Exempel",
-        "description": "Bläddra i verkliga testexempel",
-        "button": "Visa Exempel"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Utforska All Dokumentation"
   }

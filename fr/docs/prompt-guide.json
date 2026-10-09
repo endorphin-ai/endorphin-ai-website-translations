@@ -4,120 +4,41 @@
       "backToDocumentation": "Retour à la Documentation"
     },
     "header": {
-      "badge": "Avancé",
-      "title": "Guide des Prompts IA",
-      "subtitle": "Techniques avancées de prompts IA et optimisation pour une efficacité de test maximale"
+      "badge": "Avancé"
     },
     "introduction": {
-      "title": "Maîtriser les Prompts IA",
-      "description": "Apprenez à écrire des prompts efficaces qui obtiennent les meilleurs résultats des tests alimentés par l'IA.",
-      "importance": "Pourquoi l'optimisation des prompts importe :",
-      "importanceList": {
-        "accuracy": "✅ Précision et fiabilité des tests plus élevées",
-        "efficiency": "✅ Utilisation réduite des tokens et coûts",
-        "maintenance": "✅ Tests plus maintenables et déboguables",
-        "robustness": "✅ Meilleure gestion des cas limites",
-        "speed": "✅ Exécution de tests plus rapide"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "Principes Fondamentaux des Prompts",
-      "description": "Suivez ces principes pour une communication IA efficace :",
       "principles": {
-        "clarity": {
-          "title": "1. Soyez Clair et Spécifique",
-          "description": "Utilisez un langage précis et évitez l'ambiguïté",
-          "example": "Bon : 'Cliquez sur le bouton bleu Soumettre dans le pied de page'\nMauvais : 'Cliquez sur le bouton'"
-        },
-        "context": {
-          "title": "2. Fournissez du Contexte",
-          "description": "Donnez à l'IA suffisamment de contexte pour comprendre le scénario",
-          "example": "Bon : 'Après vous être connecté, naviguez vers les paramètres du profil utilisateur'\nMauvais : 'Allez aux paramètres'"
-        },
-        "structure": {
-          "title": "3. Utilisez une Structure Logique",
-          "description": "Organisez les étapes dans un ordre logique et séquentiel",
-          "example": "Bon : Instructions étape par étape avec un flux clair\nMauvais : Sauter entre des actions non liées"
-        },
-        "validation": {
-          "title": "4. Incluez la Validation",
-          "description": "Spécifiez toujours ce qui doit être vérifié",
-          "example": "Bon : 'Vérifiez que le message de succès apparaît'\nMauvais : 'Soumettez le formulaire' (sans validation)"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "Techniques Avancées",
-      "description": "Stratégies de prompts sophistiquées pour des scénarios complexes :",
       "techniques": {
-        "conditionalLogic": {
-          "title": "Logique Conditionnelle",
-          "description": "Gérez différents scénarios basés sur l'état de la page ou les données",
-          "example": "Si l'utilisateur est déjà connecté, ignorez la connexion et allez au tableau de bord"
-        },
-        "errorHandling": {
-          "title": "Gestion d'Erreurs",
-          "description": "Anticipez et gérez les erreurs potentielles élégamment",
-          "example": "Si la connexion échoue, capturez le message d'erreur et réessayez avec des identifiants différents"
-        },
-        "dynamicContent": {
-          "title": "Contenu Dynamique",
-          "description": "Travaillez avec du contenu qui change basé sur les données ou l'état",
-          "example": "Sélectionnez le premier produit disponible dans les résultats de recherche"
-        },
-        "multiStepFlows": {
-          "title": "Flux Multi-Étapes",
-          "description": "Divisez les workflows complexes en étapes gérables",
-          "example": "Processus de commande complet : panier → expédition → paiement → confirmation"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "Optimisation des Prompts",
-      "description": "Stratégies pour améliorer les performances et réduire les coûts :",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "Efficacité des Tokens",
-          "description": "Écrivez des prompts concis qui obtiennent des résultats maximaux avec des tokens minimaux",
-          "tips": "• Utilisez des verbes d'action • Évitez les descriptions redondantes • Concentrez-vous sur l'essentiel"
-        },
-        "reusability": {
-          "title": "Modèles Réutilisables",
-          "description": "Créez des modèles de prompts pour des scénarios courants",
-          "tips": "• Flux de connexion standard • Modèles de validation de formulaire • Séquences de navigation"
-        },
-        "testing": {
-          "title": "Test de Prompts",
-          "description": "Testez et affinez les prompts en utilisant le Test Recorder",
-          "tips": "• Utilisez Test Recorder pour l'expérimentation • Test A/B différentes approches • Surveillez les taux de succès"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "Exemples du Monde Réel",
-      "description": "Exemples pratiques montrant des modèles de prompts efficaces :",
-      "ecommerce": {
-        "title": "Commande E-commerce",
-        "description": "Flux d'achat complet avec panier, expédition et paiement"
-      },
-      "dashboard": {
-        "title": "Interaction Tableau de Bord",
-        "description": "Navigation complexe de tableau de bord et manipulation de données"
-      },
-      "forms": {
-        "title": "Gestion de Formulaires Complexes",
-        "description": "Formulaires multi-étapes avec validation et champs conditionnels"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "Problèmes Courants et Solutions",
-      "description": "Dépannage des défis courants de prompts :",
-      "issues": {
-        "elementNotFound": "• Élément non trouvé → Utilisez des descriptions sémantiques au lieu de sélecteurs techniques",
-        "ambiguousInstructions": "• Instructions ambiguës → Ajoutez plus de contexte et de détails spécifiques",
-        "timingIssues": "• Problèmes de timing → Ajoutez des conditions d'attente explicites",
-        "validationFailures": "• Échecs de validation → Soyez plus spécifique sur les résultats attendus"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "Suivant: Débogage VS Code →",

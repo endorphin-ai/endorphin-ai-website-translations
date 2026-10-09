@@ -19,16 +19,13 @@
       "description": "Kuvaile käyttäjän toimintoja selkeällä suomella"
     },
     "selfHealing": {
-      "title": "🔁 Itseparantuvat Testit",
-      "description": "Mukautuu automaattisesti käyttöliittymän muutoksiin"
+      "title": "🔁 Itseparantuvat Testit"
     },
     "smartValidation": {
-      "title": "🕵️ Älykäs Vahvistusagentti",
-      "description": "Havaitsee visuaaliset ja loogiset virheet"
+      "title": "🕵️ Älykäs Vahvistusagentti"
     },
     "costTracking": {
-      "title": "💰 Kustannus- ja Token-seuranta",
-      "description": "Seuraa AI:n käyttökustannuksia ja tokenien kulutusta"
+      "title": "💰 Kustannus- ja Token-seuranta"
     },
     "ciIntegration": {
       "title": "🚀 CI-integraatio",
@@ -59,12 +56,10 @@
       "description": "Näe tarkalleen, miten AI analysoi, päättelee ja suorittaa testiohjeitasi"
     },
     "builtInTools": {
-      "title": "🔧 Sisäänrakennettu työkalujärjestelmä",
-      "description": "12 kattavaa selainautomatisointityökalua mukana - et tarvitse mukautettuja työkaluja"
+      "title": "🔧 Sisäänrakennettu työkalujärjestelmä"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Testin tallentaja",
-      "description": "Interaktiivinen testin tallentaja reaaliaikaista prompt-testausta varten - kokeile ja vahvista testi-ideasi välittömästi"
+      "title": "🎬 Testin tallentaja"
     },
     "enhancedReports": {
       "title": "📊 Parannetut HTML-raportit",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Pikaloitus",
     "step1": "Asenna kehys",
-    "step2": "Määritä OpenAI API-avaimesi",
     "step3": "Kirjoita ensimmäinen testisi",
     "step4": "Suorita ja katso taikaa!",
     "startNow": "Aloita nyt →"

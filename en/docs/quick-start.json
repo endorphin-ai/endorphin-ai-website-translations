@@ -2,72 +2,95 @@
   "quickStartPage": {
     "badge": "5 Minutes",
     "title": "Quick Start Guide",
-    "subtitle": "Get up and running with Endorphin AI in under 5 minutes",
+    "subtitle": "Get up and running with Endorphin AI in minutes",
+    "whatIs": "Endorphin AI is a browser testing tool that understands plain English. Tell it what to test, and it handles the rest.",
     "step1": {
       "title": "Installation",
-      "description": "Install Endorphin AI via npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript definitions included • ✅ Zero configuration required"
+      "description": "Install Endorphin AI with npm:"
     },
     "step2": {
-      "title": "🔑 OpenAI Setup",
-      "description": "Configure your OpenAI API key:",
-      "getApiKey": "1. Get your API key from OpenAI",
-      "visitPlatform": "Visit platform.openai.com/api-keys to create your API key",
-      "addToEnv": "2. Add to .env file:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Keep your API key secure • ✅ Never commit .env files to version control",
-      "substep1": "1. Get your API key from OpenAI",
+      "title": "🔑 Setup",
+      "description": "Add your OpenAI key, then initialize the project:",
+      "substep1": "1. Create a .env file with your OpenAI key:",
       "visitLink": "Visit",
       "createKey": "to create your API key",
-      "substep2": "2. Add to .env file:"
+      "substep2": "2. Initialize your project:"
     },
     "step3": {
       "title": "Create Your First Test",
-      "description": "Create a simple test file using the v0.9.0 smart structure:",
-      "codeComment": "// my-first-test.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'User Login Test',\n  description: 'Test user authentication flow',\n  tags: ['authentication'],\n  priority: 'High',\n  \n  setup: async () => ({\n    baseUrl: 'https://example.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@example.com',\n    password: 'password123'\n  }),\n  \n  task: async (data, setup) => `\n    Navigate to ${setup.baseUrl}/login\n    Fill email field with \"${data.email}\"\n    Fill password field with \"${data.password}\"\n    Click \"Login\" button\n    Verify dashboard is visible\n  `\n};"
+      "description": "Create a test file"
     },
     "step4": {
       "title": "Run Your Test",
-      "description": "Execute your test with a single command:",
-      "command": "npx endorphin-ai run my-first-test.js",
-      "aiAnalysis": "AI will analyze your instructions and execute the test automatically"
+      "description": "Run the test by its ID:"
     },
     "step5": {
       "title": "View Results",
-      "description": "Check your beautiful HTML report with cost tracking:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Test execution details",
-        "aiDecisions": "AI decision history",
-        "costBreakdown": "Cost breakdown",
-        "screenshots": "Screenshots gallery"
+      "description": "After running tests, generate a report and open it in the browser:",
+      "featuresTitle": "Report features:",
+      "feature1": "Click screenshots to zoom",
+      "feature2": "Search tests by name",
+      "feature3": "Filter by passed/failed",
+      "feature4": "Keyboard shortcuts (Ctrl+F to search)"
+    },
+    "smartTests": {
+      "title": "Smart Tests with Data",
+      "description": "Tests can prepare data and set up environments automatically:"
+    },
+    "tools": {
+      "title": "Built-in Tools",
+      "description": "Endorphin AI includes 26 tools that understand natural language. Some of them:",
+      "list": {
+        "navigate": "Go to websites",
+        "click": "Click buttons and links",
+        "fill": "Type in forms",
+        "verifyElement": "Check if things exist",
+        "screenshot": "Take pictures",
+        "wait": "Pause between actions"
       },
-      "feature1": "Test execution details",
-      "feature2": "AI decision history",
-      "feature3": "Cost breakdown",
-      "feature4": "Screenshots gallery"
+      "seeAll": "See all tools:"
+    },
+    "tips": {
+      "title": "Tips",
+      "simpleFormat": "Simple test format",
+      "stepFormat": "Step-by-step format",
+      "dynamicData": "Dynamic data"
+    },
+    "commands": {
+      "title": "Quick Commands"
+    },
+    "help": {
+      "title": "Need Help?",
+      "results": "Check test results in the folder",
+      "reports": "Reports are in",
+      "screenshots": "Screenshots help debug failures",
+      "verbosePrefix": "Use",
+      "verboseSuffix": "for detailed output"
     },
     "congratulations": {
-      "title": "🎉 Congratulations!",
-      "subtitle": "You've successfully run your first AI-powered test. Ready for more?"
+      "title": "🎉 That's it!",
+      "subtitle": "You're ready to test with AI. Here is where to go next."
     },
     "nextSteps": {
-      "setup": {
-        "title": "Complete Setup",
-        "description": "Learn advanced configuration and project setup",
-        "button": "Read Guide"
-      },
       "structure": {
-        "title": "Test Structure",
-        "description": "Master the v0.9.0 smart test structure",
-        "button": "Learn More"
+        "title": "Write Your Own Tests",
+        "description": "Learn how a test is structured",
+        "button": "Test Structure"
+      },
+      "setup": {
+        "title": "Configure Your Project",
+        "description": "Project setup and configuration options",
+        "button": "Project Setup"
+      },
+      "reports": {
+        "title": "Explore HTML Reports",
+        "description": "See what the interactive report shows",
+        "button": "HTML Reporter"
       },
       "examples": {
-        "title": "Examples",
-        "description": "Browse real-world testing examples",
-        "button": "View Examples"
+        "title": "Advanced Testing Tips",
+        "description": "Tips for writing better tests",
+        "button": "Test Writing Tips"
       }
     },
     "exploreAll": "Explore All Documentation"

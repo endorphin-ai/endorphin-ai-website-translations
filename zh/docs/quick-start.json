@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5分钟",
     "title": "快速入门指南",
-    "subtitle": "在不到5分钟内启动Endorphin AI",
     "step1": {
-      "title": "安装",
-      "description": "通过npm安装Endorphin AI：",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ 包含TypeScript定义 • ✅ 无需配置"
+      "title": "安装"
     },
     "step2": {
-      "title": "🔑 OpenAI设置",
-      "description": "配置您的OpenAI API密钥：",
-      "getApiKey": "1. 获取您的OpenAI API密钥",
-      "visitPlatform": "访问platform.openai.com/api-keys创建您的API密钥",
-      "addToEnv": "2. 添加到.env文件：",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ 保持您的API密钥安全 • ✅ 不要将.env文件提交到版本控制",
-      "substep1": "1. 获取您的OpenAI API密钥",
       "visitLink": "访问",
-      "createKey": "创建您的API密钥",
-      "substep2": "2. 添加到.env文件："
+      "createKey": "创建您的API密钥"
     },
     "step3": {
-      "title": "创建您的第一个测试",
-      "description": "使用v0.9.0智能结构创建简单的测试文件：",
-      "codeComment": "// 我的第一个测试.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: '登录测试',\n  description: '测试用户认证流程',\n  tags: ['认证'],\n  priority: '高',\n  \n  setup: async () => ({\n    baseUrl: 'https://example.com'\n  }),\n  \n  data: async () => ({\n    email: 'test@example.com',\n    password: 'password123'\n  }),\n  \n  task: async (data, setup) => `\n    导航到 ${setup.baseUrl}/login\n    填写邮箱字段为 \"${data.email}\"\n    填写密码字段为 \"${data.password}\"\n    点击\"登录\"按钮\n    验证仪表板可见\n  `\n};"
+      "title": "创建您的第一个测试"
     },
     "step4": {
-      "title": "运行您的测试",
-      "description": "用一个命令运行您的测试：",
-      "command": "npx endorphin-ai run 我的第一个测试.js",
-      "aiAnalysis": "AI将分析您的指令并自动执行测试"
+      "title": "运行您的测试"
     },
     "step5": {
       "title": "查看结果",
-      "description": "检查您带有成本跟踪的精美HTML报告：",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "测试执行详情",
-        "aiDecisions": "AI决策历史",
-        "costBreakdown": "成本明细",
-        "screenshots": "截图画廊"
-      },
-      "feature1": "测试执行详情",
-      "feature2": "AI决策历史",
-      "feature3": "成本明细",
-      "feature4": "截图画廊"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 恭喜！",
-      "subtitle": "您已成功运行了第一个AI驱动的测试。准备好继续了吗？"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "完整设置",
-        "description": "学习高级设置和项目配置",
-        "button": "阅读指南"
-      },
-      "structure": {
-        "title": "测试结构",
-        "description": "掌握v0.9.0智能测试结构",
-        "button": "了解更多"
-      },
-      "examples": {
-        "title": "示例",
-        "description": "探索真实世界的测试示例",
-        "button": "查看示例"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "探索全部文档"
   }

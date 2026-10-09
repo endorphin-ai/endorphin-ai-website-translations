@@ -19,16 +19,13 @@
       "description": "한국어로 사용자 행동을 설명"
     },
     "selfHealing": {
-      "title": "🔁 자가 치유 테스트",
-      "description": "UI 변경에 자동으로 적응"
+      "title": "🔁 자가 치유 테스트"
     },
     "smartValidation": {
-      "title": "🕵️ 지능형 검증 에이전트",
-      "description": "시각적 및 논리적 오류 감지"
+      "title": "🕵️ 지능형 검증 에이전트"
     },
     "costTracking": {
-      "title": "💰 비용 및 토큰 추적",
-      "description": "AI 사용 비용과 토큰 소비 모니터링"
+      "title": "💰 비용 및 토큰 추적"
     },
     "ciIntegration": {
       "title": "🚀 CI 통합",
@@ -59,12 +56,10 @@
       "description": "AI가 테스트 지시사항을 어떻게 분석, 추론, 실행하는지 정확히 확인"
     },
     "builtInTools": {
-      "title": "🔧 내장 도구 시스템",
-      "description": "12개의 포괄적인 브라우저 자동화 도구 내장 - 사용자 정의 도구 불필요"
+      "title": "🔧 내장 도구 시스템"
     },
     "testRecorderInteractive": {
-      "title": "🎬 테스트 레코더",
-      "description": "인터랙티브 테스트 레코더로 실시간 프롬프트 시도 - 테스트 아이디어를 즉시 실험하고 검증"
+      "title": "🎬 테스트 레코더"
     },
     "enhancedReports": {
       "title": "📊 향상된 HTML 리포트",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 빠른 시작",
     "step1": "프레임워크 설치",
-    "step2": "OpenAI API 키 설정",
     "step3": "첫 번째 테스트 작성",
     "step4": "실행하고 마법을 체험!",
     "startNow": "지금 시작하기 →"

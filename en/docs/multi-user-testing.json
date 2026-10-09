@@ -1,0 +1,185 @@
+{
+  "multiUserTestingPage": {
+    "navigation": {
+      "backToDocumentation": "Back to Documentation"
+    },
+    "header": {
+      "badge": "Multi-User",
+      "title": "Multi-User Testing",
+      "description": "Run a test with several browser sessions at the same time. This is useful for collaborative features, user interactions, and scenarios that need more than one active user."
+    },
+    "overview": {
+      "title": "Overview",
+      "description": "Multi-user tests use the users array and the tasks function instead of the single task field. The framework detects multi-user tests automatically and creates a separate browser session for each user."
+    },
+    "basicStructure": {
+      "title": "Basic Multi-User Test Structure",
+      "description": "Define the users, then return one task per user from the tasks function."
+    },
+    "keyFeatures": {
+      "title": "Key Features",
+      "automaticDetection": {
+        "title": "Automatic Detection",
+        "items": [
+          "The framework automatically detects tests with a users array and a tasks function",
+          "No CLI changes are needed. Use the existing run command",
+          "Backward compatible with single-user tests"
+        ]
+      },
+      "browserSessions": {
+        "title": "Multiple Browser Sessions",
+        "items": [
+          "Each user gets their own browser context and page",
+          "Sessions run in parallel for better performance",
+          "Maximum 5 users per test to prevent resource exhaustion"
+        ]
+      },
+      "userTasks": {
+        "title": "User-Specific Tasks",
+        "items": [
+          "The tasks function returns user-specific task instructions",
+          "Each user can have a different workflow",
+          "Tasks run simultaneously across all users"
+        ]
+      }
+    },
+    "getPage": {
+      "title": "Using the getPage() Function",
+      "description": "You can access a specific user's page in setup and task functions:"
+    },
+    "utilities": {
+      "title": "Available Utility Functions",
+      "description": "These helpers are exported from endorphin-ai.",
+      "getPage": "Get the page for a specific user",
+      "getCurrentUserId": "Get the current user ID, if any",
+      "getUserIds": "Get all user IDs in the current test",
+      "isMultiUserMode": "Check whether multi-user mode is active"
+    },
+    "dataGeneration": {
+      "title": "Data Generation for Multi-User Tests",
+      "description": "Return data for each user, plus any shared data, from the data function."
+    },
+    "reporting": {
+      "title": "Test Results and Reporting",
+      "description": "Multi-user tests generate detailed reports showing:",
+      "items": [
+        "Overall test success or failure",
+        "Per-user results and status",
+        "Individual user task execution details",
+        "Combined token usage and cost tracking",
+        "User-specific screenshots and logs"
+      ]
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "userNaming": {
+        "title": "User Naming",
+        "items": [
+          "Use descriptive user names: 'admin', 'customer', 'moderator'",
+          "Keep names short and clear",
+          "Avoid special characters"
+        ]
+      },
+      "taskDesign": {
+        "title": "Task Design",
+        "items": [
+          "Make tasks independent when possible",
+          "Use the setup function for common initialization",
+          "Consider user interaction timing"
+        ]
+      },
+      "dataManagement": {
+        "title": "Data Management",
+        "items": [
+          "Structure data by user in the data function",
+          "Use user IDs as keys for user-specific data",
+          "Share common data across users"
+        ]
+      },
+      "errorHandling": {
+        "title": "Error Handling",
+        "items": [
+          "The test fails if any user fails",
+          "Individual user errors are tracked",
+          "Use descriptive error messages"
+        ]
+      }
+    },
+    "example": {
+      "title": "Example: E-commerce Multi-User Test",
+      "description": "A buyer and a seller working in the same marketplace."
+    },
+    "migration": {
+      "title": "Migration from Single-User Tests",
+      "description": "To convert a single-user test, replace the task field with a users array and a tasks function:"
+    },
+    "limitations": {
+      "title": "Limitations",
+      "items": [
+        "Maximum 5 users per test",
+        "All users must complete successfully for the test to pass",
+        "Browser resources scale with the number of users",
+        "Parallel execution may affect system performance"
+      ]
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "description": "Common issues and how to fix them",
+      "pageNotFound": {
+        "title": "\"User page not found\"",
+        "solutions": [
+          "Ensure the user ID exists in the users array",
+          "Check that multi-user mode is properly initialized"
+        ]
+      },
+      "noTask": {
+        "title": "\"No task found for user\"",
+        "solutions": [
+          "Verify that the tasks function returns tasks for all users",
+          "Check that the user ID spelling matches exactly"
+        ]
+      },
+      "resources": {
+        "title": "Resource exhaustion",
+        "solutions": [
+          "Reduce the number of users",
+          "Increase system resources",
+          "Consider running users sequentially instead of in parallel"
+        ]
+      },
+      "debugTips": {
+        "title": "Debug Tips",
+        "description": "Log the multi-user state and check that each user page is accessible:"
+      }
+    },
+    "advanced": {
+      "title": "Advanced Usage",
+      "sequential": {
+        "title": "Sequential User Execution",
+        "description": "If you need users to execute sequentially instead of in parallel:"
+      },
+      "synchronization": {
+        "title": "User Synchronization",
+        "description": "For tests that require user synchronization, use shared state:"
+      }
+    },
+    "summary": {
+      "description": "The framework handles the complexity of managing multiple browser sessions while providing a simple API for defining user-specific workflows."
+    },
+    "nextSteps": {
+      "title": "Next Steps",
+      "testStructure": {
+        "title": "Test Structure",
+        "description": "The fields of a test case"
+      },
+      "jiraIntegration": {
+        "title": "JIRA Integration",
+        "description": "Generate role-based multi-user tests from JIRA tickets"
+      },
+      "htmlReporter": {
+        "title": "HTML Reports",
+        "description": "View test results"
+      }
+    }
+  }
+}

@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minutos",
     "title": "Guia de Início Rápido",
-    "subtitle": "Comece a usar o Endorphin AI em menos de 5 minutos",
-    "congratulations": {
-      "title": "🎉 Parabéns!",
-      "subtitle": "Você executou com sucesso seu primeiro teste alimentado por IA. Pronto para mais?"
-    },
+    "congratulations": {},
     "step1": {
-      "title": "Instalação",
-      "description": "Instalar Endorphin AI via npm:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ Definições TypeScript incluídas • ✅ Nenhuma configuração necessária"
+      "title": "Instalação"
     },
     "step2": {
-      "title": "🔑 Configuração OpenAI",
-      "description": "Configure sua chave API OpenAI:",
-      "getApiKey": "1. Obtenha sua chave API do OpenAI",
-      "visitPlatform": "Visite platform.openai.com/api-keys para criar sua chave API",
-      "addToEnv": "2. Adicionar ao arquivo .env:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Mantenha sua chave API segura • ✅ Nunca commite arquivos .env no controle de versão",
-      "substep1": "1. Obtenha sua chave API do OpenAI",
       "visitLink": "Visit",
-      "createKey": "to create your API key",
-      "substep2": "2. Adicionar ao arquivo .env:"
+      "createKey": "to create your API key"
     },
     "step3": {
-      "title": "Crie Seu Primeiro Teste",
-      "description": "Crie um arquivo de teste simples usando a estrutura inteligente v0.9.0:",
-      "codeComment": "// meu-primeiro-teste.ts\\nimport type { TestCase } from 'endorphin-ai';\\n\\nexport const LOGIN_TEST: TestCase = {\\n  id: 'LOGIN-001',\\n  name: 'Teste de Login do Usuário',\\n  description: 'Teste do fluxo de autenticação do usuário',\\n  tags: ['autenticação'],\\n  priority: 'Alta',\\n  \\n  setup: async () => ({\\n    baseUrl: 'https://exemplo.com'\\n  }),\\n  \\n  data: async () => ({\\n    email: 'test@exemplo.com',\\n    password: 'senha123'\\n  }),\\n  \\n  task: async (data, setup) => \\`\\n    Navegar para \\${setup.baseUrl}/login\\n    Preencher campo de email com \\\"\\${data.email}\\\"\\n    Preencher campo de senha com \\\"\\${data.password}\\\"\\n    Clicar no botão \\\"Login\\\"\\n    Verificar se o dashboard está visível\\n  \\`\\n};"
+      "title": "Crie Seu Primeiro Teste"
     },
     "step4": {
-      "title": "Execute Seu Teste",
-      "description": "Execute seu teste com um único comando:",
-      "command": "npx endorphin-ai run meu-primeiro-teste.js",
-      "aiAnalysis": "A IA analisará suas instruções e executará o teste automaticamente"
+      "title": "Execute Seu Teste"
     },
     "step5": {
       "title": "Ver Resultados",
-      "description": "Verifique seu belo relatório HTML com rastreamento de custos:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Detalhes de execução do teste",
-        "aiDecisions": "Histórico de decisões da IA",
-        "costBreakdown": "Detalhamento de custos",
-        "screenshots": "Galeria de capturas de tela"
-      },
-      "feature1": "Detalhes de execução do teste",
-      "feature2": "Histórico de decisões da IA",
-      "feature3": "Detalhamento de custos",
-      "feature4": "Galeria de capturas de tela"
+      "features": {}
     },
     "nextSteps": {
-      "setup": {
-        "title": "Configuração Completa",
-        "description": "Aprenda configuração avançada e setup do projeto",
-        "button": "Ler Guia"
-      },
-      "structure": {
-        "title": "Estrutura de Teste",
-        "description": "Domine a estrutura de teste inteligente v0.9.0",
-        "button": "Saber Mais"
-      },
-      "examples": {
-        "title": "Exemplos",
-        "description": "Navegue por exemplos de testes do mundo real",
-        "button": "Ver Exemplos"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Explorar Toda a Documentação"
   }

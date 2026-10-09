@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "Обов'язково",
-      "title": "Посібник з Налаштування Проекту",
-      "subtitle": "Повний посібник з налаштування та конфігурації проекту для професійних робочих процесів тестування"
+      "title": "Посібник з Налаштування Проекту"
     },
     "installation": {
-      "title": "Встановлення",
-      "description": "Розпочніть роботу з Endorphin AI, використовуючи один з цих методів:",
-      "option1": "Варіант 1: Швидке Налаштування",
-      "option2": "Варіант 2: Ручне Встановлення"
+      "title": "Встановлення"
     },
     "projectSetup": {
       "title": "Налаштування Проекту",
-      "description": "Ініціалізуйте свій проект з правильною структурою та файлами конфігурації.",
       "quickSetup": "Швидке Налаштування з Init",
       "quickSetupDescription": "Найшвидший спосіб налаштувати ваш проект:",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "Це створює:",
       "configFile": "Файл конфігурації",
-      "testsFolder": "Ваші тестові файли",
       "envTemplate": "Шаблон змінних середовища",
       "exampleTest": "Приклад тестового файлу",
       "manualSetup": "Ручне Налаштування",
-      "manualDescription": "Для більшого контролю над налаштуванням:",
-      "step1": "1. Створити endorphin.config.ts:",
       "step2": "2. Створити файл .env:",
       "step3": "3. Створити папку tests:"
     },
     "openaiSetup": {
       "title": "Налаштування OpenAI",
-      "description": "Налаштуйте ваш API ключ OpenAI для тестування на основі ШІ:",
       "step1": "1. Отримайте ваш API ключ від",
       "step1Description": "Відвідайте platform.openai.com/api-keys для створення вашого API ключа",
       "step2": "2. Додайте до вашого файлу .env:",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "Створіть Ваш Перший Тест",
-      "description": "Створіть тестовий файл для перевірки правильності роботи вашого налаштування.",
-      "createFile": "Створіть файл з назвою google-test.js у вашій папці tests:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Запуск Тестів",
       "listTests": "Список усіх тестів:",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "Запустити конкретний тест:",
@@ -60,10 +46,7 @@
       "openBrowser": "Відкрити в браузері:",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "Налаштування Завершено!",
-      "description": "Ваш проект тепер налаштований і готовий для тестування на основі ШІ. Ви можете почати писати тести, використовуючи описи природною мовою."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Далі: Структура Тесту →",
       "backButton": "Повернутись до Документації"

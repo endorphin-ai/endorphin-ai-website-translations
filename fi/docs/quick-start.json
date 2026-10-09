@@ -2,73 +2,28 @@
   "quickStartPage": {
     "badge": "5 Minuuttia",
     "title": "Pika-aloitusopas",
-    "subtitle": "Ota Endorphin AI käyttöön alle 5 minuutissa",
     "step1": {
-      "title": "Asennus",
-      "description": "Asenna Endorphin AI npm:n kautta:",
-      "npmInstall": "npm install endorphin-ai",
-      "npmInit": "npx endorphin-ai init",
-      "benefits": "✅ TypeScript-määrittelyt mukana • ✅ Nolla konfiguraatiota tarvitaan"
+      "title": "Asennus"
     },
     "step2": {
-      "title": "🔑 OpenAI-asetukset",
-      "description": "Määritä OpenAI API-avaimesi:",
-      "getApiKey": "1. Hanki OpenAI API-avaimesi",
-      "visitPlatform": "Vieraile platform.openai.com/api-keys luodaksesi API-avaimesi",
-      "addToEnv": "2. Lisää .env-tiedostoon:",
-      "envExample": "OPENAI_API_KEY=sk-proj-abc123..",
-      "security": "✅ Pidä API-avaimesi turvassa • ✅ Älä koskaan committa .env-tiedostoja versionhallintaan",
-      "substep1": "1. Hanki OpenAI API-avaimesi",
       "visitLink": "Vieraile",
-      "createKey": "luodaksesi API-avaimesi",
-      "substep2": "2. Lisää .env-tiedostoon:"
+      "createKey": "luodaksesi API-avaimesi"
     },
     "step3": {
-      "title": "Luo ensimmäinen testisi",
-      "description": "Luo yksinkertainen testitiedosto käyttäen v0.9.0:n älykästä rakennetta:",
-      "codeComment": "// eka-testini.ts\nimport type { TestCase } from 'endorphin-ai';\n\nexport const LOGIN_TEST: TestCase = {\n  id: 'LOGIN-001',\n  name: 'Kirjautumistesti',\n  description: 'Testaa käyttäjän tunnistautumisen toiminta',\n  tags: ['tunnistautuminen'],\n  priority: 'Korkea',\n  \n  setup: async () => ({\n    baseUrl: 'https://esimerkki.com'\n  }),\n  \n  data: async () => ({\n    email: 'testi@esimerkki.com',\n    password: 'salasana123'\n  }),\n  \n  task: async (data, setup) => `\n    Siirry osoitteeseen ${setup.baseUrl}/login\n    Täytä sähköpostikenttä arvolla \"${data.email}\"\n    Täytä salasanakenttä arvolla \"${data.password}\"\n    Klikkaa \"Kirjaudu sisään\" -painiketta\n    Varmista että hallintapaneeli on näkyvissä\n  `\n};"
+      "title": "Luo ensimmäinen testisi"
     },
     "step4": {
-      "title": "Suorita testisi",
-      "description": "Suorita testisi yhdellä komennolla:",
-      "command": "npx endorphin-ai run eka-testini.js",
-      "aiAnalysis": "AI analysoi ohjeesi ja suorittaa testin automaattisesti"
+      "title": "Suorita testisi"
     },
     "step5": {
       "title": "Katso tuloksia",
-      "description": "Tarkista kaunis HTML-raporttisi kustannusseurannalla:",
-      "command": "npx endorphin-ai generate report && npx endorphin-ai open report",
-      "features": {
-        "testExecution": "Testin suorituksen yksityiskohdat",
-        "aiDecisions": "AI:n päätöshistoria",
-        "costBreakdown": "Kustannuserittely",
-        "screenshots": "Kuvakaappausgalleria"
-      },
-      "feature1": "Testin suorituksen yksityiskohdat",
-      "feature2": "AI:n päätöshistoria",
-      "feature3": "Kustannuserittely",
-      "feature4": "Kuvakaappausgalleria"
+      "features": {}
     },
-    "congratulations": {
-      "title": "🎉 Onnittelut!",
-      "subtitle": "Olet onnistuneesti suorittanut ensimmäisen AI-voimaisen testisi. Valmiina lisään?"
-    },
+    "congratulations": {},
     "nextSteps": {
-      "setup": {
-        "title": "Täydellinen asennus",
-        "description": "Opi edistyneet asetukset ja projektin konfigurointi",
-        "button": "Lue opas"
-      },
-      "structure": {
-        "title": "Testirakenne",
-        "description": "Hallitse v0.9.0:n älykkään testirakenteen",
-        "button": "Lue lisää"
-      },
-      "examples": {
-        "title": "Esimerkit",
-        "description": "Tutustu tosielämän testiesimerkkeihin",
-        "button": "Katso esimerkkejä"
-      }
+      "setup": {},
+      "structure": {},
+      "examples": {}
     },
     "exploreAll": "Tutustu kaikkeen dokumentaatioon"
   }

@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Täydellinen dokumentaatio",
     "subtitle": "Kaikki mitä tarvitset hallitaksesi AI-voimaiset testit Endorphin AI:lla. Pika-aloituksesta edistyneisiin tekniikoihin.",
-    "versionBadge": "Dokumentaatio v0.9.0",
     "startQuickGuide": "Aloita pika-oppaalla",
     "browseAllDocs": "Selaa kaikkia dokumentteja",
     "readGuide": "Lue opas",
     "badges": {
       "5min": "5 min",
       "essential": "Oleellinen",
-      "v090": "v0.9.0",
       "examples": "Esimerkit",
       "advanced": "Edistynyt",
       "proTips": "Pro-vinkit",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Ota Endorphin AI käyttöön 5 minuutissa",
       "projectSetup": "Projektin asennus",
       "projectSetupDesc": "Täydellinen projektin asennuksen ja asetuksen opas",
-      "testStructure": "Testirakenne",
-      "testStructureDesc": "Älykäs testirakenne v0.9 setup/data/task -funktioilla"
+      "testStructure": "Testirakenne"
     },
     "advanced": {
       "title": "Edistyneet aiheet",
@@ -72,8 +69,6 @@
         "button": "Aloita nyt →"
       },
       "testStructure": {
-        "title": "Testirakenne v0.9.0",
-        "description": "Opi uusi älykäs testirakenne async setup(), data() ja task() -funktioilla.",
         "button": "Lue lisää →"
       }
     }

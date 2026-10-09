@@ -135,124 +135,56 @@
       "backToDocumentation": "[SV] Back to Documentation"
     },
     "header": {
-      "badge": "[SV] Config",
-      "title": "[SV] Environment Setup",
-      "description": "[SV] Environment variables and configuration guide. Configure Endorphin AI with simple environment variables for different environments."
+      "badge": "[SV] Config"
     },
     "quickSetup": {
       "title": "[SV] Quick Setup",
-      "description": "[SV] Get started with minimal configuration",
       "step1": "[SV] 1. Create a .env file in your project root:",
-      "sparkle": "[SV] ✨ That's it!",
-      "ready": "[SV] You're ready to go with just your OpenAI API key."
+      "sparkle": "[SV] ✨ That's it!"
     },
     "availableVariables": {
       "title": "[SV] Available Variables",
-      "description": "[SV] Complete list of environment variables you can configure",
       "openaiApiKey": {
-        "title": "[SV] OPENAI_API_KEY (Required)",
         "description": "[SV] Your OpenAI API key for AI-powered testing.",
-        "howToGet": "[SV] How to get one:",
-        "steps": "[SV] Go to OpenAI API Keys,Create a new key,Copy and paste it here"
+        "howToGet": "[SV] How to get one:"
       },
       "headless": {
-        "title": "[SV] HEADLESS (Optional)",
         "description": "[SV] Run browser with or without UI.",
-        "options": {
-          "false": "[SV] HEADLESS=false  # See the browser (good for debugging)",
-          "true": "[SV] HEADLESS=true   # No browser window (good for CI/CD)"
-        },
-        "default": "[SV] Default: true"
+        "options": {}
       },
       "baseUrl": {
-        "title": "[SV] BASE_URL (Optional)",
-        "description": "[SV] Default website for your tests.",
-        "default": "[SV] Default: https://qafromla.herokuapp.com/"
+        "description": "[SV] Default website for your tests."
       },
       "slowMo": {
-        "title": "[SV] SLOW_MO (Optional)",
-        "description": "[SV] Slow down browser actions (milliseconds).",
-        "options": {
-          "0": "[SV] SLOW_MO=0     # No delay (fastest)",
-          "500": "[SV] SLOW_MO=500   # Half second delay",
-          "1000": "[SV] SLOW_MO=1000  # One second delay"
-        },
-        "default": "[SV] Default: 0"
+        "options": {}
       },
       "endorphinDebug": {
-        "title": "[SV] ENDORPHIN_DEBUG (Optional)",
-        "description": "[SV] Enable debug mode for detailed logging.",
-        "options": {
-          "true": "[SV] ENDORPHIN_DEBUG=true   # Enable debug mode",
-          "false": "[SV] ENDORPHIN_DEBUG=false  # Disable debug mode"
-        },
-        "default": "[SV] Default: false"
+        "options": {}
       }
     },
     "exampleConfigurations": {
       "title": "[SV] Example Configurations",
-      "description": "[SV] Ready-to-use configurations for different environments",
       "localDevelopment": {
-        "title": "[SV] Local Development",
-        "description": "[SV] Perfect for development and debugging:"
+        "title": "[SV] Local Development"
       },
-      "stagingEnvironment": {
-        "title": "[SV] Staging Environment",
-        "description": "[SV] For testing against staging servers:"
-      },
-      "productionCi": {
-        "title": "[SV] Production/CI",
-        "description": "[SV] Optimized for CI/CD pipelines:"
-      },
-      "debugMode": {
-        "title": "[SV] Debug Mode",
-        "description": "[SV] For troubleshooting test issues:"
-      }
+      "stagingEnvironment": {},
+      "productionCi": {},
+      "debugMode": {}
     },
     "advancedConfiguration": {
-      "title": "[SV] Advanced Configuration",
-      "description": "[SV] Additional variables for power users",
-      "modelConfiguration": {
-        "title": "[SV] Model Configuration"
-      },
-      "browserSettings": {
-        "title": "[SV] Browser Settings"
-      },
-      "outputSettings": {
-        "title": "[SV] Output Settings"
-      }
+      "modelConfiguration": {},
+      "browserSettings": {},
+      "outputSettings": {}
     },
     "usingDifferentEnvironments": {
-      "title": "[SV] Using Different Environments",
-      "method1": {
-        "title": "[SV] Method 1: Multiple .env Files",
-        "description": "[SV] Create separate files for each environment:",
-        "loadSpecific": "[SV] Load specific environment:"
-      },
-      "method2": {
-        "title": "[SV] Method 2: Environment Variables",
-        "description": "[SV] Set variables directly in command line:"
-      },
-      "method3": {
-        "title": "[SV] Method 3: Package.json Scripts",
-        "description": "[SV] Add scripts to your package.json:",
-        "thenRun": "[SV] Then run with:"
-      }
+      "method1": {},
+      "method2": {},
+      "method3": {}
     },
     "securityBestPractices": {
-      "title": "[SV] Security Best Practices",
-      "neverCommit": {
-        "title": "[SV] 🚨 Never Commit API Keys",
-        "description": "[SV] Add .env to your .gitignore:"
-      },
-      "useEnvironmentVariables": {
-        "title": "[SV] ⚠️ Use Environment Variables in CI",
-        "description": "[SV] Set OPENAI_API_KEY as a secret in your CI/CD platform"
-      },
-      "createExample": {
-        "title": "[SV] ✅ Create .env.example",
-        "description": "[SV] Share template without secrets:"
-      }
+      "neverCommit": {},
+      "useEnvironmentVariables": {},
+      "createExample": {}
     },
     "nextSteps": {
       "next": "[SV] CI/CD Setup",

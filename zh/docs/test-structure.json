@@ -4,9 +4,7 @@
       "backToDocumentation": "返回文档"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "测试结构指南",
-      "subtitle": "掌握v0.9.0智能测试结构，使用async setup()、data()和task()函数"
+      "title": "测试结构指南"
     },
     "basicStructure": {
       "title": "📝 基本测试结构",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "动态测试",
-      "badge": "v0.9.0 功能",
       "setupFunctions": {
         "title": "使用设置函数",
         "description": "准备您的测试环境："

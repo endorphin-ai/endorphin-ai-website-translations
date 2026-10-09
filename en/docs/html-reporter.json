@@ -6,11 +6,11 @@
         "header": {
             "badge": "Reports",
             "title": "HTML Reporter",
-            "description": "Interactive reports with cost tracking and AI decisions. Beautiful, interactive test reports that make debugging easy."
+            "description": "Beautiful, interactive test reports that make debugging easy."
         },
         "whatAreReports": {
             "title": "🎯 What are HTML Reports?",
-            "description": "After running tests, Endorphin AI creates interactive web reports that provide comprehensive insights into your test execution.",
+            "description": "After running tests, Endorphin AI creates interactive web reports showing:",
             "features": {
                 "passedFailed": "Which tests passed or failed",
                 "screenshots": "Screenshots of every step",
@@ -20,27 +20,24 @@
         },
         "quickStart": {
             "title": "🚀 Quick Start",
-            "description": "Generate your first HTML report in 3 simple steps",
+            "description": "Generate a report in three steps",
             "step1": {
-                "title": "1. Run tests first:",
-                "command": "npx endorphin run test HEALTH-001"
+                "title": "1. Run tests first:"
             },
             "step2": {
-                "title": "2. Generate the report:",
-                "command": "npx endorphin generate report"
+                "title": "2. Then generate the report:"
             },
             "step3": {
-                "title": "3. Open it:",
-                "command": "npx endorphin open report"
+                "title": "3. Open it:"
             },
             "thatsIt": {
                 "title": "✨ That's it!",
-                "description": "Your report opens in the browser automatically."
+                "description": "Your report opens in the browser."
             }
         },
         "features": {
             "title": "📋 Report Features",
-            "description": "Comprehensive insights into your test execution",
+            "description": "What you see when you open a report",
             "dashboard": {
                 "title": "Dashboard View",
                 "description": "When you open a report, you'll see:",
@@ -52,15 +49,15 @@
                 "title": "Interactive Features",
                 "searchTests": {
                     "title": "Search Tests",
-                    "description": "Type in the search box to find tests instantly - by ID, name, or any content"
+                    "description": "Type in the search box to find tests instantly. Search by test ID (for example \"LOGIN-001\") or by test name (for example \"login\"). Results update as you type."
                 },
                 "filterStatus": {
                     "title": "Filter by Status",
-                    "description": "Click tabs to filter: All, Passed, Failed tests"
+                    "description": "Click the tabs to filter: All shows everything, Passed shows only successful tests, Failed shows only failed tests."
                 },
                 "viewScreenshots": {
                     "title": "View Screenshots",
-                    "description": "Click any screenshot to see full-size, zoom, and navigate between steps"
+                    "description": "Click any screenshot to see the full-size image, zoom in or out, and navigate between screenshots. Close with the Escape key."
                 }
             },
             "testDetails": {
@@ -75,9 +72,8 @@
             }
         },
         "advancedFeatures": {
-            "title": "Advanced Features",
-            "badge": "v0.9.0",
-            "description": "Enhanced reporting with AI insights and cost tracking",
+            "title": "Cost Tracking and AI Decisions",
+            "description": "AI usage, decision history and step details for each test",
             "costTracking": {
                 "title": "Cost & Token Tracking",
                 "description": "Each test shows detailed AI usage information:",
@@ -123,8 +119,7 @@
             "exportJson": "Export to JSON"
         },
         "fileOrganization": {
-            "title": "📁 Where Reports are Saved",
-            "structure": "test-results/\n├── reports/\n│   ├── report-2025-01-04.html    # Today's report\n│   ├── screenshots/               # Images for the report\n│   └── assets/                    # Styles and scripts\n└── HEALTH-001_2025-01-04/         # Raw test data"
+            "title": "📁 Where Reports are Saved"
         },
         "tips": {
             "title": "💡 Tips & Tricks",
@@ -146,6 +141,15 @@
                     "Optimize expensive tests - Find tests that use too many tokens",
                     "Compare costs - See which tests are most/least expensive",
                     "Budget planning - Use cost data for project planning"
+                ]
+            },
+            "understandAI": {
+                "title": "Understand AI Behavior",
+                "steps": [
+                    "Review decision history - Learn how the AI solves problems",
+                    "Improve test instructions - See where the AI gets confused",
+                    "Debug complex flows - Follow the AI's reasoning process",
+                    "Share insights - Export decision data for team analysis"
                 ]
             },
             "shareReports": {
@@ -172,28 +176,58 @@
             "cleanup": {
                 "title": "Clean Up Old Reports",
                 "remove30Days": {
-                    "description": "Remove reports older than 30 days:",
-                    "command": "npx endorphin cleanup reports"
+                    "description": "Remove reports older than 30 days:"
                 },
                 "keep7Days": {
-                    "description": "Keep only last 7 days:",
-                    "command": "npx endorphin cleanup reports 7"
+                    "description": "Keep only last 7 days:"
+                }
+            },
+            "cleanupResults": {
+                "title": "Clean Up Test Results",
+                "keep10": {
+                    "description": "Keep only 10 most recent results per test:"
+                },
+                "keep5": {
+                    "description": "Keep only 5 most recent:"
                 }
             },
             "customNames": {
-                "title": "Custom Report Names",
+                "title": "Report Customization",
                 "changeName": {
-                    "description": "Change report name:",
-                    "command": "npx endorphin generate report --filename my-custom-report.html"
+                    "description": "Change report name:"
                 },
                 "multipleReports": {
-                    "description": "Generate multiple reports:",
-                    "smokeComment": "# Smoke test report",
-                    "smokeCommand": "npx endorphin generate report --filename smoke-tests.html",
-                    "regressionComment": "# Full regression report",
-                    "regressionCommand": "npx endorphin generate report --filename regression.html"
+                    "description": "Generate different reports for different purposes:"
                 }
             }
+        },
+        "troubleshooting": {
+            "title": "🚨 Troubleshooting",
+            "noResults": {
+                "title": "\"No test results found\"",
+                "description": "Run some tests first:"
+            },
+            "screenshotsNotLoading": {
+                "title": "Screenshots Not Loading",
+                "items": [
+                    "Check that the test-results/reports/screenshots/ folder exists",
+                    "Ensure the browser allows local file access",
+                    "Try opening the report from a web server"
+                ]
+            },
+            "wontOpen": {
+                "title": "Report Won't Open",
+                "items": [
+                    "Check that the file exists in test-results/reports/",
+                    "Use the full path if needed",
+                    "Try a different browser"
+                ]
+            }
+        },
+        "cicd": {
+            "title": "🏢 CI/CD Integration",
+            "githubActions": "GitHub Actions Example",
+            "gitlabCi": "GitLab CI Example"
         },
         "nextSteps": {
             "next": "Test Recorder",

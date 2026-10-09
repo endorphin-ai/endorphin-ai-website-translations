@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Vollständige Dokumentation",
     "subtitle": "Alles, was Sie für KI-gestütztes Testen mit Endorphin AI benötigen. Von der Schnellstart-Anleitung bis zu fortgeschrittenen Techniken.",
-    "versionBadge": "v0.9.0 Dokumentation",
     "startQuickGuide": "Mit Schnellanleitung starten",
     "browseAllDocs": "Alle Dokumente durchsuchen",
     "readGuide": "Anleitung lesen",
     "badges": {
       "5min": "5 Min",
       "essential": "Essentiell",
-      "v090": "v0.9.0",
       "examples": "Beispiele",
       "advanced": "Fortgeschritten",
       "proTips": "Profi-Tipps",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Mit Endorphin AI in 5 Minuten einsatzbereit",
       "projectSetup": "Projekt-Setup",
       "projectSetupDesc": "Vollständige Anleitung für Projekt-Setup und Konfiguration",
-      "testStructure": "Test-Struktur",
-      "testStructureDesc": "v0.9 intelligente Test-Struktur mit setup/data/task Funktionen"
+      "testStructure": "Test-Struktur"
     },
     "advanced": {
       "title": "Erweiterte Themen",
@@ -72,8 +69,6 @@
         "button": "Jetzt starten →"
       },
       "testStructure": {
-        "title": "v0.9.0 Test-Struktur",
-        "description": "Lernen Sie die neue intelligente Test-Struktur mit async setup(), data() und task() Funktionen.",
         "button": "Mehr erfahren →"
       }
     }

@@ -4,120 +4,41 @@
       "backToDocumentation": "Zurück zur Dokumentation"
     },
     "header": {
-      "badge": "Erweitert",
-      "title": "KI-Prompt-Leitfaden",
-      "subtitle": "Erweiterte KI-Prompt-Techniken und Optimierung für maximale Test-Effektivität"
+      "badge": "Erweitert"
     },
     "introduction": {
-      "title": "KI-Prompting meistern",
-      "description": "Lernen Sie, wie Sie effektive Prompts schreiben, die die besten Ergebnisse aus KI-gestützten Tests erzielen.",
-      "importance": "Warum Prompt-Optimierung wichtig ist:",
-      "importanceList": {
-        "accuracy": "✅ Höhere Test-Genauigkeit und Zuverlässigkeit",
-        "efficiency": "✅ Reduzierte Token-Nutzung und Kosten",
-        "maintenance": "✅ Wartbarere und debuggbare Tests",
-        "robustness": "✅ Bessere Behandlung von Edge-Cases",
-        "speed": "✅ Schnellere Test-Ausführung"
-      }
+      "importanceList": {}
     },
     "promptPrinciples": {
-      "title": "Kern-Prompt-Prinzipien",
-      "description": "Befolgen Sie diese Prinzipien für effektive KI-Kommunikation:",
       "principles": {
-        "clarity": {
-          "title": "1. Klar und spezifisch sein",
-          "description": "Verwenden Sie präzise Sprache und vermeiden Sie Mehrdeutigkeit",
-          "example": "Gut: 'Klicken Sie auf den blauen Absenden-Button im Footer'\nSchlecht: 'Klicken Sie auf den Button'"
-        },
-        "context": {
-          "title": "2. Kontext bereitstellen",
-          "description": "Geben Sie der KI genügend Kontext, um das Szenario zu verstehen",
-          "example": "Gut: 'Nach dem Einloggen, navigieren Sie zu den Benutzerprofileinstellungen'\nSchlecht: 'Gehen Sie zu den Einstellungen'"
-        },
-        "structure": {
-          "title": "3. Logische Struktur verwenden",
-          "description": "Organisieren Sie Schritte in logischer, sequenzieller Reihenfolge",
-          "example": "Gut: Schritt-für-Schritt-Anweisungen mit klarem Ablauf\nSchlecht: Zwischen unzusammenhängenden Aktionen springen"
-        },
-        "validation": {
-          "title": "4. Validierung einschließen",
-          "description": "Spezifizieren Sie immer, was überprüft werden soll",
-          "example": "Gut: 'Überprüfen Sie, dass die Erfolgsmeldung erscheint'\nSchlecht: 'Formular absenden' (ohne Validierung)"
-        }
+        "clarity": {},
+        "context": {},
+        "structure": {},
+        "validation": {}
       }
     },
     "advancedTechniques": {
-      "title": "Erweiterte Techniken",
-      "description": "Ausgeklügelte Prompt-Strategien für komplexe Szenarien:",
       "techniques": {
-        "conditionalLogic": {
-          "title": "Bedingte Logik",
-          "description": "Behandeln Sie verschiedene Szenarien basierend auf Seitenstatus oder Daten",
-          "example": "Wenn der Benutzer bereits eingeloggt ist, überspringe Login und gehe zum Dashboard"
-        },
-        "errorHandling": {
-          "title": "Fehlerbehandlung",
-          "description": "Antizipieren und behandeln Sie potenzielle Fehler elegant",
-          "example": "Wenn Login fehlschlägt, erfasse Fehlermeldung und versuche es mit anderen Anmeldedaten"
-        },
-        "dynamicContent": {
-          "title": "Dynamische Inhalte",
-          "description": "Arbeiten Sie mit Inhalten, die sich basierend auf Daten oder Status ändern",
-          "example": "Wählen Sie das erste verfügbare Produkt aus den Suchergebnissen"
-        },
-        "multiStepFlows": {
-          "title": "Mehrstufige Flows",
-          "description": "Teilen Sie komplexe Workflows in handhabbare Schritte auf",
-          "example": "Kompletter Checkout-Prozess: Warenkorb → Versand → Zahlung → Bestätigung"
-        }
+        "conditionalLogic": {},
+        "errorHandling": {},
+        "dynamicContent": {},
+        "multiStepFlows": {}
       }
     },
     "optimization": {
-      "title": "Prompt-Optimierung",
-      "description": "Strategien zur Verbesserung der Performance und Kostenreduzierung:",
       "strategies": {
-        "tokenEfficiency": {
-          "title": "Token-Effizienz",
-          "description": "Schreiben Sie prägnante Prompts, die maximale Ergebnisse mit minimalen Tokens erzielen",
-          "tips": "• Verwenden Sie Aktionsverben • Vermeiden Sie redundante Beschreibungen • Fokussieren Sie auf das Wesentliche"
-        },
-        "reusability": {
-          "title": "Wiederverwendbare Muster",
-          "description": "Erstellen Sie Prompt-Templates für häufige Szenarien",
-          "tips": "• Standard-Login-Flows • Formular-Validierungsmuster • Navigationssequenzen"
-        },
-        "testing": {
-          "title": "Prompt-Tests",
-          "description": "Testen und verfeinern Sie Prompts mit dem Test Recorder",
-          "tips": "• Verwenden Sie Test Recorder für Experimente • A/B-Test verschiedene Ansätze • Überwachen Sie Erfolgsraten"
-        }
+        "tokenEfficiency": {},
+        "reusability": {},
+        "testing": {}
       }
     },
     "examples": {
-      "title": "Beispiele aus der Praxis",
-      "description": "Praktische Beispiele, die effektive Prompt-Muster zeigen:",
-      "ecommerce": {
-        "title": "E-Commerce-Checkout",
-        "description": "Kompletter Kaufprozess mit Warenkorb, Versand und Zahlung"
-      },
-      "dashboard": {
-        "title": "Dashboard-Interaktion",
-        "description": "Komplexe Dashboard-Navigation und Datenmanipulation"
-      },
-      "forms": {
-        "title": "Komplexe Formularverarbeitung",
-        "description": "Mehrstufige Formulare mit Validierung und bedingten Feldern"
-      }
+      "ecommerce": {},
+      "dashboard": {},
+      "forms": {}
     },
     "troubleshooting": {
-      "title": "Häufige Probleme und Lösungen",
-      "description": "Fehlerbehebung für häufige Prompt-Herausforderungen:",
-      "issues": {
-        "elementNotFound": "• Element nicht gefunden → Verwenden Sie semantische Beschreibungen statt technischer Selektoren",
-        "ambiguousInstructions": "• Mehrdeutige Anweisungen → Fügen Sie mehr Kontext und spezifische Details hinzu",
-        "timingIssues": "• Timing-Probleme → Fügen Sie explizite Wartebedingungen hinzu",
-        "validationFailures": "• Validierungsfehler → Seien Sie spezifischer über erwartete Ergebnisse"
-      }
+      "issues": {}
     },
     "nextSteps": {
       "nextButton": "Weiter: VS Code Debugging →",

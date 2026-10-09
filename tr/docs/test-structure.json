@@ -4,9 +4,7 @@
       "backToDocumentation": "Dokümantasyona Dön"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Test Yapısı Rehberi",
-      "subtitle": "Async setup(), data() ve task() fonksiyonları ile v0.9.0 akıllı test yapısında ustalaşın"
+      "title": "Test Yapısı Rehberi"
     },
     "basicStructure": {
       "title": "📝 Temel Test Yapısı",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Dinamik Testler",
-      "badge": "v0.9.0 Özelliği",
       "setupFunctions": {
         "title": "Setup Fonksiyonları Kullanma",
         "description": "Test ortamınızı hazırlayın:"

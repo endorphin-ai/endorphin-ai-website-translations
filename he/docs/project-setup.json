@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "חיוני",
-      "title": "מדריך הגדרת פרויקט",
-      "subtitle": "מדריך מקיף להגדרה והתקנת פרויקט לזרימות עבודה בדיקות מקצועיות"
+      "title": "מדריך הגדרת פרויקט"
     },
     "installation": {
-      "title": "התקנה",
-      "description": "התחל עם Endorphin AI באמצעות אחת מהשיטות הללו:",
-      "option1": "אפשרות 1: הגדרה מהירה",
-      "option2": "אפשרות 2: התקנה ידנית"
+      "title": "התקנה"
     },
     "projectSetup": {
       "title": "הגדרת פרויקט",
-      "description": "אתחל את הפרויקט שלך עם המבנה הנכון וקבצי הגדרות.",
       "quickSetup": "הגדרה מהירה עם Init",
       "thisCreates": "זה יוצר:",
       "configFile": "קובץ הגדרות",
-      "testsFolder": "קבצי הבדיקה שלך",
       "envTemplate": "תבנית משתני סביבה",
       "exampleTest": "קובץ בדיקה לדוגמה",
       "manualSetup": "הגדרה ידנית",
-      "manualDescription": "יותר שליטה על ההגדרה שלך:",
-      "step1": "1. צור endorphin.config.ts:",
       "step2": "2. צור קובץ .env:",
       "step3": "3. צור תיקיית tests:"
     },
     "openaiSetup": {
       "title": "הגדרת OpenAI",
-      "description": "הגדר את מפתח OpenAI API שלך לבדיקות מופעלות AI:",
       "step1": "1. קבל מפתח API מן",
       "step2": "2. הוסף לקובץ .env שלך:"
     },
-    "firstTest": {
-      "title": "צור את הבדיקה הראשונה שלך",
-      "description": "צור קובץ בדיקה כדי לוודא שההגדרה שלך עובדת כראוי.",
-      "createFile": "צור קובץ בשם google-test.js בתיקיית tests שלך:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "הרצת בדיקות",
       "listTests": "רשום את כל הבדיקות:",
       "runSpecific": "הרץ בדיקה ספציפית:",
       "runAll": "הרץ את כל הבדיקות:"
@@ -51,10 +37,7 @@
       "generateReport": "צור דוח:",
       "openBrowser": "פתח בדפדפן:"
     },
-    "success": {
-      "title": "ההגדרה הושלמה!",
-      "description": "הפרויקט שלך כעת מוגדר ומוכן לבדיקות מופעלות AI. אתה יכול להתחיל לכתוב בדיקות באמצעות תיאורי שפה טבעית."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "הבא: מבנה בדיקות →",
       "backButton": "חזור לתיעוד"

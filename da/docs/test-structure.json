@@ -4,9 +4,7 @@
       "backToDocumentation": "Tilbage til Dokumentation"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Teststruktur Guide",
-      "subtitle": "Mestre den smarte teststruktur v0.9.0 med async setup(), data() og task() funktioner"
+      "title": "Teststruktur Guide"
     },
     "basicStructure": {
       "title": "📝 Grundlæggende Teststruktur",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Dynamiske Tests",
-      "badge": "v0.9.0 Funktion",
       "setupFunctions": {
         "title": "Brug af Setup Funktioner",
         "description": "Forbered dit testmiljø:"

@@ -2,14 +2,12 @@
   "documentation": {
     "title": "完整文档",
     "subtitle": "掌握Endorphin AI的AI驱动测试所需的一切。从快速入门到高级技术。",
-    "versionBadge": "文档 v0.9.0",
     "startQuickGuide": "从快速指南开始",
     "browseAllDocs": "浏览所有文档",
     "readGuide": "阅读指南",
     "badges": {
       "5min": "5分钟",
       "essential": "必需",
-      "v090": "v0.9.0",
       "examples": "示例",
       "advanced": "高级",
       "proTips": "专业技巧",
@@ -26,8 +24,7 @@
       "quickStartDesc": "5分钟内启动Endorphin AI",
       "projectSetup": "项目设置",
       "projectSetupDesc": "完整的项目设置和安装指南",
-      "testStructure": "测试结构",
-      "testStructureDesc": "具有setup/data/task函数的v0.9智能测试结构"
+      "testStructure": "测试结构"
     },
     "advanced": {
       "title": "高级主题",
@@ -72,8 +69,6 @@
         "button": "立即开始 →"
       },
       "testStructure": {
-        "title": "测试结构 v0.9.0",
-        "description": "学习带有async setup()、data()和task()函数的新智能测试结构。",
         "button": "了解更多 →"
       }
     }

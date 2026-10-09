@@ -4,9 +4,7 @@
       "backToDocumentation": "Takaisin dokumentaatioon"
     },
     "header": {
-      "badge": "v0.9.0",
-      "title": "Testirakenteen opas",
-      "subtitle": "Hallitse älykäs testirakenne v0.9.0 async setup(), data() ja task() funktioilla"
+      "title": "Testirakenteen opas"
     },
     "basicStructure": {
       "title": "📝 Perustestirakenne",
@@ -30,7 +28,6 @@
     },
     "dynamicTests": {
       "title": "Dynaamiset testit",
-      "badge": "v0.9.0 ominaisuus",
       "setupFunctions": {
         "title": "Setup-funktioiden käyttö",
         "description": "Valmistele testiympäristösi:"

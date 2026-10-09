@@ -19,16 +19,13 @@
       "description": "Jelaskan tindakan pengguna dalam bahasa Indonesia sederhana"
     },
     "selfHealing": {
-      "title": "🔁 Tes yang Menyembuhkan Diri",
-      "description": "Otomatis beradaptasi dengan perubahan UI"
+      "title": "🔁 Tes yang Menyembuhkan Diri"
     },
     "smartValidation": {
-      "title": "🕵️ Agen Validasi Cerdas",
-      "description": "Mendeteksi bug visual dan logika"
+      "title": "🕵️ Agen Validasi Cerdas"
     },
     "costTracking": {
-      "title": "💰 Pelacakan Biaya & Token",
-      "description": "Pantau biaya penggunaan AI dan konsumsi token"
+      "title": "💰 Pelacakan Biaya & Token"
     },
     "ciIntegration": {
       "title": "🚀 Integrasi CI",
@@ -59,12 +56,10 @@
       "description": "Lihat persis bagaimana AI menganalisis, bernalar, dan mengeksekusi instruksi tes Anda"
     },
     "builtInTools": {
-      "title": "🔧 Sistem alat terintegrasi",
-      "description": "12 alat otomasi browser komprehensif disertakan - tidak perlu alat kustom"
+      "title": "🔧 Sistem alat terintegrasi"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Perekam tes",
-      "description": "Perekam tes interaktif untuk pengujian prompt real-time - bereksperimen dan validasi ide tes secara instan"
+      "title": "🎬 Perekam tes"
     },
     "enhancedReports": {
       "title": "📊 Laporan HTML yang ditingkatkan",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Mulai cepat",
     "step1": "Instal framework",
-    "step2": "Konfigurasi kunci OpenAI API Anda",
     "step3": "Tulis tes pertama Anda",
     "step4": "Jalankan dan saksikan keajaiban!",
     "startNow": "Mulai sekarang →"

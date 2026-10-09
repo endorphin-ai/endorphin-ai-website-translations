@@ -119,15 +119,12 @@
       "description": "[JA] Set up GitHub Actions to run your Endorphin AI tests automatically in CI/CD pipelines"
     },
     "quickSetup": {
-      "title": "[JA] Quick Setup (5 Minutes)",
-      "description": "[JA] Get your tests running in CI with these simple steps",
       "step1": {
         "title": "[JA] Create GitHub Actions Workflow",
         "description": "[JA] Create .github/workflows/endorphin-tests.yml:"
       },
       "step2": {
-        "title": "[JA] Add OpenAI API Key Secret",
-        "steps": "[JA] Go to your GitHub repository,Navigate to Settings → Secrets and variables → Actions,Click New repository secret,Name: OPENAI_API_KEY,Value: Your OpenAI API key (starts with sk-)"
+        "title": "[JA] Add OpenAI API Key Secret"
       },
       "step3": {
         "title": "[JA] Test Your Setup",
@@ -140,16 +137,13 @@
         "description": "[JA] Test against staging and production environments using matrix strategy."
       },
       "scheduledTests": {
-        "title": "[JA] Scheduled Tests",
-        "description": "[JA] Run comprehensive tests nightly with cron scheduling."
+        "title": "[JA] Scheduled Tests"
       },
       "targetedTesting": {
-        "title": "[JA] Targeted Testing",
-        "description": "[JA] Run different test suites based on tags and priorities."
+        "title": "[JA] Targeted Testing"
       },
       "costManagement": {
-        "title": "[JA] Cost Management",
-        "description": "[JA] Monitor token usage and implement cost controls."
+        "title": "[JA] Cost Management"
       }
     },
     "environmentVariables": {
@@ -160,34 +154,24 @@
         "openaiApiKey": "[JA] Your OpenAI API key"
       },
       "browserSettings": {
-        "title": "[JA] Browser Settings",
-        "headless": "[JA] true for CI"
+        "title": "[JA] Browser Settings"
       },
       "testConfiguration": {
         "title": "[JA] Test Configuration",
-        "baseUrl": "[JA] Override test URLs",
-        "nodeEnv": "[JA] Set to 'ci'"
+        "baseUrl": "[JA] Override test URLs"
       },
       "debugSettings": {
-        "title": "[JA] Debug Settings",
-        "endorphinDebug": "[JA] verbose for logs"
+        "title": "[JA] Debug Settings"
       }
     },
     "securityBestPractices": {
       "title": "[JA] Security Best Practices",
-      "doThis": {
-        "title": "[JA] ✅ Do This",
-        "items": "[JA] Store API keys in GitHub Secrets,Use environment-specific secrets,Rotate API keys regularly,Limit test execution to prevent costs,Use branch protection rules"
-      },
-      "avoidThis": {
-        "title": "[JA] ❌ Avoid This",
-        "items": "[JA] Never commit API keys to code,Don't run expensive tests on every PR,Avoid running tests in forks,Don't skip timeout limits,Avoid exposing sensitive data in logs"
-      }
+      "doThis": {},
+      "avoidThis": {}
     },
     "gettingStartedChecklist": {
       "title": "[JA] Getting Started Checklist",
-      "description": "[JA] Follow this checklist to set up your CI/CD pipeline",
-      "items": "[JA] Create .github/workflows/endorphin-tests.yml,Add OPENAI_API_KEY to GitHub Secrets,Configure endorphin.config.ts for CI,Test workflow with simple test,Add appropriate tags to tests,Set up artifact upload for results,Configure notifications for failures,Consider cost management"
+      "description": "[JA] Follow this checklist to set up your CI/CD pipeline"
     },
     "navigationButtons": {
       "previous": "[JA] Environment Setup",

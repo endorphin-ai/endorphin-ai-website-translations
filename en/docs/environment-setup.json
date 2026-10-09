@@ -5,128 +5,113 @@
         },
         "header": {
             "badge": "Config",
-            "title": "Environment Setup",
-            "description": "Environment variables and configuration guide. Configure Endorphin AI with simple environment variables for different environments."
+            "title": "Environment Variables Guide",
+            "description": "Configure Endorphin AI with these simple environment variables."
         },
         "quickSetup": {
             "title": "Quick Setup",
-            "description": "Get started with minimal configuration",
+            "description": "One variable is enough to start.",
             "step1": "1. Create a .env file in your project root:",
             "sparkle": "✨ That's it!",
-            "ready": "You're ready to go with just your OpenAI API key."
+            "ready": "You're ready to go."
         },
         "availableVariables": {
             "title": "Available Variables",
-            "description": "Complete list of environment variables you can configure",
+            "description": "The environment variables Endorphin AI reads.",
+            "required": "Required",
+            "optional": "Optional",
+            "default": "Default:",
             "openaiApiKey": {
-                "title": "OPENAI_API_KEY (Required)",
                 "description": "Your OpenAI API key for AI-powered testing.",
                 "howToGet": "How to get one:",
-                "steps": [
-                    "Go to OpenAI API Keys",
-                    "Create a new key",
-                    "Copy and paste it here"
-                ]
+                "step1": "Go to",
+                "step2": "Create a new key",
+                "step3": "Copy and paste it here"
             },
             "headless": {
-                "title": "HEADLESS (Optional)",
-                "description": "Run browser with or without UI.",
-                "options": {
-                    "false": "HEADLESS=false  # See the browser (good for debugging)",
-                    "true": "HEADLESS=true   # No browser window (good for CI/CD)"
-                },
-                "default": "Default: true"
+                "description": "Run browser with or without UI."
             },
             "baseUrl": {
-                "title": "BASE_URL (Optional)",
-                "description": "Default website for your tests.",
-                "default": "Default: https://qafromla.herokuapp.com/"
+                "description": "Default website for your tests."
             },
-            "slowMo": {
-                "title": "SLOW_MO (Optional)",
-                "description": "Slow down browser actions (milliseconds).",
-                "options": {
-                    "0": "SLOW_MO=0     # No delay (fastest)",
-                    "500": "SLOW_MO=500   # Half second delay",
-                    "1000": "SLOW_MO=1000  # One second delay"
-                },
-                "default": "Default: 0"
-            },
-            "endorphinDebug": {
-                "title": "ENDORPHIN_DEBUG (Optional)",
-                "description": "Enable debug mode for detailed logging.",
-                "options": {
-                    "true": "ENDORPHIN_DEBUG=true   # Enable debug mode",
-                    "false": "ENDORPHIN_DEBUG=false  # Disable debug mode"
-                },
-                "default": "Default: false"
+            "jira": {
+                "title": "JIRA Integration",
+                "description": "Configure JIRA integration to sync tests from tickets:",
+                "setup": "Setup instructions: see the JIRA Integration Guide."
             }
         },
         "exampleConfigurations": {
             "title": "Example Configurations",
-            "description": "Ready-to-use configurations for different environments",
+            "description": "Ready-to-use .env files for common cases.",
             "localDevelopment": {
                 "title": "Local Development",
-                "description": "Perfect for development and debugging:"
+                "description": "Perfect for writing and debugging tests:"
             },
-            "stagingEnvironment": {
-                "title": "Staging Environment",
-                "description": "For testing against staging servers:"
+            "cicd": {
+                "title": "CI/CD Pipeline",
+                "description": "Fast and efficient for automated testing:"
             },
-            "productionCi": {
-                "title": "Production/CI",
-                "description": "Optimized for CI/CD pipelines:"
+            "production": {
+                "title": "Production Testing",
+                "description": "Test your live environment:"
             },
-            "debugMode": {
-                "title": "Debug Mode",
-                "description": "For troubleshooting test issues:"
+            "jira": {
+                "title": "JIRA Integration Enabled",
+                "description": "Sync tests from JIRA tickets:"
             }
         },
-        "advancedConfiguration": {
-            "title": "Advanced Configuration",
-            "description": "Additional variables for power users",
-            "modelConfiguration": {
-                "title": "Model Configuration"
+        "usingInTests": {
+            "title": "Using Environment Variables in Tests",
+            "access": {
+                "title": "Access in Test Files"
             },
-            "browserSettings": {
-                "title": "Browser Settings"
-            },
-            "outputSettings": {
-                "title": "Output Settings"
+            "multiple": {
+                "title": "Multiple Environments",
+                "description": "Create different .env files:",
+                "load": "Load the right one:"
             }
         },
-        "usingDifferentEnvironments": {
-            "title": "Using Different Environments",
-            "method1": {
-                "title": "Method 1: Multiple .env Files",
-                "description": "Create separate files for each environment:",
-                "loadSpecific": "Load specific environment:"
+        "commonIssues": {
+            "title": "Common Issues",
+            "problem": "Problem:",
+            "solution": "Solution:",
+            "missingKey": {
+                "title": "\"Missing OpenAI API Key\"",
+                "problem": "Test fails with API key error.",
+                "solution": "Make sure your .env file:",
+                "item1": "Is in the project root (same folder as package.json)",
+                "item2": "Has the correct key name:",
+                "item3": "Contains a valid key starting with"
             },
-            "method2": {
-                "title": "Method 2: Environment Variables",
-                "description": "Set variables directly in command line:"
+            "browserNotFound": {
+                "title": "\"Browser Not Found\"",
+                "problem": "Playwright can't find browser.",
+                "solution": "Install browsers:"
             },
-            "method3": {
-                "title": "Method 3: Package.json Scripts",
-                "description": "Add scripts to your package.json:",
-                "thenRun": "Then run with:"
+            "cannotSee": {
+                "title": "\"Cannot See Browser\"",
+                "problem": "Browser runs but you can't see it.",
+                "solutionPrefix": "Set",
+                "solutionSuffix": "in your .env file."
             }
         },
-        "securityBestPractices": {
-            "title": "Security Best Practices",
-            "neverCommit": {
-                "title": "🚨 Never Commit API Keys",
-                "description": "Add .env to your .gitignore:"
+        "securityTips": {
+            "title": "Security Tips",
+            "keepSafe": {
+                "title": "Keep Your API Key Safe",
+                "item1": "Never commit .env to git",
+                "item2": "Add .env to .gitignore",
+                "item3": "Use environment secrets in CI/CD"
             },
-            "useEnvironmentVariables": {
-                "title": "⚠️ Use Environment Variables in CI",
-                "description": "Set OPENAI_API_KEY as a secret in your CI/CD platform"
+            "gitignore": {
+                "title": "Example .gitignore"
             },
-            "createExample": {
-                "title": "✅ Create .env.example",
-                "description": "Share template without secrets:"
+            "cicd": {
+                "title": "CI/CD Setup",
+                "description": "Instead of .env files, use secrets:"
             }
         },
+        "closing": "The defaults work well for most cases. Add your OpenAI key and start testing.",
         "nextSteps": {
             "next": "CI/CD Setup",
             "previous": "Test Recorder"

@@ -2,14 +2,13 @@
   "documentation": {
     "title": "Complete Documentation",
     "subtitle": "Everything you need to master AI-powered testing with Endorphin AI. From quick start to advanced techniques.",
-    "versionBadge": "v0.9.0 Documentation",
+    "versionBadge": "Latest documentation",
     "startQuickGuide": "Start with Quick Guide",
     "browseAllDocs": "Browse All Docs",
     "readGuide": "Read Guide",
     "badges": {
       "5min": "5 min",
       "essential": "Essential",
-      "v090": "v0.9.0",
       "examples": "Examples",
       "advanced": "Advanced",
       "proTips": "Pro Tips",
@@ -17,7 +16,12 @@
       "interactive": "Interactive",
       "config": "Config",
       "automation": "Automation",
-      "patterns": "Patterns"
+      "patterns": "Patterns",
+      "core": "Core",
+      "ai": "AI",
+      "vision": "Vision",
+      "integration": "Integration",
+      "parallel": "Multi-user"
     },
     "gettingStarted": {
       "title": "Getting Started",
@@ -27,7 +31,7 @@
       "projectSetup": "Project Setup",
       "projectSetupDesc": "Complete project setup and configuration guide",
       "testStructure": "Test Structure",
-      "testStructureDesc": "v0.9 smart test structure with setup/data/task functions"
+      "testStructureDesc": "Smart test structure with setup, data and task functions"
     },
     "advanced": {
       "title": "Advanced Topics",
@@ -37,7 +41,9 @@
       "promptGuide": "Prompt Guide",
       "promptGuideDesc": "Advanced AI prompting techniques and optimization",
       "vscodeDebugging": "VS Code Debugging",
-      "vscodeDebuggingDesc": "Professional debugging with breakpoints and debug object"
+      "vscodeDebuggingDesc": "Professional debugging with breakpoints and debug object",
+      "multiUserTesting": "Multi-User Testing",
+      "multiUserTestingDesc": "Run up to 5 users in one test, each in its own browser"
     },
     "tools": {
       "title": "Tools & Integrations",
@@ -47,7 +53,13 @@
       "testRecorder": "Test Recorder",
       "testRecorderDesc": "Interactive test creation with browser recording",
       "environmentSetup": "Environment Setup",
-      "environmentSetupDesc": "Environment variables and configuration guide"
+      "environmentSetupDesc": "Environment variables and configuration guide",
+      "claudeCode": "Claude Code Integration",
+      "claudeCodeDesc": "Write, record and fix tests from Claude Code with slash commands",
+      "visionVerification": "Vision Verification",
+      "visionVerificationDesc": "AI screenshot verification: setup, modes and usage",
+      "jiraIntegration": "JIRA Integration",
+      "jiraIntegrationDesc": "Sync tests from JIRA tickets"
     },
     "deployment": {
       "title": "Deployment & CI/CD",
@@ -66,8 +78,8 @@
         "button": "Start Now →"
       },
       "testStructure": {
-        "title": "v0.9.0 Test Structure",
-        "description": "Learn the new smart test structure with async setup(), data(), and task() functions.",
+        "title": "Smart Test Structure",
+        "description": "Learn the smart test structure with async setup(), data(), and task() functions.",
         "button": "Learn More →"
       },
       "helpText": "Need help? Check out our comprehensive examples and troubleshooting guides.",

@@ -20,15 +20,15 @@
     },
     "selfHealing": {
       "title": "🔁 Self-Healing Tests",
-      "description": "Automatically adapt to UI changes"
+      "description": "Tests adapt to UI changes. The AI reads the page's accessibility tree before every decision"
     },
     "smartValidation": {
       "title": "🕵️ Smart Validation Agent",
-      "description": "Detect visual and logic bugs"
+      "description": "Confirms each test result with a screenshot and a confidence score"
     },
     "costTracking": {
       "title": "💰 Cost & Token Tracking",
-      "description": "Monitor AI usage costs and token consumption"
+      "description": "Monitor AI usage costs and token consumption, including vision calls"
     },
     "ciIntegration": {
       "title": "🚀 CI Integration",
@@ -37,6 +37,18 @@
     "insightfulReports": {
       "title": "📊 Insightful Reports",
       "description": "Get human-readable, AI-generated reports"
+    },
+    "visionVerification": {
+      "title": "👁️ Vision Verification",
+      "description": "Verify elements by screenshot, not only in the DOM"
+    },
+    "claudeCode": {
+      "title": "🤖 Claude Code Integration",
+      "description": "Write and fix tests with the /write-test and /fix-test commands"
+    },
+    "multiProvider": {
+      "title": "🔀 OpenAI and Google Gemini",
+      "description": "Pick the model by name. The provider is detected automatically"
     }
   },
   "codeExample": {
@@ -60,11 +72,11 @@
     },
     "builtInTools": {
       "title": "🔧 Built-in Tools System",
-      "description": "12 comprehensive browser automation tools built-in - no custom tools needed"
+      "description": "26 browser automation tools built in: navigate, click, fill, verify, hover, drag, scroll, file upload, tabs, network inspection and more"
     },
     "testRecorderInteractive": {
       "title": "🎬 Test Recorder",
-      "description": "Interactive test recorder to try prompts in real-time - instantly experiment and validate test ideas"
+      "description": "Create tests by clicking through your app, or drive the recorder from the command line"
     },
     "enhancedReports": {
       "title": "📊 Enhanced HTML Reports",
@@ -74,7 +86,7 @@
   "quickStart": {
     "title": "🚀 Quick Start",
     "step1": "Install the framework",
-    "step2": "Set up your OpenAI API key",
+    "step2": "Add your OpenAI or Google Gemini API key",
     "step3": "Write your first test",
     "step4": "Run and watch the magic happen!",
     "startNow": "Start Now →"

@@ -2,14 +2,12 @@
   "documentation": {
     "title": "التوثيق الشامل",
     "subtitle": "كل ما تحتاجه لإتقان الاختبارات المدعومة بالذكاء الاصطناعي مع Endorphin AI. من البدء السريع إلى التقنيات المتقدمة.",
-    "versionBadge": "التوثيق v0.9.0",
     "startQuickGuide": "ابدأ بالدليل السريع",
     "browseAllDocs": "تصفح جميع المستندات",
     "readGuide": "اقرأ الدليل",
     "badges": {
       "5min": "5 دقائق",
       "essential": "أساسي",
-      "v090": "v0.9.0",
       "examples": "أمثلة",
       "advanced": "متقدم",
       "proTips": "نصائح محترفة",
@@ -26,8 +24,7 @@
       "quickStartDesc": "شغل Endorphin AI في 5 دقائق",
       "projectSetup": "إعداد المشروع",
       "projectSetupDesc": "دليل شامل لإعداد وتثبيت المشروع",
-      "testStructure": "هيكل الاختبارات",
-      "testStructureDesc": "هيكل اختبار ذكي v0.9 مع وظائف setup/data/task"
+      "testStructure": "هيكل الاختبارات"
     },
     "advanced": {
       "title": "مواضيع متقدمة",
@@ -72,8 +69,6 @@
         "button": "ابدأ الآن →"
       },
       "testStructure": {
-        "title": "هيكل الاختبارات v0.9.0",
-        "description": "تعلم هيكل الاختبار الذكي الجديد مع وظائف async setup() و data() و task().",
         "button": "تعلم المزيد →"
       }
     }

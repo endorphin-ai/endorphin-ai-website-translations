@@ -5,47 +5,33 @@
     },
     "header": {
       "badge": "必需",
-      "title": "项目设置指南",
-      "subtitle": "专业测试工作流程的完整项目设置和安装指南"
+      "title": "项目设置指南"
     },
     "installation": {
-      "title": "安装",
-      "description": "使用以下方法之一开始使用Endorphin AI：",
-      "option1": "选项1：快速设置",
-      "option2": "选项2：手动安装"
+      "title": "安装"
     },
     "projectSetup": {
       "title": "项目设置",
-      "description": "使用正确的结构和配置文件初始化您的项目。",
       "quickSetup": "使用Init进行快速设置",
       "quickSetupDescription": "设置项目的最快方法：",
       "quickSetupCommand": "npx endorphin-ai init",
       "thisCreates": "这将创建：",
       "configFile": "配置文件",
-      "testsFolder": "您的测试文件",
       "envTemplate": "环境变量模板",
       "exampleTest": "示例测试文件",
       "manualSetup": "手动设置",
-      "manualDescription": "更好地控制您的设置：",
-      "step1": "1. 创建 endorphin.config.ts：",
       "step2": "2. 创建 .env 文件：",
       "step3": "3. 创建 tests 文件夹："
     },
     "openaiSetup": {
       "title": "OpenAI设置",
-      "description": "为AI驱动的测试设置您的OpenAI API密钥：",
       "step1": "1. 获取您的 API 密钥从",
       "step1Description": "访问platform.openai.com/api-keys创建您的API密钥",
       "step2": "2. 添加到您的.env文件：",
       "step2Example": "OPENAI_API_KEY=sk-proj-abc123.."
     },
-    "firstTest": {
-      "title": "创建您的第一个测试",
-      "description": "创建一个测试文件以验证您的设置是否正常工作。",
-      "createFile": "在您的tests文件夹中创建名为google-test.js的文件："
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "运行测试",
       "listTests": "列出所有测试：",
       "listTestsCommand": "npx endorphin-ai list",
       "runSpecific": "运行特定测试：",
@@ -60,10 +46,7 @@
       "openBrowser": "在浏览器中打开：",
       "openBrowserCommand": "npx endorphin-ai open report"
     },
-    "success": {
-      "title": "设置完成！",
-      "description": "您的项目现在已设置并准备好进行AI驱动的测试。您可以开始使用自然语言描述编写测试。"
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "下一步：测试结构 →",
       "backButton": "返回文档"

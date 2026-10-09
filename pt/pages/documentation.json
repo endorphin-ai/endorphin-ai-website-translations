@@ -2,14 +2,12 @@
   "documentation": {
     "title": "Documentação completa",
     "subtitle": "Tudo o que você precisa para dominar testes potencializados por IA com Endorphin AI. Do início rápido às técnicas avançadas.",
-    "versionBadge": "Documentação v0.9.0",
     "startQuickGuide": "Começar com o guia rápido",
     "browseAllDocs": "Explorar todos os documentos",
     "readGuide": "Ler guia",
     "badges": {
       "5min": "5 min",
       "essential": "Essencial",
-      "v090": "v0.9.0",
       "examples": "Exemplos",
       "advanced": "Avançado",
       "proTips": "Dicas pro",
@@ -26,8 +24,7 @@
       "quickStartDesc": "Comece a funcionar com Endorphin AI em 5 minutos",
       "projectSetup": "Configuração do projeto",
       "projectSetupDesc": "Guia completo de configuração e instalação do projeto",
-      "testStructure": "Estrutura de testes",
-      "testStructureDesc": "Estrutura inteligente de testes v0.9 com funções setup/data/task"
+      "testStructure": "Estrutura de testes"
     },
     "advanced": {
       "title": "Tópicos avançados",
@@ -72,8 +69,6 @@
         "button": "Começar agora →"
       },
       "testStructure": {
-        "title": "Estrutura de testes v0.9.0",
-        "description": "Aprenda a nova estrutura inteligente de testes com funções async setup(), data() e task().",
         "button": "Saber mais →"
       }
     }

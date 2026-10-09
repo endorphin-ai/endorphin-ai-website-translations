@@ -19,16 +19,13 @@
       "description": "Beskriv brukerhandlinger på vanlig norsk"
     },
     "selfHealing": {
-      "title": "🔁 Selvhelbredende Tester",
-      "description": "Tilpasser seg automatisk til UI-endringer"
+      "title": "🔁 Selvhelbredende Tester"
     },
     "smartValidation": {
-      "title": "🕵️ Smart Valideringsagent",
-      "description": "Oppdager visuelle og logiske feil"
+      "title": "🕵️ Smart Valideringsagent"
     },
     "costTracking": {
-      "title": "💰 Kostnads- og Token-sporing",
-      "description": "Overvåk AI-brukskostnader og tokenforbruk"
+      "title": "💰 Kostnads- og Token-sporing"
     },
     "ciIntegration": {
       "title": "🚀 CI-integrasjon",
@@ -59,12 +56,10 @@
       "description": "Se nøyaktig hvordan AI analyserte, resonnerte og utførte testinstruksjoner"
     },
     "builtInTools": {
-      "title": "🔧 Innebygd Verktøysystem",
-      "description": "12 omfattende nettleserautomatiseringsverktøy innebygd - ingen tilpassede verktøy nødvendig"
+      "title": "🔧 Innebygd Verktøysystem"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Testopptaker",
-      "description": "Interaktiv testopptaker for å prøve ledetekster i sanntid - eksperimenter og valider testideer umiddelbart"
+      "title": "🎬 Testopptaker"
     },
     "enhancedReports": {
       "title": "📊 Forbedrede HTML-rapporter",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Hurtigstart",
     "step1": "Installer rammeverket",
-    "step2": "Sett opp din OpenAI API-nøkkel",
     "step3": "Skriv din første test",
     "step4": "Kjør og se magien skje!",
     "startNow": "Start Nå →"

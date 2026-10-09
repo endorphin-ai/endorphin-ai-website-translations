@@ -19,16 +19,13 @@
       "description": "Describe acciones del usuario en inglés simple"
     },
     "selfHealing": {
-      "title": "🔁 Pruebas auto-reparadoras",
-      "description": "Se adaptan automáticamente a cambios de interfaz"
+      "title": "🔁 Pruebas auto-reparadoras"
     },
     "smartValidation": {
-      "title": "🕵️ Agente de validación inteligente",
-      "description": "Detecta errores visuales y lógicos"
+      "title": "🕵️ Agente de validación inteligente"
     },
     "costTracking": {
-      "title": "💰 Seguimiento de costos y tokens",
-      "description": "Monitorea costos de uso de IA y consumo de tokens"
+      "title": "💰 Seguimiento de costos y tokens"
     },
     "ciIntegration": {
       "title": "🚀 Integración CI",
@@ -59,12 +56,10 @@
       "description": "Ve exactamente cómo la IA analiza, razona y ejecuta tus instrucciones de prueba"
     },
     "builtInTools": {
-      "title": "🔧 Sistema de herramientas integrado",
-      "description": "12 herramientas comprehensivas de automatización del navegador incluidas - no necesitas herramientas personalizadas"
+      "title": "🔧 Sistema de herramientas integrado"
     },
     "testRecorderInteractive": {
-      "title": "🎬 Grabador de pruebas",
-      "description": "Grabador de pruebas interactivo para probar prompts en tiempo real - experimenta y valida ideas de prueba al instante"
+      "title": "🎬 Grabador de pruebas"
     },
     "enhancedReports": {
       "title": "📊 Reportes HTML mejorados",
@@ -74,7 +69,6 @@
   "quickStart": {
     "title": "🚀 Inicio rápido",
     "step1": "Instalar el framework",
-    "step2": "Configurar tu clave API de OpenAI",
     "step3": "Escribir tu primera prueba",
     "step4": "¡Ejecutar y ver la magia!",
     "startNow": "Comenzar ahora →"

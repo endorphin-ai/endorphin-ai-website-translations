@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "Esencial",
-      "title": "Guía de Configuración del Proyecto",
-      "subtitle": "Guía completa de configuración e instalación del proyecto para flujos de trabajo de prueba profesionales"
+      "title": "Guía de Configuración del Proyecto"
     },
     "installation": {
-      "title": "Instalación",
-      "description": "Comienza con Endorphin AI usando uno de estos métodos:",
-      "option1": "Opción 1: Configuración Rápida",
-      "option2": "Opción 2: Instalación Manual"
+      "title": "Instalación"
     },
     "projectSetup": {
       "title": "Configuración del Proyecto",
-      "description": "Inicializa tu proyecto con la estructura y archivos de configuración adecuados.",
       "quickSetup": "Configuración Rápida con Init",
       "thisCreates": "Esto crea:",
       "configFile": "Archivo de configuración",
-      "testsFolder": "Tus archivos de prueba",
       "envTemplate": "Plantilla de variables de entorno",
       "exampleTest": "Archivo de prueba de ejemplo",
       "manualSetup": "Configuración Manual",
-      "manualDescription": "Para más control sobre tu configuración:",
-      "step1": "1. Crear endorphin.config.ts:",
       "step2": "2. Crear archivo .env:",
       "step3": "3. Crear carpeta tests:"
     },
     "openaiSetup": {
       "title": "Configuración OpenAI",
-      "description": "Configura tu clave API de OpenAI para pruebas potenciadas por IA:",
       "step1": "1. Obtén tu clave API de",
       "step2": "2. Añadir a tu archivo .env:"
     },
-    "firstTest": {
-      "title": "Crea Tu Primera Prueba",
-      "description": "Crea un archivo de prueba para verificar que tu configuración funciona correctamente.",
-      "createFile": "Crea un archivo llamado google-test.js en tu carpeta tests:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Ejecutar Pruebas",
       "listTests": "Listar todas las pruebas:",
       "runSpecific": "Ejecutar prueba específica:",
       "runAll": "Ejecutar todas las pruebas:"
@@ -51,10 +37,7 @@
       "generateReport": "Generar informe:",
       "openBrowser": "Abrir en navegador:"
     },
-    "success": {
-      "title": "¡Configuración Completa!",
-      "description": "Tu proyecto está ahora configurado y listo para pruebas potenciadas por IA. Puedes comenzar a escribir pruebas usando descripciones en lenguaje natural."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Siguiente: Estructura de Pruebas →",
       "backButton": "Volver a la Documentación"

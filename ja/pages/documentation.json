@@ -2,14 +2,12 @@
   "documentation": {
     "title": "完全なドキュメント",
     "subtitle": "Endorphin AIでAIを活用したテストをマスターするために必要なすべて。クイックスタートから高度なテクニックまで。",
-    "versionBadge": "v0.9.0 ドキュメント",
     "startQuickGuide": "クイックガイドで始める",
     "browseAllDocs": "すべてのドキュメントを参照",
     "readGuide": "ガイドを読む",
     "badges": {
       "5min": "5分",
       "essential": "必須",
-      "v090": "v0.9.0",
       "examples": "例",
       "advanced": "高度",
       "proTips": "プロのヒント",
@@ -26,8 +24,7 @@
       "quickStartDesc": "5分でEndorphin AIを始める",
       "projectSetup": "プロジェクト設定",
       "projectSetupDesc": "プロジェクトの設定と構成の完全ガイド",
-      "testStructure": "テスト構造",
-      "testStructureDesc": "setup/data/task関数を使用したv0.9スマートテスト構造"
+      "testStructure": "テスト構造"
     },
     "advanced": {
       "title": "高度なトピック",
@@ -72,8 +69,6 @@
         "button": "今すぐ始める →"
       },
       "testStructure": {
-        "title": "v0.9.0 テスト構造",
-        "description": "非同期のsetup()、data()、task()関数を使用した新しいスマートテスト構造を学びます。",
         "button": "詳細を見る →"
       }
     }

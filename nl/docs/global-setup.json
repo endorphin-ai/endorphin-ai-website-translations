@@ -116,9 +116,7 @@
       "backToDocumentation": "[NL] Back to Documentation"
     },
     "header": {
-      "badge": "[NL] v0.9.0 Feature",
-      "title": "[NL] Global Setup Guide",
-      "description": "[NL] Run custom code before all your tests start - perfect for preparing servers, databases, and test environments"
+      "title": "[NL] Global Setup Guide"
     },
     "whatIsGlobalSetup": {
       "title": "[NL] What is Global Setup?",
@@ -131,11 +129,7 @@
       }
     },
     "quickSetup": {
-      "title": "[NL] Quick Setup (2 Steps)",
-      "step1": {
-        "title": "[NL] Create global-setup.js",
-        "description": "[NL] Create a global-setup.js file in your project root:"
-      },
+      "step1": {},
       "step2": {
         "title": "[NL] Configure Endorphin",
         "description": "[NL] Tell Endorphin to use it in endorphin.config.ts:",
@@ -158,8 +152,7 @@
       }
     },
     "usingSetupData": {
-      "title": "[NL] Using Setup Data in Tests",
-      "description": "[NL] Access environment variables and data set during global setup"
+      "title": "[NL] Using Setup Data in Tests"
     },
     "importantNotes": {
       "title": "[NL] Important Notes",
@@ -194,12 +187,8 @@
         "solutions": "[NL] Environment variables should work,Global variables might not persist,Use files or external storage for complex data"
       }
     },
-    "proTips": {
-      "title": "[NL] Pro Tips",
-      "tips": "[NL] Keep it Simple - Don't overcomplicate setup,Log Progress - Help debug when things go wrong,Handle Errors - Fail gracefully with clear messages,Fast Setup - Don't slow down test starts"
-    },
+    "proTips": {},
     "navigationButtons": {
-      "backToDocumentation": "[NL] Back to Documentation",
       "previous": "[NL] CI/CD Setup",
       "next": "[NL] Test Structure"
     }

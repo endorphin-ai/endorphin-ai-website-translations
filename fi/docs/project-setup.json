@@ -5,43 +5,29 @@
     },
     "header": {
       "badge": "Oleellinen",
-      "title": "Projektin asennusopas",
-      "subtitle": "Täydellinen projektin asennus- ja konfiguraatio-opas ammattimaisille testiworkflow-ille"
+      "title": "Projektin asennusopas"
     },
     "installation": {
-      "title": "Asennus",
-      "description": "Aloita Endorphin AI:n kanssa jollakin näistä tavoista:",
-      "option1": "Vaihtoehto 1: Pikaasennus",
-      "option2": "Vaihtoehto 2: Manuaalinen asennus"
+      "title": "Asennus"
     },
     "projectSetup": {
       "title": "Projektin asennus",
-      "description": "Alusta projektisi oikealla rakenteella ja konfiguraatiotiedostoilla.",
       "quickSetup": "Pikaasennus Init:llä",
       "thisCreates": "Tämä luo:",
       "configFile": "Konfiguraatiotiedosto",
-      "testsFolder": "Sinun testitiedostosi",
       "envTemplate": "Ympäristömuuttujien pohja",
       "exampleTest": "Esimerkki testitiedosto",
       "manualSetup": "Manuaalinen asennus",
-      "manualDescription": "Enemmän hallintaa asennukseesi:",
-      "step1": "1. Luo endorphin.config.ts:",
       "step2": "2. Luo .env-tiedosto:",
       "step3": "3. Luo tests-kansio:"
     },
     "openaiSetup": {
       "title": "OpenAI-asennus",
-      "description": "Aseta OpenAI API-avaimesi AI-voimaisia testejä varten:",
       "step1": "1. Hanki API-avaimesi",
       "step2": "2. Lisää .env-tiedostoosi:"
     },
-    "firstTest": {
-      "title": "Luo ensimmäinen testisi",
-      "description": "Luo testitiedosto varmistaaksesi että asetuksesi toimivat oikein.",
-      "createFile": "Luo tiedosto nimeltä google-test.js tests-kansioosi:"
-    },
+    "firstTest": {},
     "runTest": {
-      "title": "Testien suorittaminen",
       "listTests": "Listaa kaikki testit:",
       "runSpecific": "Suorita tietty testi:",
       "runAll": "Suorita kaikki testit:"
@@ -51,10 +37,7 @@
       "generateReport": "Luo raportti:",
       "openBrowser": "Avaa selaimessa:"
     },
-    "success": {
-      "title": "Asennus valmis!",
-      "description": "Projektisi on nyt asetettu ja valmis AI-voimaisille testeille. Voit alkaa kirjoittaa testejä käyttäen luonnollisen kielen kuvauksia."
-    },
+    "success": {},
     "nextSteps": {
       "nextButton": "Seuraava: Testirakenne →",
       "backButton": "Takaisin dokumentaatioon"
