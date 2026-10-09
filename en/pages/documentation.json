@@ -88,6 +88,10 @@
         "troubleshooting": "Troubleshooting",
         "joinCommunity": "Join Community"
       }
+    },
+    "allDocs": {
+      "title": "All Docs",
+      "description": "Every guide in one place."
     }
   }
 }
